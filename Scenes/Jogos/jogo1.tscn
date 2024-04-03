@@ -1,0 +1,157 @@
+[gd_scene load_steps=6 format=3 uid="uid://dwqhfvs6wtxtv"]
+
+[ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo1_controller.gd" id="1_sjwyw"]
+[ext_resource type="Resource" uid="uid://wgmm7b74c05a" path="res://Recursos/Jogo 1/jogo1.tres" id="2_3lcda"]
+[ext_resource type="Texture2D" uid="uid://ban0afpu3rh2e" path="res://Imagens/Screenshot 2024-02-18 213558.png" id="2_xo6fn"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqjss"]
+bg_color = Color(0.968627, 0.905882, 0.815686, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3u1s3"]
+
+[node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource("1_sjwyw")
+game = ExtResource("2_3lcda")
+color_right = Color(0, 1, 0, 1)
+color_wrong = Color(1, 0, 0, 1)
+
+[node name="Jogo 1" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Jogo 1"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -539.0
+offset_top = -317.0
+offset_right = 540.0
+offset_bottom = 157.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="texto pergunta" type="Label" parent="Jogo 1/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 70)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Pergunta"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ImageHolder" type="Panel" parent="Jogo 1/VBoxContainer"]
+custom_minimum_size = Vector2(0, 400)
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dqjss")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Jogo 1/VBoxContainer/ImageHolder"]
+
+[node name="imagem do audio" type="TextureRect" parent="Jogo 1/VBoxContainer/ImageHolder"]
+visible = false
+layout_mode = 0
+offset_left = -3.0
+offset_right = 1267.0
+offset_bottom = 400.0
+stretch_mode = 5
+
+[node name="Audio" type="Button" parent="Jogo 1/VBoxContainer/ImageHolder"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -126.5
+offset_top = -169.0
+offset_right = 129.5
+offset_bottom = 94.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3u1s3")
+icon = ExtResource("2_xo6fn")
+flat = true
+
+[node name="respostas" type="HBoxContainer" parent="Jogo 1"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 76.0
+offset_top = 103.0
+offset_right = -76.0
+offset_bottom = 234.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="Button" type="Button" parent="Jogo 1/respostas"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button2" type="Button" parent="Jogo 1/respostas"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect" type="ColorRect" parent="Jogo 1"]
+visible = false
+layout_mode = 0
+offset_right = 1278.0
+offset_bottom = 718.0
+color = Color(0.254902, 0.686275, 0.552941, 1)
+
+[node name="Label" type="Label" parent="Jogo 1/ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -642.0
+offset_top = 75.0
+offset_right = 642.0
+offset_bottom = 239.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.168627, 0.168627, 0.168627, 1)
+theme_override_font_sizes/font_size = 50
+text = "Ronda terminada!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Jogo 1/ColorRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -472.0
+offset_top = -393.0
+offset_right = 473.0
+offset_bottom = -105.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 20
+
+[node name="jogar" type="Button" parent="Jogo 1/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "Jogar novamente"
+
+[node name="menu" type="Button" parent="Jogo 1/ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "Menu"
+
+[connection signal="pressed" from="Jogo 1/VBoxContainer/ImageHolder/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="Jogo 1/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="Jogo 1/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]

@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=3 format=3 uid="uid://68kjjjqek8de"]
+
+[ext_resource type="AudioStream" uid="uid://dm1yoi5avgdp1" path="res://Audio/estanteAudio.ogg" id="1_an4iq"]
+[ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_har4i"]
+
+[resource]
+script = ExtResource("1_har4i")
+question_info = ""
+type = 2
+question_audio = ExtResource("1_an4iq")
+options = Array[String](["estante", "instante"])
+correct = "estante"

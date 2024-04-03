@@ -1,0 +1,73 @@
+[gd_scene load_steps=5 format=3 uid="uid://dpfm1eoby5gsu"]
+
+[ext_resource type="Script" path="res://Scripts/Scenes/menu.gd" id="1_0o3k3"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bsau0"]
+bg_color = Color(0.254902, 0.686275, 0.552941, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bl71l"]
+bg_color = Color(0.256213, 0.687809, 0.552939, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dkn38"]
+bg_color = Color(0.256213, 0.687809, 0.552939, 1)
+
+[node name="Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_0o3k3")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -338.0
+offset_top = -378.0
+offset_right = 338.0
+offset_bottom = -81.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="Botões" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_stretch_ratio = 0.0
+theme_override_constants/separation = 22
+
+[node name="Jogar" type="Button" parent="MarginContainer/Botões"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_bsau0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_bl71l")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_dkn38")
+text = "Jogar"
+
+[node name="Opções" type="Button" parent="MarginContainer/Botões"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 30
+text = "Opções"
+
+[node name="Texto" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -150.0
+offset_top = 90.0
+offset_right = 153.0
+offset_bottom = 221.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.0313726, 0, 0, 0.803922)
+theme_override_font_sizes/font_size = 70
+text = "Jogo"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="MarginContainer/Botões/Jogar" to="." method="_on_jogar_pressed"]
