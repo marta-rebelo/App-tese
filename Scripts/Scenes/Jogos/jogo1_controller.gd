@@ -28,7 +28,7 @@ func load_game() -> void:
 	
 	var options = current_game.options
 	
-	options.shuffle()
+#	options.shuffle()
 	
 	for i in buttons.size():
 		buttons[i].text = options[i]

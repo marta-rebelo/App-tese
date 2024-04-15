@@ -1,1 +1,12 @@
 res://menu.tscn
+res://Scenes/Jogos/jogo1.tscn
+res://Scripts/Recursos/perguntas.gd
+res://Scripts/Scenes/Jogos/jogo1_controller.gd
+res://Scripts/Scenes/Jogos/jogo2_controller.gd
+res://Scripts/Scenes/Jogos/jogo3_controller.gd
+res://Scenes/Jogos/jogo4.tscn
+res://Scripts/Scenes/Jogos/jogo4_controller.gd
+res://Scenes/Jogos/jogo3.tscn
+res://Scenes/Jogos/jogo2.tscn
+res://Recursos/Jogo 4/vaca faca.tres
+res://Recursos/Jogo 4/duas imagens.tres

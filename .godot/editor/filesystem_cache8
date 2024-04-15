@@ -1,49 +1,57 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712162705
+::res://::1713215365
 export_presets.cfg::TextFile::-1::1708866140::0::1::::<><>::
 icon.svg::CompressedTexture2D::1689612228049455958::1708866140::1712162710::1::::<><>::
-menu.tscn::PackedScene::8223191860774169248::1708866140::0::1::::<><>::res://Scripts/Scenes/menu.gd
-::res://Audio/::1712162667
+menu.tscn::PackedScene::8223191860774169248::1713215365::0::1::::<><>::res://Scripts/Scenes/menu.gd
+::res://Audio/::1712162711
 estanteAudio.ogg::AudioStreamOggVorbis::8056684671841546148::1708866140::1712162710::1::::<><>::
 faca.wav::AudioStreamWAV::4281219996911961074::1708866140::1712162711::1::::<><>::
-::res://Imagens/::1712162668
+::res://Imagens/::1713215403
 bola.png::CompressedTexture2D::4978052342384629539::1708866140::1712162710::1::::<><>::
 desktop.ini::TextFile::-1::1708866140::0::1::::<><>::
 melancia.png::CompressedTexture2D::805475569263563506::1708866140::1712162710::1::::<><>::
 Screenshot 2024-02-18 213558.png::CompressedTexture2D::2414775806050659774::1708866140::1712162710::1::::<><>::
-::res://Recursos/::1712162669
+::res://Imagens/Jogo 4/::1713215498
+Knife-Png-225.png::CompressedTexture2D::300132569159482867::1713215416::1713215417::1::::<><>::
+vecteezy_cartoon-of-cow-illustration-cow-in-png-format-image_13211278.png::CompressedTexture2D::5193044880269757595::1713215498::1713215503::1::::<><>::
+::res://Recursos/::1713214635
 ::res://Recursos/Jogo 1/::1712162669
-estante.tres::Resource/GameQuestion::2244602348081919678::1708866140::0::1::::<><>::uid://dm1yoi5avgdp1::::res://Audio/estanteAudio.ogg<>res://Scripts/Recursos/perguntas.gd
-faca.tres::Resource/GameQuestion::155482555493190420::1708866140::0::1::::<><>::uid://b184cko8f5nc1::::res://Audio/faca.wav<>res://Scripts/Recursos/perguntas.gd
-jogo1.tres::Resource/GameType::1557292543785932288::1708866140::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://68kjjjqek8de::::res://Recursos/Jogo 1/estante.tres<>uid://chk1l4r5vpsm::::res://Recursos/Jogo 1/faca.tres
+estante.tres::Resource/Resource::2244602348081919678::1708866140::0::1::::<><>::uid://dm1yoi5avgdp1
+faca.tres::Resource/Resource::155482555493190420::1708866140::0::1::::<><>::uid://b184cko8f5nc1
+jogo1.tres::Resource/Resource::1557292543785932288::1708866140::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://68kjjjqek8de
 ::res://Recursos/Jogo 2/::1712162669
-jogo2.tres::Resource/GameType::8661334042368680889::1708866140::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://bob5yqto8f0ul::::res://Recursos/Jogo 2/Perguntas/fossil.tres<>uid://c2ljx6xaoxqth::::res://Recursos/Jogo 2/Perguntas/problema.tres<>uid://bombfiu5dbxtk::::res://Recursos/Jogo 2/Perguntas/porta.tres<>uid://hm1474go1k7d::::res://Recursos/Jogo 2/Perguntas/facil.tres
+jogo2.tres::Resource/Resource::8661334042368680889::1708866140::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://bob5yqto8f0ul
 ::res://Recursos/Jogo 2/Perguntas/::1712162669
-facil.tres::Resource/GameQuestion::517726594189002523::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
-fossil.tres::Resource/GameQuestion::3372994111621632975::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
-porta.tres::Resource/GameQuestion::3393907126086590436::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
-problema.tres::Resource/GameQuestion::6691237490876432677::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
-::res://Recursos/Jogo 3/::1712162671
+facil.tres::Resource/Resource::517726594189002523::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
+fossil.tres::Resource/Resource::3372994111621632975::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
+porta.tres::Resource/Resource::3393907126086590436::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
+problema.tres::Resource/Resource::6691237490876432677::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
+::res://Recursos/Jogo 3/::1713214635
 bola.png::CompressedTexture2D::5751547694941883519::1708866140::1712162710::1::::<><>::
-bola.tres::Resource/GameQuestion::4735735738995410897::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://cc6n2a05qohp0::::res://Imagens/bola.png
-jogo3.tres::Resource/GameType::1521011045128242869::1708866140::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://b8qa41lmkm1i0::::res://Recursos/Jogo 3/bola.tres<>uid://cf3s427eu22ei::::res://Recursos/Jogo 3/melancia.tres
+bola.tres::Resource/Resource::4735735738995410897::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://cc6n2a05qohp0
+jogo3.tres::Resource/Resource::1521011045128242869::1708866140::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://b8qa41lmkm1i0
 melancia.png::CompressedTexture2D::6587361859956539449::1708866140::1712162710::1::::<><>::
-melancia.tres::Resource/GameQuestion::5182734324356832276::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://c0375f3xc6ab6::::res://Recursos/Jogo 3/melancia.png
-::res://Scenes/::1712162672
-selecionar_jogo.tscn::PackedScene::1832842105212652695::1708866140::0::1::::<><>::res://Scripts/Scenes/selecionar_jogo.gd
-::res://Scenes/Jogos/::1712162673
-jogo1.tscn::PackedScene::8736881735335365839::1708866140::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo1_controller.gd<>uid://wgmm7b74c05a::::res://Recursos/Jogo 1/jogo1.tres<>uid://ban0afpu3rh2e::::res://Imagens/Screenshot 2024-02-18 213558.png
-jogo2.tscn::PackedScene::6844448514174927381::1708866140::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo2_controller.gd<>uid://dvnu52u5tloq0::::res://Recursos/Jogo 2/jogo2.tres
-jogo3.tscn::PackedScene::9210529253115872909::1708866140::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo3_controller.gd<>uid://vw13hefv2k3n::::res://Recursos/Jogo 3/jogo3.tres
-::res://Scripts/::1712162673
+melancia.tres::Resource/Resource::5182734324356832276::1708866140::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://c0375f3xc6ab6
+::res://Recursos/Jogo 4/::1713215163
+duas imagens.tres::Resource/GameType::8487218841817767044::1713215163::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://prq4i0v1tf7b::::res://Recursos/Jogo 4/vaca faca.tres
+vaca faca.tres::Resource/GameQuestion::1088950796093561197::1713215163::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
+::res://Scenes/::1712163652
+selecionar_jogo.tscn::PackedScene::1832842105212652695::1712163652::0::1::::<><>::res://Scripts/Scenes/selecionar_jogo.gd
+::res://Scenes/Jogos/::1713215365
+jogo1.tscn::PackedScene::8736881735335365839::1713215365::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo1_controller.gd<>uid://wgmm7b74c05a::::res://Recursos/Jogo 1/jogo1.tres<>uid://ban0afpu3rh2e::::res://Imagens/Screenshot 2024-02-18 213558.png
+jogo2.tscn::PackedScene::6844448514174927381::1713215365::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo2_controller.gd<>uid://dvnu52u5tloq0::::res://Recursos/Jogo 2/jogo2.tres
+jogo3.tscn::PackedScene::9210529253115872909::1713215365::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo3_controller.gd<>uid://vw13hefv2k3n::::res://Recursos/Jogo 3/jogo3.tres
+jogo4.tscn::PackedScene::7945171553299241982::1713215365::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo4_controller.gd<>uid://ds6jiwabyrkfk::::res://Recursos/Jogo 4/duas imagens.tres
+::res://Scripts/::1712167338
 enum.gd::GDScript::-1::1708866140::0::1::::Enum<>RefCounted<>::
-::res://Scripts/Recursos/::1712162673
-perguntas.gd::GDScript::-1::1708866140::0::1::::GameQuestion<>Resource<>::
+::res://Scripts/Recursos/::1713214545
+perguntas.gd::GDScript::-1::1713214545::0::1::::GameQuestion<>Resource<>::
 tipo_de_jogo.gd::GDScript::-1::1708866140::0::1::::GameType<>Resource<>::
-::res://Scripts/Scenes/::1712162673
+::res://Scripts/Scenes/::1712167338
 menu.gd::GDScript::-1::1708866140::0::1::::<>Control<>::
 selecionar_jogo.gd::GDScript::-1::1708866140::0::1::::<>Control<>::
-::res://Scripts/Scenes/Jogos/::1712162673
-jogo1_controller.gd::GDScript::-1::1708866140::0::1::::<>Node<>::
-jogo2_controller.gd::GDScript::-1::1708866140::0::1::::<>Node<>::
-jogo3_controller.gd::GDScript::-1::1708866140::0::1::::<>Node<>::
+::res://Scripts/Scenes/Jogos/::1713215052
+jogo1_controller.gd::GDScript::-1::1713214577::0::1::::<>Node<>::
+jogo2_controller.gd::GDScript::-1::1713214577::0::1::::<>Node<>::
+jogo3_controller.gd::GDScript::-1::1713214578::0::1::::<>Node<>::
+jogo4_controller.gd::GDScript::-1::1713215052::0::1::::<>Node<>::

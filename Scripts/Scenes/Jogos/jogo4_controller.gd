@@ -10,39 +10,39 @@ var index: int
 var current_game: GameQuestion:
 	get: return game.type[index]
 
-@onready var question_image: TextureRect = $Control/Imagem/QuestionImage
+@onready var texto_das_perguntas = $"Control/perguntas/texto das perguntas"
 
 func _ready() -> void:
 	for button in $Control/respostas.get_children():
 		buttons.append(button)
 	
 	randomize()
-#	game.type.shuffle()	
-		
+	game.type.shuffle()	
 	load_game()
 
 func load_game() -> void:
-	
-	
-	question_image.texture = current_game.question_image
-	
+
+	texto_das_perguntas.text = current_game.question_info
 	var options = current_game.options
-	options.shuffle()
-	
+	var gameoptions_image = current_game.options_image
+
+
+#	options.shuffle()
+
 	for i in buttons.size():
 		buttons[i].text = options[i]
+		buttons[i].get_child(0).texture = gameoptions_image[i]
 		buttons [i].pressed.connect(_buttons_answer.bind(buttons[i]))
 	
 
 func _buttons_answer(button) -> void:
-
-
 	if current_game.correct == button.text:
 		button.modulate = color_right
 		_next_question()
 	else:
 		button.modulate = color_wrong
-#
+		
+
 func _next_question() -> void:
 	
 	for bt in buttons:
@@ -58,15 +58,13 @@ func _next_question() -> void:
 	else:
 		load_game()
 
+	
 func _game_over() -> void:
-	
 	$Control/ColorRect.show()
-	
+
+
 func _on_jogar_pressed():
 	get_tree().reload_current_scene()
 
-
 func _on_menu_pressed():
 	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")
-	
-	
