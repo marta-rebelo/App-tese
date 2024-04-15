@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn7dfdwn21k60"
-path="res://.godot/imported/bola.png-df3b68167a7010851439b2df90ec152b.ctex"
+uid="uid://c0375f3xc6ab6"
+path="res://.godot/imported/melancia.png-c4b8db04af8a4e1e2b52191d6f6dd127.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Recursos/Jogo 3/bola.png"
-dest_files=["res://.godot/imported/bola.png-df3b68167a7010851439b2df90ec152b.ctex"]
+source_file="res://Recursos/Jogo 1/melancia.png"
+dest_files=["res://.godot/imported/melancia.png-c4b8db04af8a4e1e2b52191d6f6dd127.ctex"]
 
 [params]
 

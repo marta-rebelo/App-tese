@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GameType" load_steps=6 format=3 uid="uid://dvnu52u5tloq0"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/tipo_de_jogo.gd" id="1_a5t3m"]
+[ext_resource type="Resource" uid="uid://bob5yqto8f0ul" path="res://Recursos/Jogo 6/Perguntas/fossil.tres" id="2_63lkg"]
+[ext_resource type="Resource" uid="uid://c2ljx6xaoxqth" path="res://Recursos/Jogo 6/Perguntas/problema.tres" id="3_pxaqs"]
+[ext_resource type="Resource" uid="uid://bombfiu5dbxtk" path="res://Recursos/Jogo 6/Perguntas/porta.tres" id="4_qoaml"]
+[ext_resource type="Resource" uid="uid://hm1474go1k7d" path="res://Recursos/Jogo 6/Perguntas/facil.tres" id="5_7y2wy"]
+
+[resource]
+script = ExtResource("1_a5t3m")
+type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_63lkg"), ExtResource("3_pxaqs"), ExtResource("4_qoaml"), ExtResource("5_7y2wy")])

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Protótipo 2024"
+config/name="Protótipo 2024 (vertical)"
 run/main_scene="res://menu.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"

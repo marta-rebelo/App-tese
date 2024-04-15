@@ -1,15 +1,21 @@
-[gd_scene load_steps=3 format=3 uid="uid://c4rrcjrawr6ov"]
+[gd_scene load_steps=6 format=3 uid="uid://dnkwpa6hlcktb"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo2_controller.gd" id="1_acap8"]
-[ext_resource type="Resource" uid="uid://dvnu52u5tloq0" path="res://Recursos/Jogo 2/jogo2.tres" id="2_b55ja"]
+[ext_resource type="Resource" uid="uid://cha60psmp1qud" path="res://Recursos/Jogo 2/jogo 2.tres" id="2_wvkfa"]
+[ext_resource type="Texture2D" uid="uid://ban0afpu3rh2e" path="res://Imagens/Screenshot 2024-02-18 213558.png" id="3_kducj"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqjss"]
+bg_color = Color(0.968627, 0.905882, 0.815686, 1)
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3u1s3"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_acap8")
-game = ExtResource("2_b55ja")
-color_right = Color(0, 1, 0, 1)
-color_wrong = Color(0.898039, 0, 0, 1)
+game = ExtResource("2_wvkfa")
+color_right = Color(0, 1, 0.364706, 1)
+color_wrong = Color(1, 0, 0, 1)
 
-[node name="Control" type="Control" parent="."]
+[node name="Jogo 1" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -17,63 +23,100 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="perguntas" type="VBoxContainer" parent="Control"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Jogo 1"]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = 8
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-offset_left = -239.0
-offset_top = 60.0
-offset_right = 241.0
-offset_bottom = 334.0
+anchor_bottom = 0.5
+offset_left = -238.0
+offset_top = -317.0
+offset_right = 239.0
+offset_bottom = 157.0
 grow_horizontal = 2
+grow_vertical = 2
 
-[node name="texto das perguntas" type="Label" parent="Control/perguntas"]
-custom_minimum_size = Vector2(0, 60)
+[node name="texto pergunta" type="Label" parent="Jogo 1/VBoxContainer"]
+visible = false
+custom_minimum_size = Vector2(0, 70)
 layout_mode = 2
-size_flags_vertical = 6
+size_flags_horizontal = 4
 theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 80
+theme_override_font_sizes/font_size = 40
 text = "Pergunta"
 horizontal_alignment = 1
 vertical_alignment = 1
-autowrap_mode = 2
 
-[node name="respostas" type="HBoxContainer" parent="Control"]
-layout_mode = 0
-offset_left = 2.0
-offset_top = 480.0
-offset_right = 478.0
-offset_bottom = 660.0
-theme_override_constants/separation = 50
-
-[node name="Button" type="Button" parent="Control/respostas"]
-custom_minimum_size = Vector2(200, 20)
+[node name="ImageHolder" type="Panel" parent="Jogo 1/VBoxContainer"]
+custom_minimum_size = Vector2(0, 400)
 layout_mode = 2
-size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 30
+theme_override_styles/panel = SubResource("StyleBoxFlat_dqjss")
 
-[node name="Button2" type="Button" parent="Control/respostas"]
-custom_minimum_size = Vector2(200, 20)
-layout_mode = 2
-size_flags_horizontal = 3
-theme_override_font_sizes/font_size = 30
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Jogo 1/VBoxContainer/ImageHolder"]
 
-[node name="ColorRect" type="ColorRect" parent="Control"]
+[node name="imagem do audio" type="TextureRect" parent="Jogo 1/VBoxContainer/ImageHolder"]
 visible = false
 layout_mode = 0
-offset_right = 482.0
-offset_bottom = 798.0
+offset_left = -3.0
+offset_right = 1267.0
+offset_bottom = 400.0
+stretch_mode = 5
+
+[node name="Audio" type="Button" parent="Jogo 1/VBoxContainer/ImageHolder"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -126.5
+offset_top = -169.0
+offset_right = 129.5
+offset_bottom = 94.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3u1s3")
+icon = ExtResource("3_kducj")
+flat = true
+
+[node name="respostas" type="HBoxContainer" parent="Jogo 1"]
+layout_mode = 1
+anchors_preset = 14
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = 76.0
+offset_top = 103.0
+offset_right = -76.0
+offset_bottom = 234.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 50
+
+[node name="Button" type="Button" parent="Jogo 1/respostas"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Button2" type="Button" parent="Jogo 1/respostas"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ColorRect" type="ColorRect" parent="Jogo 1"]
+visible = false
+layout_mode = 0
+offset_right = 483.0
+offset_bottom = 799.0
 color = Color(0.254902, 0.686275, 0.552941, 1)
 
-[node name="Label" type="Label" parent="Control/ColorRect"]
+[node name="Label" type="Label" parent="Jogo 1/ColorRect"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -240.0
+offset_left = -237.5
 offset_top = 75.0
-offset_right = 240.0
+offset_right = 242.5
 offset_bottom = 239.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.168627, 0.168627, 0.168627, 1)
@@ -82,32 +125,33 @@ text = "Ronda terminada!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Control/ColorRect"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Jogo 1/ColorRect"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -244.0
+offset_left = -241.5
 offset_top = -393.0
-offset_right = 237.0
+offset_right = 240.5
 offset_bottom = -105.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 20
 
-[node name="jogar" type="Button" parent="Control/ColorRect/VBoxContainer"]
+[node name="jogar" type="Button" parent="Jogo 1/ColorRect/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 text = "Jogar novamente"
 
-[node name="menu" type="Button" parent="Control/ColorRect/VBoxContainer"]
+[node name="menu" type="Button" parent="Jogo 1/ColorRect/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 text = "Menu"
 
-[connection signal="pressed" from="Control/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
-[connection signal="pressed" from="Control/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Jogo 1/VBoxContainer/ImageHolder/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="Jogo 1/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="Jogo 1/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]

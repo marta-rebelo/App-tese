@@ -5,4 +5,4 @@
 
 [resource]
 script = ExtResource("1_b7cjl")
-type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_qmcif")])
+type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_qmcif"), ExtResource("2_qmcif")])

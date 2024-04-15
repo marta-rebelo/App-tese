@@ -11,6 +11,8 @@ var current_game: GameQuestion:
 	get: return game.type[index]
 
 @onready var texto_das_perguntas = $"Control/perguntas/texto das perguntas"
+@onready var options_audio1: AudioStreamPlayer = $"Control/AudioStreamPlayer"
+@onready var options_audio2: AudioStreamPlayer = $"Control/AudioStreamPlayer2"
 
 func _ready() -> void:
 	for button in $Control/respostas.get_children():
@@ -25,6 +27,9 @@ func load_game() -> void:
 	texto_das_perguntas.text = current_game.question_info
 	var options = current_game.options
 	var gameoptions_image = current_game.options_image
+	
+	options_audio1.stream = current_game.options_audio1
+	options_audio2.stream = current_game.options_audio2
 
 
 #	options.shuffle()
@@ -68,3 +73,13 @@ func _on_jogar_pressed():
 
 func _on_menu_pressed():
 	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")
+
+
+
+func _on_audio_2_pressed():
+	options_audio2.play()
+
+
+func _on_audio_1_pressed():
+	options_audio1.play()
+
