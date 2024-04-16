@@ -1,8 +1,6 @@
 extends Node
 
 @export var game: GameType
-@export var color_right: Color
-@export var color_wrong: Color
 
 var buttons: Array[Button]
 var index: int
@@ -38,10 +36,10 @@ func _buttons_answer(button) -> void:
 
 
 	if current_game.correct == button.text:
-		button.modulate = color_right
+		button.modulate = Color(0, 1.1, 0.4)
 		_next_question()
 	else:
-		button.modulate = color_wrong
+		button.modulate = Color(2.1, 0, 0.3)
 #
 func _next_question() -> void:
 	

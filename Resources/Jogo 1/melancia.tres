@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=3 format=3 uid="uid://cf3s427eu22ei"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_cwhth"]
+[ext_resource type="Texture2D" uid="uid://c0375f3xc6ab6" path="res://Resources/Jogo 1/melancia.png" id="1_nkxk4"]
+
+[resource]
+script = ExtResource("1_cwhth")
+question_info = ""
+type = 1
+question_image = ExtResource("1_nkxk4")
+options = Array[String](["n", "m"])
+correct = "m"

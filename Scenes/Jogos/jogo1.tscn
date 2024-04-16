@@ -1,19 +1,61 @@
-[gd_scene load_steps=6 format=3 uid="uid://d4hwcohpdl44x"]
+[gd_scene load_steps=12 format=3 uid="uid://d4hwcohpdl44x"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo1_controller.gd" id="1_sjwyw"]
-[ext_resource type="Resource" uid="uid://vw13hefv2k3n" path="res://Recursos/Jogo 1/jogo1.tres" id="2_3lcda"]
-[ext_resource type="Texture2D" uid="uid://ban0afpu3rh2e" path="res://Imagens/Screenshot 2024-02-18 213558.png" id="2_xo6fn"]
+[ext_resource type="Resource" uid="uid://vw13hefv2k3n" path="res://Resources/Jogo 1/jogo1.tres" id="2_3lcda"]
+[ext_resource type="Texture2D" uid="uid://ban0afpu3rh2e" path="res://Images/Screenshot 2024-02-18 213558.png" id="2_xo6fn"]
+[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="3_tsq0y"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pnirq"]
 bg_color = Color(0.968627, 0.905882, 0.815686, 1)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fmcrf"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2wcl1"]
+bg_color = Color(0.341176, 0.588235, 0.843137, 1)
+border_width_bottom = 20
+border_color = Color(0.235294, 0.47451, 0.717647, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gx768"]
+bg_color = Color(0.341176, 0.588235, 0.843137, 1)
+border_width_bottom = 20
+border_color = Color(0.235294, 0.47451, 0.717647, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hx0kq"]
+bg_color = Color(0.341176, 0.588235, 0.843137, 1)
+border_width_bottom = 20
+border_color = Color(0.235294, 0.47451, 0.717647, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t8g1m"]
+bg_color = Color(0.341176, 0.588235, 0.843137, 1)
+border_width_bottom = 20
+border_color = Color(0.235294, 0.47451, 0.717647, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="Theme" id="Theme_6fau4"]
+default_font_size = 40
+Button/styles/focus = SubResource("StyleBoxFlat_2wcl1")
+Button/styles/hover = SubResource("StyleBoxFlat_gx768")
+Button/styles/normal = SubResource("StyleBoxFlat_hx0kq")
+Button/styles/pressed = SubResource("StyleBoxFlat_t8g1m")
+
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_sjwyw")
 game = ExtResource("2_3lcda")
-color_right = Color(0, 1, 0, 1)
-color_wrong = Color(1, 0, 0, 1)
 
 [node name="Control" type="Control" parent="."]
 layout_mode = 3
@@ -25,30 +67,32 @@ grow_vertical = 2
 
 [node name="respostas" type="HBoxContainer" parent="Control"]
 layout_mode = 1
-anchors_preset = 7
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -239.0
-offset_top = -391.0
-offset_right = 236.0
-offset_bottom = -247.0
+anchor_bottom = 0.5
+offset_left = -208.0
+offset_top = -22.0
+offset_right = 209.0
+offset_bottom = 143.0
 grow_horizontal = 2
-grow_vertical = 0
-theme_override_constants/separation = 100
+grow_vertical = 2
+theme_override_constants/separation = 80
 
 [node name="Button" type="Button" parent="Control/respostas"]
-custom_minimum_size = Vector2(200, 20)
+custom_minimum_size = Vector2(150, 20)
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("3_tsq0y")
 theme_override_font_sizes/font_size = 40
 
 [node name="Button2" type="Button" parent="Control/respostas"]
 clip_contents = true
-custom_minimum_size = Vector2(20, 20)
+custom_minimum_size = Vector2(150, 20)
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("3_tsq0y")
 theme_override_font_sizes/font_size = 40
 
 [node name="Imagem" type="PanelContainer" parent="Control"]
@@ -57,9 +101,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -240.0
-offset_top = 88.0
+offset_top = 114.0
 offset_right = 236.0
-offset_bottom = 404.0
+offset_bottom = 334.0
 grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_pnirq")
 
@@ -75,13 +119,13 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -189.0
-offset_top = -221.0
-offset_right = 189.0
-offset_bottom = -94.0
+offset_left = -150.0
+offset_top = -228.0
+offset_right = 150.0
+offset_bottom = -128.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_constants/separation = 100
+theme_override_constants/separation = 120
 
 [node name="audio1" type="Button" parent="Control/audio"]
 custom_minimum_size = Vector2(100, 100)
@@ -93,8 +137,8 @@ icon = SubResource("CompressedTexture2D_fmcrf")
 [node name="TextureRect" type="TextureRect" parent="Control/audio/audio1"]
 layout_mode = 0
 offset_top = 2.0
-offset_right = 138.0
-offset_bottom = 126.0
+offset_right = 98.0
+offset_bottom = 98.0
 texture = ExtResource("2_xo6fn")
 expand_mode = 3
 stretch_mode = 5
@@ -109,8 +153,8 @@ theme_override_font_sizes/font_size = 30
 layout_mode = 0
 offset_left = 2.0
 offset_top = 1.0
-offset_right = 141.0
-offset_bottom = 128.0
+offset_right = 105.0
+offset_bottom = 100.0
 texture = ExtResource("2_xo6fn")
 expand_mode = 3
 stretch_mode = 5
@@ -125,7 +169,7 @@ layout_mode = 2
 offset_top = -4.0
 offset_right = 482.0
 offset_bottom = 802.0
-color = Color(0.254902, 0.686275, 0.552941, 1)
+color = Color(0.529412, 0.894118, 0.764706, 1)
 
 [node name="Label" type="Label" parent="Control/ColorRect"]
 layout_mode = 1
@@ -144,28 +188,30 @@ vertical_alignment = 1
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/ColorRect"]
 layout_mode = 1
-anchors_preset = 7
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -240.0
-offset_top = -393.0
-offset_right = 243.0
-offset_bottom = -105.0
+anchor_bottom = 0.5
+offset_left = -168.0
+offset_top = -31.0
+offset_right = 168.0
+offset_bottom = 267.0
 grow_horizontal = 2
-grow_vertical = 0
-theme_override_constants/separation = 20
+grow_vertical = 2
+theme_override_constants/separation = 30
 
 [node name="jogar" type="Button" parent="Control/ColorRect/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme = SubResource("Theme_6fau4")
 theme_override_font_sizes/font_size = 30
 text = "Jogar novamente"
 
 [node name="menu" type="Button" parent="Control/ColorRect/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme = ExtResource("3_tsq0y")
 theme_override_font_sizes/font_size = 30
 text = "Menu"
 

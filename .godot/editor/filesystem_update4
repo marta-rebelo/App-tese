@@ -1,20 +1,14 @@
-res://menu.tscn
-res://Scripts/Scenes/selecionar_jogo.gd
-res://Scenes/selecionar_jogo.tscn
 res://Scenes/Jogos/jogo1.tscn
-res://Scenes/Jogos/jogo2.tscn
-res://Scenes/Jogos/jogo6.tscn
-res://Scenes/Jogos/jogo3.tscn
-res://Scenes/Jogos/jogo3s.tscn
-res://Scripts/Scenes/Jogos/jogo2_controller.gd
-res://Scenes/Jogos/jogo5.tscn
-res://Recursos/Jogo 2/janela.tres
-res://Recursos/Jogo 2/hora.tres
-res://Recursos/Jogo 2/jogo 2.tres
-res://Scripts/Scenes/Jogos/jogo5_controller.gd
-res://Recursos/Jogo 5/cama cadeira gaveta.tres
-res://Recursos/Jogo 5/jogo5.tres
-res://Scenes/Jogos/jogo4.tscn
-res://Recursos/Jogo 4/vaca faca.tres
-res://Recursos/Jogo 4/duas imagens.tres
+res://themes/tema.tres
+res://menu.tscn
 res://Scripts/Scenes/Jogos/jogo1_controller.gd
+res://Scenes/Jogos/jogo2.tscn
+res://Scripts/Scenes/Jogos/jogo2_controller.gd
+res://Scripts/Scenes/Jogos/jogo3_controller.gd
+res://Scenes/Jogos/jogo3.tscn
+res://Scenes/Jogos/jogo6.tscn
+res://Scenes/Jogos/jogo4.tscn
+res://Scenes/Jogos/jogo5.tscn
+res://Scripts/Scenes/Jogos/jogo6_controller.gd
+res://Scripts/Scenes/Jogos/jogo5_controller.gd
+res://Scripts/Scenes/Jogos/jogo4_controller.gd

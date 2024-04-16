@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://dnkwpa6hlcktb"]
+[gd_scene load_steps=7 format=3 uid="uid://dnkwpa6hlcktb"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo2_controller.gd" id="1_acap8"]
-[ext_resource type="Resource" uid="uid://cha60psmp1qud" path="res://Recursos/Jogo 2/jogo 2.tres" id="2_wvkfa"]
-[ext_resource type="Texture2D" uid="uid://ban0afpu3rh2e" path="res://Imagens/Screenshot 2024-02-18 213558.png" id="3_kducj"]
+[ext_resource type="Resource" uid="uid://cha60psmp1qud" path="res://Resources/Jogo 2/jogo 2.tres" id="2_wvkfa"]
+[ext_resource type="Texture2D" uid="uid://ban0afpu3rh2e" path="res://Images/Screenshot 2024-02-18 213558.png" id="3_kducj"]
+[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="4_1qkvh"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqjss"]
 bg_color = Color(0.968627, 0.905882, 0.815686, 1)
@@ -12,8 +13,6 @@ bg_color = Color(0.968627, 0.905882, 0.815686, 1)
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_acap8")
 game = ExtResource("2_wvkfa")
-color_right = Color(0, 1, 0.364706, 1)
-color_wrong = Color(1, 0, 0, 1)
 
 [node name="Jogo 1" type="Control" parent="."]
 layout_mode = 3
@@ -95,12 +94,16 @@ grow_vertical = 2
 theme_override_constants/separation = 50
 
 [node name="Button" type="Button" parent="Jogo 1/respostas"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("4_1qkvh")
 
 [node name="Button2" type="Button" parent="Jogo 1/respostas"]
+custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("4_1qkvh")
 
 [node name="ColorRect" type="ColorRect" parent="Jogo 1"]
 visible = false

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="GameType" load_steps=4 format=3 uid="uid://cha60psmp1qud"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/tipo_de_jogo.gd" id="1_ntnq5"]
+[ext_resource type="Resource" uid="uid://b2ug2bl1e0mco" path="res://Resources/Jogo 2/hora.tres" id="2_vv042"]
+[ext_resource type="Resource" uid="uid://cr0jlmlx186uu" path="res://Resources/Jogo 2/janela.tres" id="3_rv2aa"]
+
+[resource]
+script = ExtResource("1_ntnq5")
+type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_vv042"), ExtResource("3_rv2aa")])

@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://dpfm1eoby5gsu"]
+[gd_scene load_steps=6 format=3 uid="uid://dpfm1eoby5gsu"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/menu.gd" id="1_0o3k3"]
+[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="2_hotjv"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bsau0"]
 bg_color = Color(0.254902, 0.686275, 0.552941, 1)
@@ -51,8 +52,8 @@ text = "Jogar"
 [node name="Opções" type="Button" parent="MarginContainer/Botões"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 30
-text = "Opções"
+theme = ExtResource("2_hotjv")
+text = "Ajuda"
 
 [node name="Texto" type="Label" parent="."]
 layout_mode = 1

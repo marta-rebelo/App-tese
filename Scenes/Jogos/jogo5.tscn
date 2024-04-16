@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://d1j27u5ufdl3"]
+[gd_scene load_steps=7 format=3 uid="uid://d1j27u5ufdl3"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo5_controller.gd" id="1_qq7we"]
-[ext_resource type="Resource" uid="uid://cb4lrrt5bwn6x" path="res://Recursos/Jogo 5/jogo5.tres" id="2_mvg0y"]
-[ext_resource type="Texture2D" uid="uid://ban0afpu3rh2e" path="res://Imagens/Screenshot 2024-02-18 213558.png" id="3_t4k0v"]
+[ext_resource type="Resource" uid="uid://cb4lrrt5bwn6x" path="res://Resources/Jogo 5/jogo5.tres" id="2_mvg0y"]
+[ext_resource type="Texture2D" uid="uid://ban0afpu3rh2e" path="res://Images/Screenshot 2024-02-18 213558.png" id="3_t4k0v"]
+[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="4_p8qcq"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqjss"]
 bg_color = Color(0.968627, 0.905882, 0.815686, 1)
@@ -12,8 +13,6 @@ bg_color = Color(0.968627, 0.905882, 0.815686, 1)
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_qq7we")
 game = ExtResource("2_mvg0y")
-color_right = Color(0, 1, 0, 1)
-color_wrong = Color(1, 0, 0, 1)
 
 [node name="Jogo 5" type="Control" parent="."]
 layout_mode = 3
@@ -23,15 +22,54 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Jogo 5"]
+[node name="ImageHolder" type="Panel" parent="Jogo 5"]
+custom_minimum_size = Vector2(0, 320)
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -186.5
-offset_right = 186.5
-offset_bottom = 704.0
+offset_left = -133.0
+offset_right = 134.0
+offset_bottom = 331.0
 grow_horizontal = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_dqjss")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Jogo 5/ImageHolder"]
+
+[node name="imagem do audio" type="TextureRect" parent="Jogo 5/ImageHolder"]
+visible = false
+layout_mode = 0
+offset_left = -3.0
+offset_right = 1267.0
+offset_bottom = 400.0
+stretch_mode = 5
+
+[node name="Audio" type="Button" parent="Jogo 5/ImageHolder"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -129.5
+offset_right = 131.5
+offset_bottom = 334.0
+grow_horizontal = 2
+theme_override_styles/focus = SubResource("StyleBoxEmpty_3u1s3")
+icon = ExtResource("3_t4k0v")
+flat = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Jogo 5"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -141.0
+offset_top = -467.0
+offset_right = 141.0
+offset_bottom = -18.0
+grow_horizontal = 2
+grow_vertical = 0
 
 [node name="texto pergunta" type="Label" parent="Jogo 5/VBoxContainer"]
 visible = false
@@ -44,54 +82,24 @@ text = "Pergunta"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ImageHolder" type="Panel" parent="Jogo 5/VBoxContainer"]
-custom_minimum_size = Vector2(0, 400)
-layout_mode = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_dqjss")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Jogo 5/VBoxContainer/ImageHolder"]
-
-[node name="imagem do audio" type="TextureRect" parent="Jogo 5/VBoxContainer/ImageHolder"]
-visible = false
-layout_mode = 0
-offset_left = -3.0
-offset_right = 1267.0
-offset_bottom = 400.0
-stretch_mode = 5
-
-[node name="Audio" type="Button" parent="Jogo 5/VBoxContainer/ImageHolder"]
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -126.5
-offset_top = -169.0
-offset_right = 129.5
-offset_bottom = 94.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_3u1s3")
-icon = ExtResource("3_t4k0v")
-flat = true
-
 [node name="respostas" type="VBoxContainer" parent="Jogo 5/VBoxContainer"]
 layout_mode = 2
-theme_override_constants/separation = 30
+theme = ExtResource("4_p8qcq")
+theme_override_constants/separation = 40
 
 [node name="Button" type="Button" parent="Jogo 5/VBoxContainer/respostas"]
-custom_minimum_size = Vector2(0, 80)
+custom_minimum_size = Vector2(0, 110)
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("4_p8qcq")
 
 [node name="Button2" type="Button" parent="Jogo 5/VBoxContainer/respostas"]
-custom_minimum_size = Vector2(0, 80)
+custom_minimum_size = Vector2(0, 110)
 layout_mode = 2
 size_flags_horizontal = 3
 
 [node name="Button3" type="Button" parent="Jogo 5/VBoxContainer/respostas"]
-custom_minimum_size = Vector2(0, 80)
+custom_minimum_size = Vector2(0, 110)
 layout_mode = 2
 size_flags_horizontal = 3
 
@@ -145,6 +153,6 @@ size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 text = "Menu"
 
-[connection signal="pressed" from="Jogo 5/VBoxContainer/ImageHolder/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="Jogo 5/ImageHolder/Audio" to="." method="_on_audio_pressed"]
 [connection signal="pressed" from="Jogo 5/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="Jogo 5/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]

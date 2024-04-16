@@ -1,8 +1,6 @@
 extends Node
 
 @export var game: GameType
-@export var color_right: Color
-@export var color_wrong: Color
 
 var buttons: Array[Button]
 var index: int
@@ -10,7 +8,7 @@ var index: int
 var current_game: GameQuestion:
 	get: return game.type[index]
 	
-@onready var question_audio: AudioStreamPlayer = $"Jogo 5/VBoxContainer/ImageHolder/AudioStreamPlayer"
+@onready var question_audio: AudioStreamPlayer = $"Jogo 5/ImageHolder/AudioStreamPlayer"
 
 func _ready() -> void:
 	for button in $"Jogo 5/VBoxContainer/respostas".get_children():
@@ -38,10 +36,10 @@ func _buttons_answer(button) -> void:
 
 
 	if current_game.correct == button.text:
-		button.modulate = color_right
+		button.modulate = Color(0, 1.1, 0.4)
 		_next_question()
 	else:
-		button.modulate = color_wrong
+		button.modulate = Color(2.1, 0, 0.3)
 #
 func _next_question() -> void:
 	
