@@ -1,16 +1,16 @@
 [gd_resource type="Resource" script_class="GameQuestion" load_steps=5 format=3 uid="uid://prq4i0v1tf7b"]
 
 [ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_26min"]
-[ext_resource type="Texture2D" uid="uid://cf8sxqga28en0" path="res://Images/Jogo 4/vecteezy_cartoon-of-cow-illustration-cow-in-png-format-image_13211278.png" id="1_p4qap"]
 [ext_resource type="AudioStream" uid="uid://b184cko8f5nc1" path="res://Audio/faca.wav" id="2_kfnnn"]
 [ext_resource type="Texture2D" uid="uid://ejne0lot4c7t" path="res://Images/Jogo 4/Knife-Png-225.png" id="2_vnjha"]
+[ext_resource type="Texture2D" uid="uid://cggp6qedrsre" path="res://Images/Jogo 4/vaca 3.svg" id="3_3hvyx"]
 
 [resource]
 script = ExtResource("1_26min")
 question_info = "F"
 type = 0
 options = Array[String](["vaca", "faca"])
-options_image = Array[Texture2D]([ExtResource("1_p4qap"), ExtResource("2_vnjha")])
+options_image = Array[Texture2D]([ExtResource("2_vnjha"), ExtResource("3_3hvyx")])
 options_audio1 = ExtResource("2_kfnnn")
 options_audio2 = ExtResource("2_kfnnn")
 correct = "faca"

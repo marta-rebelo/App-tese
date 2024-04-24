@@ -59,7 +59,7 @@ func _next_question() -> void:
 	for bt in buttons:
 		bt.modulate=Color.WHITE
 	index +=1
-	if index >= 2:
+	if index >= 3:
 		_game_over()
 	else:
 		load_game()

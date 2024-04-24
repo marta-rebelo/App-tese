@@ -135,7 +135,6 @@ theme_override_constants/separation = 100
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Control"]
 
 [node name="audio 2" type="Button" parent="Control"]
-modulate = Color(1, 1, 1, 0.803922)
 custom_minimum_size = Vector2(70, 70)
 layout_mode = 1
 anchors_preset = -1
@@ -156,7 +155,6 @@ icon = ExtResource("5_dxi76")
 expand_icon = true
 
 [node name="audio1" type="Button" parent="Control"]
-modulate = Color(1, 1, 1, 0.803922)
 custom_minimum_size = Vector2(70, 70)
 layout_mode = 1
 anchors_preset = -1

@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="GameQuestion" load_steps=2 format=3 uid="uid://c0k26ukiphm5l"]
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=3 format=3 uid="uid://c0k26ukiphm5l"]
 
+[ext_resource type="Texture2D" uid="uid://7ogjfruhqglw" path="res://Images/Jogo 1/chuva copy.svg" id="1_ahtgl"]
 [ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_v3wiy"]
 
 [resource]
 script = ExtResource("1_v3wiy")
 question_info = ""
 type = 0
+question_image = ExtResource("1_ahtgl")
 options = Array[String](["j", "ch"])
 options_image = Array[Texture2D]([])
 correct = "ch"

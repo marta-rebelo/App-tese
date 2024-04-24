@@ -1,11 +1,13 @@
-[gd_resource type="Resource" script_class="GameQuestion" load_steps=2 format=3 uid="uid://d2m2424os4nl7"]
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=3 format=3 uid="uid://d2m2424os4nl7"]
 
+[ext_resource type="Texture2D" uid="uid://uisa20l7jfvp" path="res://Images/tulipa final copy3.svg" id="1_a27k7"]
 [ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_ntwv6"]
 
 [resource]
 script = ExtResource("1_ntwv6")
 question_info = ""
 type = 0
+question_image = ExtResource("1_a27k7")
 options = Array[String](["t", "p"])
 options_image = Array[Texture2D]([])
 correct = "t"
