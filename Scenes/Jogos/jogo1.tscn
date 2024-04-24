@@ -1,57 +1,16 @@
-[gd_scene load_steps=12 format=3 uid="uid://d4hwcohpdl44x"]
+[gd_scene load_steps=9 format=3 uid="uid://d4hwcohpdl44x"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo1_controller.gd" id="1_sjwyw"]
-[ext_resource type="Resource" uid="uid://vw13hefv2k3n" path="res://Resources/Jogo 1/jogo1.tres" id="2_3lcda"]
-[ext_resource type="Texture2D" uid="uid://ban0afpu3rh2e" path="res://Images/Screenshot 2024-02-18 213558.png" id="2_xo6fn"]
+[ext_resource type="Resource" uid="uid://ds07i6e4vvqgs" path="res://Resources/Jogo 1/jogo1.tres" id="2_3lcda"]
 [ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="3_tsq0y"]
+[ext_resource type="Theme" uid="uid://dduwhxbgsqkts" path="res://themes/botaoaudiopequeno.tres" id="4_f0qy7"]
+[ext_resource type="Texture2D" uid="uid://dchv76lm0kqtf" path="res://Images/Jogo 1/audio icon2.svg" id="5_6mbt1"]
+[ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="6_xfctd"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pnirq"]
 bg_color = Color(0.968627, 0.905882, 0.815686, 1)
 
-[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_fmcrf"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2wcl1"]
-bg_color = Color(0.341176, 0.588235, 0.843137, 1)
-border_width_bottom = 20
-border_color = Color(0.235294, 0.47451, 0.717647, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_gx768"]
-bg_color = Color(0.341176, 0.588235, 0.843137, 1)
-border_width_bottom = 20
-border_color = Color(0.235294, 0.47451, 0.717647, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hx0kq"]
-bg_color = Color(0.341176, 0.588235, 0.843137, 1)
-border_width_bottom = 20
-border_color = Color(0.235294, 0.47451, 0.717647, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t8g1m"]
-bg_color = Color(0.341176, 0.588235, 0.843137, 1)
-border_width_bottom = 20
-border_color = Color(0.235294, 0.47451, 0.717647, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
-
-[sub_resource type="Theme" id="Theme_6fau4"]
-default_font_size = 40
-Button/styles/focus = SubResource("StyleBoxFlat_2wcl1")
-Button/styles/hover = SubResource("StyleBoxFlat_gx768")
-Button/styles/normal = SubResource("StyleBoxFlat_hx0kq")
-Button/styles/pressed = SubResource("StyleBoxFlat_t8g1m")
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pki21"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_sjwyw")
@@ -72,10 +31,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -208.0
-offset_top = -22.0
-offset_right = 209.0
-offset_bottom = 143.0
+offset_left = -193.0
+offset_top = 58.0
+offset_right = 187.0
+offset_bottom = 179.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 80
@@ -101,9 +60,9 @@ anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -240.0
-offset_top = 114.0
+offset_top = 132.0
 offset_right = 236.0
-offset_bottom = 334.0
+offset_bottom = 386.0
 grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_pnirq")
 
@@ -119,10 +78,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -150.0
-offset_top = -228.0
-offset_right = 150.0
-offset_bottom = -128.0
+offset_left = -164.0
+offset_top = -162.0
+offset_right = 156.0
+offset_bottom = -62.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 120
@@ -131,37 +90,40 @@ theme_override_constants/separation = 120
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("4_f0qy7")
 theme_override_font_sizes/font_size = 30
-icon = SubResource("CompressedTexture2D_fmcrf")
-
-[node name="TextureRect" type="TextureRect" parent="Control/audio/audio1"]
-layout_mode = 0
-offset_top = 2.0
-offset_right = 98.0
-offset_bottom = 98.0
-texture = ExtResource("2_xo6fn")
-expand_mode = 3
-stretch_mode = 5
+icon = ExtResource("5_6mbt1")
+expand_icon = true
 
 [node name="audio 2" type="Button" parent="Control/audio"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("4_f0qy7")
 theme_override_font_sizes/font_size = 30
-
-[node name="TextureRect" type="TextureRect" parent="Control/audio/audio 2"]
-layout_mode = 0
-offset_left = 2.0
-offset_top = 1.0
-offset_right = 105.0
-offset_bottom = 100.0
-texture = ExtResource("2_xo6fn")
-expand_mode = 3
-stretch_mode = 5
+icon = ExtResource("5_6mbt1")
+expand_icon = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Control"]
+
+[node name="voltar" type="Button" parent="Control"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -228.0
+offset_top = 24.0
+offset_right = -127.0
+offset_bottom = 102.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_pki21")
+icon = ExtResource("6_xfctd")
+flat = true
+icon_alignment = 1
+expand_icon = true
 
 [node name="ColorRect" type="ColorRect" parent="Control"]
 visible = false
@@ -182,7 +144,7 @@ offset_bottom = 484.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.168627, 0.168627, 0.168627, 1)
 theme_override_font_sizes/font_size = 50
-text = "Ronda terminada!"
+text = "Parabéns!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
@@ -204,7 +166,7 @@ theme_override_constants/separation = 30
 [node name="jogar" type="Button" parent="Control/ColorRect/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
-theme = SubResource("Theme_6fau4")
+theme = ExtResource("3_tsq0y")
 theme_override_font_sizes/font_size = 30
 text = "Jogar novamente"
 
@@ -215,5 +177,6 @@ theme = ExtResource("3_tsq0y")
 theme_override_font_sizes/font_size = 30
 text = "Menu"
 
+[connection signal="pressed" from="Control/voltar" to="." method="_on_voltar_pressed"]
 [connection signal="pressed" from="Control/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="Control/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]

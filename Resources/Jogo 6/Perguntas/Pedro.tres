@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=2 format=3 uid="uid://hm1474go1k7d"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_hgqf8"]
+
+[resource]
+script = ExtResource("1_hgqf8")
+question_info = "Pe___"
+type = 0
+options = Array[String](["dro", "dor"])
+options_image = Array[Texture2D]([])
+correct = "dro"

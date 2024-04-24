@@ -83,3 +83,7 @@ func _on_audio_2_pressed():
 
 func _on_audio_1_pressed():
 	options_audio1.play()
+
+
+func _on_voltar_pressed():
+	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")

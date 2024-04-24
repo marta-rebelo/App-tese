@@ -1,6 +1,53 @@
-[gd_scene load_steps=2 format=3 uid="uid://1d3v22be545x"]
+[gd_scene load_steps=10 format=3 uid="uid://1d3v22be545x"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/selecionar_jogo.gd" id="1_yqoph"]
+[ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="2_hxhun"]
+[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="3_hlyo0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6i55p"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3xssy"]
+bg_color = Color(0.341176, 0.588235, 0.843137, 1)
+border_width_bottom = 20
+border_color = Color(0.235294, 0.47451, 0.717647, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hx4ie"]
+bg_color = Color(0.341176, 0.588235, 0.843137, 1)
+border_width_bottom = 20
+border_color = Color(0.235294, 0.47451, 0.717647, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_8lxf8"]
+bg_color = Color(0.341176, 0.588235, 0.843137, 1)
+border_width_bottom = 20
+border_color = Color(0.235294, 0.47451, 0.717647, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_q6lff"]
+bg_color = Color(0.341176, 0.588235, 0.843137, 1)
+border_width_bottom = 20
+border_color = Color(0.235294, 0.47451, 0.717647, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
+
+[sub_resource type="Theme" id="Theme_pkppr"]
+default_font_size = 40
+Button/styles/focus = SubResource("StyleBoxFlat_3xssy")
+Button/styles/hover = SubResource("StyleBoxFlat_hx4ie")
+Button/styles/normal = SubResource("StyleBoxFlat_8lxf8")
+Button/styles/pressed = SubResource("StyleBoxFlat_q6lff")
 
 [node name="Selecionar jogo" type="Control"]
 layout_mode = 3
@@ -13,27 +60,35 @@ script = ExtResource("1_yqoph")
 
 [node name="voltar" type="Button" parent="."]
 layout_mode = 2
-offset_left = 30.0
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -228.0
 offset_top = 24.0
-offset_right = 132.0
-offset_bottom = 83.0
+offset_right = -127.0
+offset_bottom = 102.0
 theme_override_font_sizes/font_size = 30
-text = "voltar"
+theme_override_styles/focus = SubResource("StyleBoxEmpty_6i55p")
+icon = ExtResource("2_hxhun")
+flat = true
+icon_alignment = 1
+expand_icon = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
-anchors_preset = 7
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
+anchor_bottom = 0.5
 offset_left = -211.0
-offset_top = -696.0
+offset_top = -251.0
 offset_right = 211.0
+offset_bottom = 400.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
 
 [node name="Texto" type="Label" parent="VBoxContainer"]
+visible = false
 custom_minimum_size = Vector2(0, 100)
 layout_mode = 2
 theme_override_colors/font_color = Color(0.0313726, 0, 0, 0.803922)
@@ -51,6 +106,7 @@ custom_minimum_size = Vector2(100, 100)
 layout_direction = 1
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
+theme = SubResource("Theme_pkppr")
 theme_override_constants/h_separation = 25
 theme_override_constants/v_separation = 25
 columns = 2
@@ -59,6 +115,7 @@ columns = 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40
 text = "
 JOGO 1
@@ -69,6 +126,7 @@ JOGO 1
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40
 text = "
 JOGO 2
@@ -79,6 +137,7 @@ JOGO 2
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40
 text = "
 JOGO 3
@@ -89,6 +148,7 @@ JOGO 3
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40
 text = "
 JOGO 4
@@ -99,6 +159,7 @@ JOGO 4
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40
 text = "
 JOGO 5
@@ -109,6 +170,7 @@ JOGO 5
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40
 text = "
 JOGO 6

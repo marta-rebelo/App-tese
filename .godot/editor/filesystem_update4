@@ -1,14 +1,10 @@
 res://Scenes/Jogos/jogo1.tscn
 res://themes/tema.tres
+res://themes/botaoaudio.tres
+res://themes/botaoaudiopequeno.tres
+res://Scenes/selecionar_jogo.tscn
 res://menu.tscn
-res://Scripts/Scenes/Jogos/jogo1_controller.gd
 res://Scenes/Jogos/jogo2.tscn
-res://Scripts/Scenes/Jogos/jogo2_controller.gd
-res://Scripts/Scenes/Jogos/jogo3_controller.gd
 res://Scenes/Jogos/jogo3.tscn
-res://Scenes/Jogos/jogo6.tscn
-res://Scenes/Jogos/jogo4.tscn
-res://Scenes/Jogos/jogo5.tscn
-res://Scripts/Scenes/Jogos/jogo6_controller.gd
-res://Scripts/Scenes/Jogos/jogo5_controller.gd
-res://Scripts/Scenes/Jogos/jogo4_controller.gd
+res://Resources/Jogo 1/jogo1.tres
+res://Scripts/Scenes/Jogos/jogo1_controller.gd

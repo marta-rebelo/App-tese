@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="GameType" load_steps=3 format=3 uid="uid://crqbwep31am8b"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/tipo_de_jogo.gd" id="1_xy6yg"]
+[ext_resource type="Resource" uid="uid://njpcqwukmubp" path="res://Resources/Jogo 5/teste intruso.tres" id="2_ykdcm"]
+
+[resource]
+script = ExtResource("1_xy6yg")
+type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_ykdcm"), ExtResource("2_ykdcm")])

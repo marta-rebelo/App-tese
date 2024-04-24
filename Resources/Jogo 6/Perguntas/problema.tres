@@ -7,4 +7,5 @@ script = ExtResource("1_bj4i3")
 question_info = "___blema"
 type = 0
 options = Array[String](["por", "pro"])
+options_image = Array[Texture2D]([])
 correct = "pro"

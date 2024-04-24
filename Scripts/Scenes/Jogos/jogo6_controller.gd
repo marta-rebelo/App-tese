@@ -24,7 +24,7 @@ func load_game() -> void:
 	texto_das_perguntas.text = current_game.question_info
 	
 	var options = current_game.options
-#	options.shuffle()
+	options.shuffle()
 	
 	for i in buttons.size():
 		buttons[i].text = options[i]
@@ -50,7 +50,7 @@ func _next_question() -> void:
 	for bt in buttons:
 		bt.modulate=Color.WHITE
 	index +=1
-	if index >= 2:
+	if index >= 3:
 		_game_over()
 	else:
 		load_game()
@@ -64,4 +64,8 @@ func _on_jogar_pressed():
 	get_tree().reload_current_scene()
 
 func _on_menu_pressed():
+	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")
+
+
+func _on_voltar_pressed():
 	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")

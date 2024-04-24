@@ -70,3 +70,6 @@ func _on_menu_pressed():
 
 func _on_audio_pressed():
 	question_audio.play()
+
+func _on_voltar_pressed():
+	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")

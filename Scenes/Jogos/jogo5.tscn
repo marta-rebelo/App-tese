@@ -1,123 +1,197 @@
-[gd_scene load_steps=7 format=3 uid="uid://d1j27u5ufdl3"]
+[gd_scene load_steps=8 format=3 uid="uid://cqcvsy4wqp582"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo5_controller.gd" id="1_qq7we"]
-[ext_resource type="Resource" uid="uid://cb4lrrt5bwn6x" path="res://Resources/Jogo 5/jogo5.tres" id="2_mvg0y"]
-[ext_resource type="Texture2D" uid="uid://ban0afpu3rh2e" path="res://Images/Screenshot 2024-02-18 213558.png" id="3_t4k0v"]
+[ext_resource type="Resource" uid="uid://crqbwep31am8b" path="res://Resources/Jogo 5/intruso type.tres" id="2_h3jjv"]
+[ext_resource type="Theme" uid="uid://dduwhxbgsqkts" path="res://themes/botaoaudiopequeno.tres" id="4_3np5u"]
 [ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="4_p8qcq"]
+[ext_resource type="Texture2D" uid="uid://dchv76lm0kqtf" path="res://Images/Jogo 1/audio icon2.svg" id="4_r5mbd"]
+[ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="6_nuuax"]
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqjss"]
-bg_color = Color(0.968627, 0.905882, 0.815686, 1)
-
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3u1s3"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_41xrn"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_qq7we")
-game = ExtResource("2_mvg0y")
+game = ExtResource("2_h3jjv")
 
-[node name="Jogo 5" type="Control" parent="."]
+[node name="Control" type="Control" parent="."]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = 30.0
+offset_bottom = 121.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="ImageHolder" type="Panel" parent="Jogo 5"]
-custom_minimum_size = Vector2(0, 320)
+[node name="perguntas" type="VBoxContainer" parent="Control"]
+visible = false
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -133.0
-offset_right = 134.0
-offset_bottom = 331.0
+offset_left = -239.0
+offset_top = 9.0
+offset_right = 241.0
+offset_bottom = 304.0
 grow_horizontal = 2
-theme_override_styles/panel = SubResource("StyleBoxFlat_dqjss")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Jogo 5/ImageHolder"]
-
-[node name="imagem do audio" type="TextureRect" parent="Jogo 5/ImageHolder"]
-visible = false
-layout_mode = 0
-offset_left = -3.0
-offset_right = 1267.0
-offset_bottom = 400.0
-stretch_mode = 5
-
-[node name="Audio" type="Button" parent="Jogo 5/ImageHolder"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -129.5
-offset_right = 131.5
-offset_bottom = 334.0
-grow_horizontal = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_3u1s3")
-icon = ExtResource("3_t4k0v")
-flat = true
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Jogo 5"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -141.0
-offset_top = -467.0
-offset_right = 141.0
-offset_bottom = -18.0
-grow_horizontal = 2
-grow_vertical = 0
-
-[node name="texto pergunta" type="Label" parent="Jogo 5/VBoxContainer"]
-visible = false
-custom_minimum_size = Vector2(0, 70)
+[node name="texto das perguntas" type="Label" parent="Control/perguntas"]
+custom_minimum_size = Vector2(0, 60)
 layout_mode = 2
-size_flags_horizontal = 4
-theme_override_colors/font_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 40
+size_flags_vertical = 6
+theme_override_colors/font_color = Color(0.141176, 0.141176, 0.141176, 1)
+theme_override_font_sizes/font_size = 90
 text = "Pergunta"
 horizontal_alignment = 1
 vertical_alignment = 1
+autowrap_mode = 2
 
-[node name="respostas" type="VBoxContainer" parent="Jogo 5/VBoxContainer"]
-layout_mode = 2
-theme = ExtResource("4_p8qcq")
-theme_override_constants/separation = 40
+[node name="respostas" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -180.0
+offset_top = -253.5
+offset_right = 81.0
+offset_bottom = 192.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 30
 
-[node name="Button" type="Button" parent="Jogo 5/VBoxContainer/respostas"]
-custom_minimum_size = Vector2(0, 110)
+[node name="Button" type="Button" parent="Control/respostas"]
+custom_minimum_size = Vector2(80, 95)
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("4_p8qcq")
+theme_override_font_sizes/font_size = 30
 
-[node name="Button2" type="Button" parent="Jogo 5/VBoxContainer/respostas"]
-custom_minimum_size = Vector2(0, 110)
+[node name="Button3" type="Button" parent="Control/respostas"]
+custom_minimum_size = Vector2(80, 95)
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("4_p8qcq")
+theme_override_font_sizes/font_size = 30
 
-[node name="Button3" type="Button" parent="Jogo 5/VBoxContainer/respostas"]
-custom_minimum_size = Vector2(0, 110)
+[node name="Button4" type="Button" parent="Control/respostas"]
+custom_minimum_size = Vector2(80, 95)
 layout_mode = 2
 size_flags_horizontal = 3
+theme = ExtResource("4_p8qcq")
+theme_override_font_sizes/font_size = 30
 
-[node name="ColorRect" type="ColorRect" parent="Jogo 5"]
+[node name="Button2" type="Button" parent="Control/respostas"]
+custom_minimum_size = Vector2(80, 95)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("4_p8qcq")
+theme_override_font_sizes/font_size = 30
+
+[node name="respostas2" type="VBoxContainer" parent="Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 105.0
+offset_top = -248.5
+offset_right = 179.0
+offset_bottom = 203.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 55
+
+[node name="audio 4" type="Button" parent="Control/respostas2"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("4_3np5u")
+theme_override_font_sizes/font_size = 30
+icon = ExtResource("4_r5mbd")
+expand_icon = true
+
+[node name="audio 2" type="Button" parent="Control/respostas2"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("4_3np5u")
+theme_override_font_sizes/font_size = 30
+icon = ExtResource("4_r5mbd")
+expand_icon = true
+
+[node name="audio 3" type="Button" parent="Control/respostas2"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("4_3np5u")
+theme_override_font_sizes/font_size = 30
+icon = ExtResource("4_r5mbd")
+expand_icon = true
+
+[node name="audio1" type="Button" parent="Control/respostas2"]
+custom_minimum_size = Vector2(70, 70)
+layout_mode = 2
+size_flags_horizontal = 3
+theme = ExtResource("4_3np5u")
+theme_override_font_sizes/font_size = 30
+icon = ExtResource("4_r5mbd")
+expand_icon = true
+
+[node name="audio" type="HBoxContainer" parent="Control"]
 visible = false
-layout_mode = 0
-offset_right = 483.0
-offset_bottom = 799.0
-color = Color(0.254902, 0.686275, 0.552941, 1)
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.594
+anchor_right = 0.5
+anchor_bottom = 0.594
+offset_left = -189.0
+offset_top = 103.8
+offset_right = 189.0
+offset_bottom = 230.8
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 100
 
-[node name="Label" type="Label" parent="Jogo 5/ColorRect"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Control"]
+
+[node name="voltar" type="Button" parent="Control"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -237.5
+offset_left = -228.0
+offset_top = -3.0
+offset_right = -127.0
+offset_bottom = 75.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_41xrn")
+icon = ExtResource("6_nuuax")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="ColorRect" type="ColorRect" parent="Control"]
+visible = false
+layout_mode = 0
+offset_right = 482.0
+offset_bottom = 798.0
+color = Color(0.254902, 0.686275, 0.552941, 1)
+
+[node name="Label" type="Label" parent="Control/ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -240.0
 offset_top = 75.0
-offset_right = 242.5
+offset_right = 240.0
 offset_bottom = 239.0
 grow_horizontal = 2
 theme_override_colors/font_color = Color(0.168627, 0.168627, 0.168627, 1)
@@ -126,33 +200,37 @@ text = "Ronda terminada!"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="VBoxContainer" type="VBoxContainer" parent="Jogo 5/ColorRect"]
+[node name="VBoxContainer" type="VBoxContainer" parent="Control/ColorRect"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -241.5
+offset_left = -244.0
 offset_top = -393.0
-offset_right = 240.5
+offset_right = 237.0
 offset_bottom = -105.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 20
 
-[node name="jogar" type="Button" parent="Jogo 5/ColorRect/VBoxContainer"]
+[node name="jogar" type="Button" parent="Control/ColorRect/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 text = "Jogar novamente"
 
-[node name="menu" type="Button" parent="Jogo 5/ColorRect/VBoxContainer"]
+[node name="menu" type="Button" parent="Control/ColorRect/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
 theme_override_font_sizes/font_size = 30
 text = "Menu"
 
-[connection signal="pressed" from="Jogo 5/ImageHolder/Audio" to="." method="_on_audio_pressed"]
-[connection signal="pressed" from="Jogo 5/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
-[connection signal="pressed" from="Jogo 5/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="Control/respostas2/audio 4" to="." method="_on_audio_2_pressed"]
+[connection signal="pressed" from="Control/respostas2/audio 2" to="." method="_on_audio_2_pressed"]
+[connection signal="pressed" from="Control/respostas2/audio 3" to="." method="_on_audio_2_pressed"]
+[connection signal="pressed" from="Control/respostas2/audio1" to="." method="_on_audio_1_pressed"]
+[connection signal="pressed" from="Control/voltar" to="." method="_on_voltar_pressed"]
+[connection signal="pressed" from="Control/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="Control/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]

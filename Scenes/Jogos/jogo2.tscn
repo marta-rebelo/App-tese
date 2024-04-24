@@ -1,14 +1,16 @@
-[gd_scene load_steps=7 format=3 uid="uid://dnkwpa6hlcktb"]
+[gd_scene load_steps=9 format=3 uid="uid://dnkwpa6hlcktb"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo2_controller.gd" id="1_acap8"]
 [ext_resource type="Resource" uid="uid://cha60psmp1qud" path="res://Resources/Jogo 2/jogo 2.tres" id="2_wvkfa"]
-[ext_resource type="Texture2D" uid="uid://ban0afpu3rh2e" path="res://Images/Screenshot 2024-02-18 213558.png" id="3_kducj"]
+[ext_resource type="Theme" uid="uid://d135j847anoft" path="res://themes/botaoaudio.tres" id="3_35dgg"]
 [ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="4_1qkvh"]
+[ext_resource type="Texture2D" uid="uid://dchv76lm0kqtf" path="res://Images/Jogo 1/audio icon2.svg" id="4_6m3y2"]
+[ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="6_3g2ge"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqjss"]
 bg_color = Color(0.968627, 0.905882, 0.815686, 1)
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3u1s3"]
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_o4yvk"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_acap8")
@@ -69,26 +71,27 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -126.5
-offset_top = -169.0
-offset_right = 129.5
-offset_bottom = 94.0
+offset_left = -82.5
+offset_top = -90.0
+offset_right = 83.5
+offset_bottom = 83.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_styles/focus = SubResource("StyleBoxEmpty_3u1s3")
-icon = ExtResource("3_kducj")
-flat = true
+theme = ExtResource("3_35dgg")
+icon = ExtResource("4_6m3y2")
+expand_icon = true
 
 [node name="respostas" type="HBoxContainer" parent="Jogo 1"]
 layout_mode = 1
-anchors_preset = 14
+anchors_preset = 8
+anchor_left = 0.5
 anchor_top = 0.5
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 76.0
-offset_top = 103.0
-offset_right = -76.0
-offset_bottom = 234.0
+offset_left = -175.0
+offset_top = 116.0
+offset_right = 175.0
+offset_bottom = 266.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
@@ -98,12 +101,31 @@ custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("4_1qkvh")
+theme_override_font_sizes/font_size = 60
 
 [node name="Button2" type="Button" parent="Jogo 1/respostas"]
 custom_minimum_size = Vector2(150, 150)
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("4_1qkvh")
+theme_override_font_sizes/font_size = 60
+
+[node name="voltar" type="Button" parent="Jogo 1"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -228.0
+offset_top = 24.0
+offset_right = -127.0
+offset_bottom = 102.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o4yvk")
+icon = ExtResource("6_3g2ge")
+flat = true
+icon_alignment = 1
+expand_icon = true
 
 [node name="ColorRect" type="ColorRect" parent="Jogo 1"]
 visible = false
@@ -156,5 +178,6 @@ theme_override_font_sizes/font_size = 30
 text = "Menu"
 
 [connection signal="pressed" from="Jogo 1/VBoxContainer/ImageHolder/Audio" to="." method="_on_audio_pressed"]
+[connection signal="pressed" from="Jogo 1/voltar" to="." method="_on_voltar_pressed"]
 [connection signal="pressed" from="Jogo 1/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="Jogo 1/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]

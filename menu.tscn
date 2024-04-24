@@ -1,16 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://dpfm1eoby5gsu"]
+[gd_scene load_steps=4 format=3 uid="uid://dpfm1eoby5gsu"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/menu.gd" id="1_0o3k3"]
-[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="2_hotjv"]
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bsau0"]
-bg_color = Color(0.254902, 0.686275, 0.552941, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bl71l"]
-bg_color = Color(0.256213, 0.687809, 0.552939, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dkn38"]
-bg_color = Color(0.256213, 0.687809, 0.552939, 1)
+[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="2_3omfh"]
+[ext_resource type="FontFile" uid="uid://dyoxr568nj7rb" path="res://themes/OpenSans-SemiBold.ttf" id="2_e7d0x"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -23,51 +15,56 @@ script = ExtResource("1_0o3k3")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 7
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 1.0
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -175.0
-offset_top = -473.0
-offset_right = 175.0
-offset_bottom = -145.0
+anchor_bottom = 0.5
+offset_left = -138.0
+offset_top = 22.0
+offset_right = 139.0
+offset_bottom = 301.0
 grow_horizontal = 2
-grow_vertical = 0
+grow_vertical = 2
 
 [node name="Botões" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
-theme_override_constants/separation = 22
+theme_override_constants/separation = 55
 
 [node name="Jogar" type="Button" parent="MarginContainer/Botões"]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = SubResource("StyleBoxFlat_bsau0")
-theme_override_styles/hover = SubResource("StyleBoxFlat_bl71l")
-theme_override_styles/pressed = SubResource("StyleBoxFlat_dkn38")
+theme = ExtResource("2_3omfh")
+theme_override_fonts/font = ExtResource("2_e7d0x")
+theme_override_font_sizes/font_size = 38
 text = "Jogar"
 
 [node name="Opções" type="Button" parent="MarginContainer/Botões"]
 layout_mode = 2
 size_flags_vertical = 3
-theme = ExtResource("2_hotjv")
-text = "Ajuda"
+theme = ExtResource("2_3omfh")
+theme_override_fonts/font = ExtResource("2_e7d0x")
+theme_override_font_sizes/font_size = 38
+text = "Sobre"
 
 [node name="Texto" type="Label" parent="."]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
+anchor_top = 0.335
 anchor_right = 0.5
-offset_left = -150.0
-offset_top = 90.0
-offset_right = 153.0
-offset_bottom = 221.0
+anchor_bottom = 0.335
+offset_left = -194.0
+offset_top = -225.0
+offset_right = 195.0
+offset_bottom = 144.0
 grow_horizontal = 2
-theme_override_colors/font_color = Color(0.0313726, 0, 0, 0.803922)
-theme_override_font_sizes/font_size = 70
-text = "Jogo"
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.141176, 0.141176, 0.141176, 1)
+theme_override_fonts/font = ExtResource("2_e7d0x")
+theme_override_font_sizes/font_size = 75
+text = "Dislexa"
 horizontal_alignment = 1
 vertical_alignment = 1
 
