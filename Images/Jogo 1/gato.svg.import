@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn7dfdwn21k60"
-path="res://.godot/imported/bola.png-215e0bb8d5ffd8b9f1bd55231ac149ad.ctex"
+uid="uid://bh8xriomae1gp"
+path="res://.godot/imported/gato.svg-018bfbb5590a4d9f7a20c0d12666f160.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Resources/Jogo 1/bola.png"
-dest_files=["res://.godot/imported/bola.png-215e0bb8d5ffd8b9f1bd55231ac149ad.ctex"]
+source_file="res://Images/Jogo 1/gato.svg"
+dest_files=["res://.godot/imported/gato.svg-018bfbb5590a4d9f7a20c0d12666f160.ctex"]
 
 [params]
 
@@ -32,3 +32,6 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
+svg/scale=1.0
+editor/scale_with_editor_scale=false
+editor/convert_colors_with_editor_theme=false

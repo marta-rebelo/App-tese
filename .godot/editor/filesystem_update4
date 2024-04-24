@@ -1,10 +1,10 @@
+res://Resources/Jogo 1/Perguntas/gato.tres
 res://Scenes/Jogos/jogo1.tscn
 res://themes/tema.tres
 res://themes/botaoaudio.tres
+res://Resources/Jogo 1/jogo1.tres
 res://themes/botaoaudiopequeno.tres
 res://Scenes/selecionar_jogo.tscn
 res://menu.tscn
 res://Scenes/Jogos/jogo2.tscn
 res://Scenes/Jogos/jogo3.tscn
-res://Resources/Jogo 1/jogo1.tres
-res://Scripts/Scenes/Jogos/jogo1_controller.gd

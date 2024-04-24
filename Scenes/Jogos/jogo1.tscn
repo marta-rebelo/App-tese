@@ -21,26 +21,30 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -4.0
+offset_top = 6.0
+offset_right = 6.0
+offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
 
 [node name="respostas" type="HBoxContainer" parent="Control"]
 layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
+anchors_preset = -1
+anchor_left = 0.476
 anchor_top = 0.5
-anchor_right = 0.5
+anchor_right = 0.476
 anchor_bottom = 0.5
-offset_left = -193.0
-offset_top = 58.0
-offset_right = 187.0
-offset_bottom = 179.0
+offset_left = -157.24
+offset_top = 120.0
+offset_right = 182.76
+offset_bottom = 233.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 80
 
 [node name="Button" type="Button" parent="Control/respostas"]
-custom_minimum_size = Vector2(150, 20)
+custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("3_tsq0y")
@@ -48,7 +52,7 @@ theme_override_font_sizes/font_size = 40
 
 [node name="Button2" type="Button" parent="Control/respostas"]
 clip_contents = true
-custom_minimum_size = Vector2(150, 20)
+custom_minimum_size = Vector2(100, 20)
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("3_tsq0y")
@@ -56,19 +60,19 @@ theme_override_font_sizes/font_size = 40
 
 [node name="Imagem" type="PanelContainer" parent="Control"]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -240.0
-offset_top = 132.0
-offset_right = 236.0
-offset_bottom = 386.0
+offset_left = -211.0
+offset_top = 104.0
+offset_right = 205.0
+offset_bottom = 462.0
 grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_pnirq")
 
 [node name="QuestionImage" type="TextureRect" parent="Control/Imagem"]
 layout_mode = 2
-expand_mode = 2
+expand_mode = 3
 stretch_mode = 5
 
 [node name="audio" type="HBoxContainer" parent="Control"]
@@ -78,16 +82,16 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -164.0
-offset_top = -162.0
-offset_right = 156.0
-offset_bottom = -62.0
+offset_left = -147.0
+offset_top = -150.0
+offset_right = 147.0
+offset_bottom = -70.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 120
 
 [node name="audio1" type="Button" parent="Control/audio"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("4_f0qy7")
@@ -96,7 +100,7 @@ icon = ExtResource("5_6mbt1")
 expand_icon = true
 
 [node name="audio 2" type="Button" parent="Control/audio"]
-custom_minimum_size = Vector2(100, 100)
+custom_minimum_size = Vector2(80, 80)
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("4_f0qy7")

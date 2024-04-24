@@ -2,8 +2,8 @@
 
 [ext_resource type="Script" path="res://Scripts/Recursos/tipo_de_jogo.gd" id="1_flgnn"]
 [ext_resource type="Resource" path="res://Resources/Jogo 1/melancia.tres" id="2_dcffa"]
-[ext_resource type="Resource" path="res://Resources/Jogo 1/bola.tres" id="3_nywiu"]
+[ext_resource type="Resource" uid="uid://bniugnt0blmms" path="res://Resources/Jogo 1/Perguntas/gato.tres" id="4_qqt6b"]
 
 [resource]
 script = ExtResource("1_flgnn")
-type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_dcffa"), ExtResource("3_nywiu")])
+type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_dcffa"), ExtResource("4_qqt6b")])
