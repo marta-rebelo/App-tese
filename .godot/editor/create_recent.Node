@@ -1,3 +1,7 @@
+Timer
+Button
+Label
+AudioStreamPlayer
 VBoxContainer
 ColorRect
 GraphEdit
@@ -5,7 +9,4 @@ CanvasLayer
 AspectRatioContainer
 PanelContainer
 Container
-Button
-Label
-AudioStreamPlayer
 TextureRect

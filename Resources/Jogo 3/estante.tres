@@ -8,5 +8,6 @@ script = ExtResource("1_har4i")
 question_info = ""
 type = 2
 question_audio = ExtResource("1_an4iq")
-options = Array[String](["estante", "instante"])
+options = Array[String](["cama", "gama"])
+options_image = Array[Texture2D]([])
 correct = "estante"

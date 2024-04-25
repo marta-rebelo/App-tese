@@ -1,13 +1,19 @@
-[gd_resource type="Resource" script_class="GameQuestion" load_steps=3 format=3 uid="uid://d2m2424os4nl7"]
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=6 format=3 uid="uid://d2m2424os4nl7"]
 
 [ext_resource type="Texture2D" uid="uid://uisa20l7jfvp" path="res://Images/tulipa final copy3.svg" id="1_a27k7"]
+[ext_resource type="AudioStream" uid="uid://souvyluibis7" path="res://Audio/Jogo 1/T.wav" id="1_d8nqh"]
 [ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_ntwv6"]
+[ext_resource type="AudioStream" uid="uid://dydn3yip3ol2g" path="res://Audio/Jogo 1/P.wav" id="2_f8517"]
+[ext_resource type="AudioStream" uid="uid://5upt2f72glvx" path="res://Audio/Jogo 1/TULIPA.wav" id="3_ynta8"]
 
 [resource]
 script = ExtResource("1_ntwv6")
 question_info = ""
 type = 0
 question_image = ExtResource("1_a27k7")
+question_audio = ExtResource("3_ynta8")
 options = Array[String](["t", "p"])
 options_image = Array[Texture2D]([])
+options_audio1 = ExtResource("1_d8nqh")
+options_audio2 = ExtResource("2_f8517")
 correct = "t"

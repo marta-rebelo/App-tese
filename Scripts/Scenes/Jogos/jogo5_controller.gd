@@ -25,7 +25,7 @@ func load_game() -> void:
 
 	texto_das_perguntas.text = current_game.question_info
 	var options = current_game.options
-	var gameoptions_image = current_game.options_image
+#	var gameoptions_image = current_game.options_image
 	
 	options_audio1.stream = current_game.options_audio1
 	options_audio2.stream = current_game.options_audio2

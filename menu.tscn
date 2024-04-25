@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://dpfm1eoby5gsu"]
+[gd_scene load_steps=6 format=3 uid="uid://dpfm1eoby5gsu"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/menu.gd" id="1_0o3k3"]
 [ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="2_3omfh"]
 [ext_resource type="FontFile" uid="uid://dyoxr568nj7rb" path="res://themes/OpenSans-SemiBold.ttf" id="2_e7d0x"]
+[ext_resource type="StyleBox" uid="uid://bjftmriwmh0qg" path="res://themes/botao sobre.tres" id="4_5pg1k"]
+[ext_resource type="Theme" uid="uid://bswic40glfpoi" path="res://themes/FONTE.tres" id="5_hyrht"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
@@ -46,6 +48,10 @@ size_flags_vertical = 3
 theme = ExtResource("2_3omfh")
 theme_override_fonts/font = ExtResource("2_e7d0x")
 theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = ExtResource("4_5pg1k")
+theme_override_styles/hover = ExtResource("4_5pg1k")
+theme_override_styles/pressed = ExtResource("4_5pg1k")
+theme_override_styles/disabled = ExtResource("4_5pg1k")
 text = "Sobre"
 
 [node name="Texto" type="Label" parent="."]
@@ -61,6 +67,7 @@ offset_right = 195.0
 offset_bottom = 144.0
 grow_horizontal = 2
 grow_vertical = 2
+theme = ExtResource("5_hyrht")
 theme_override_colors/font_color = Color(0.141176, 0.141176, 0.141176, 1)
 theme_override_fonts/font = ExtResource("2_e7d0x")
 theme_override_font_sizes/font_size = 75

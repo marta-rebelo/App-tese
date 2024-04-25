@@ -1,8 +1,21 @@
-[gd_scene load_steps=10 format=3 uid="uid://1d3v22be545x"]
+[gd_scene load_steps=23 format=3 uid="uid://1d3v22be545x"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/selecionar_jogo.gd" id="1_yqoph"]
 [ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="2_hxhun"]
 [ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="3_hlyo0"]
+[ext_resource type="Theme" uid="uid://577qufh1kjfj" path="res://botao 1.tres" id="3_p3vlm"]
+[ext_resource type="StyleBox" uid="uid://csw2vk16owcqm" path="res://themes/botao1.tres" id="4_0ncn8"]
+[ext_resource type="Texture2D" uid="uid://btt3ar1fy5l1l" path="res://Images/botoes menu/jogo 1.svg" id="5_cuc7c"]
+[ext_resource type="Texture2D" uid="uid://bwhvltpy2k7xi" path="res://Images/botoes menu/jogo 2.svg" id="7_feio7"]
+[ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://themes/botao 2.tres" id="7_lshuv"]
+[ext_resource type="Texture2D" uid="uid://bj5hltlyr75w2" path="res://Images/botoes menu/jogo 3.svg" id="8_2m3n4"]
+[ext_resource type="Texture2D" uid="uid://xj2wbgvnmp5" path="res://Images/botoes menu/jogo 4.svg" id="9_axs1a"]
+[ext_resource type="Texture2D" uid="uid://dofxdd5jm1gkh" path="res://Images/botoes menu/jogo 5.svg" id="10_6tg60"]
+[ext_resource type="StyleBox" uid="uid://ch8y3ua5uhsld" path="res://botao 3.tres" id="10_t5whx"]
+[ext_resource type="Texture2D" uid="uid://c1hobi24qg4xs" path="res://Images/botoes menu/jogo 6.svg" id="11_1f4p3"]
+[ext_resource type="StyleBox" uid="uid://2pvuyxcfdq12" path="res://themes/botao 4.tres" id="12_g3vsu"]
+[ext_resource type="StyleBox" uid="uid://doomp44nwaule" path="res://botao 5.tres" id="13_1mxdw"]
+[ext_resource type="StyleBox" uid="uid://muaxwejjhl0j" path="res://botao 6.tres" id="15_4w0uk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6i55p"]
 
@@ -43,7 +56,7 @@ corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
 
 [sub_resource type="Theme" id="Theme_pkppr"]
-default_font_size = 40
+default_font_size = 0
 Button/styles/focus = SubResource("StyleBoxFlat_3xssy")
 Button/styles/hover = SubResource("StyleBoxFlat_hx4ie")
 Button/styles/normal = SubResource("StyleBoxFlat_8lxf8")
@@ -57,6 +70,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_yqoph")
+metadata/_edit_lock_ = true
 
 [node name="voltar" type="Button" parent="."]
 layout_mode = 2
@@ -73,6 +87,22 @@ flat = true
 icon_alignment = 1
 expand_icon = true
 
+[node name="Texto" type="Label" parent="."]
+visible = false
+custom_minimum_size = Vector2(0, 80)
+layout_mode = 2
+anchor_left = 0.502
+anchor_right = 0.502
+offset_left = -210.96
+offset_top = 38.0
+offset_right = 240.04
+offset_bottom = 197.0
+theme_override_colors/font_color = Color(0.0313726, 0, 0, 0.803922)
+theme_override_font_sizes/font_size = 35
+text = "Seleciona um jogo
+"
+vertical_alignment = 1
+
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 1
 anchors_preset = 8
@@ -80,107 +110,131 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -211.0
-offset_top = -251.0
-offset_right = 211.0
-offset_bottom = 400.0
+offset_left = -196.0
+offset_top = -291.0
+offset_right = 197.0
+offset_bottom = 348.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Texto" type="Label" parent="VBoxContainer"]
-visible = false
-custom_minimum_size = Vector2(0, 100)
-layout_mode = 2
-theme_override_colors/font_color = Color(0.0313726, 0, 0, 0.803922)
-theme_override_font_sizes/font_size = 40
-text = "Seleciona um jogo
-"
-vertical_alignment = 1
-
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
-layout_mode = 2
-
-[node name="GridContainer" type="GridContainer" parent="VBoxContainer/MarginContainer"]
+[node name="GridContainer" type="GridContainer" parent="VBoxContainer"]
 z_as_relative = false
-custom_minimum_size = Vector2(100, 100)
 layout_direction = 1
 layout_mode = 2
 size_flags_stretch_ratio = 0.0
 theme = SubResource("Theme_pkppr")
-theme_override_constants/h_separation = 25
-theme_override_constants/v_separation = 25
+theme_override_constants/h_separation = 40
+theme_override_constants/v_separation = 40
 columns = 2
 
-[node name="jogo 1" type="Button" parent="VBoxContainer/MarginContainer/GridContainer"]
+[node name="jogo 1" type="Button" parent="VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme = ExtResource("3_p3vlm")
+theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("4_0ncn8")
+theme_override_styles/hover = ExtResource("4_0ncn8")
+theme_override_styles/pressed = ExtResource("4_0ncn8")
+text = "
+
+
+"
+icon = ExtResource("5_cuc7c")
+expand_icon = true
+
+[node name="jogo 2" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("7_lshuv")
+theme_override_styles/hover = ExtResource("7_lshuv")
+theme_override_styles/pressed = ExtResource("7_lshuv")
 text = "
-JOGO 1
+
 
 "
+icon = ExtResource("7_feio7")
+icon_alignment = 1
+expand_icon = true
 
-[node name="jogo 2" type="Button" parent="VBoxContainer/MarginContainer/GridContainer"]
+[node name="jogo 3" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("10_t5whx")
+theme_override_styles/hover = ExtResource("10_t5whx")
+theme_override_styles/pressed = ExtResource("10_t5whx")
 text = "
-JOGO 2
+
 
 "
+icon = ExtResource("8_2m3n4")
+icon_alignment = 1
+expand_icon = true
 
-[node name="jogo 3" type="Button" parent="VBoxContainer/MarginContainer/GridContainer"]
+[node name="jogo 4" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("12_g3vsu")
+theme_override_styles/hover = ExtResource("12_g3vsu")
+theme_override_styles/pressed = ExtResource("12_g3vsu")
+theme_override_styles/disabled = ExtResource("12_g3vsu")
 text = "
-JOGO 3
+
 
 "
+icon = ExtResource("9_axs1a")
+icon_alignment = 1
+expand_icon = true
 
-[node name="jogo 4" type="Button" parent="VBoxContainer/MarginContainer/GridContainer"]
+[node name="jogo 5" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("13_1mxdw")
+theme_override_styles/hover = ExtResource("13_1mxdw")
+theme_override_styles/pressed = ExtResource("13_1mxdw")
 text = "
-JOGO 4
+
 
 "
+icon = ExtResource("10_6tg60")
+icon_alignment = 1
+expand_icon = true
 
-[node name="jogo 5" type="Button" parent="VBoxContainer/MarginContainer/GridContainer"]
+[node name="jogo 6" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40
+theme_override_styles/normal = ExtResource("15_4w0uk")
+theme_override_styles/hover = ExtResource("15_4w0uk")
+theme_override_styles/pressed = ExtResource("15_4w0uk")
 text = "
-JOGO 5
 
 "
+icon = ExtResource("11_1f4p3")
+icon_alignment = 1
+expand_icon = true
 
-[node name="jogo 6" type="Button" parent="VBoxContainer/MarginContainer/GridContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 3
-theme = ExtResource("3_hlyo0")
-theme_override_font_sizes/font_size = 40
-text = "
-JOGO 6
-
-"
 
 [connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]
-[connection signal="pressed" from="VBoxContainer/MarginContainer/GridContainer/jogo 1" to="." method="_on_button_pressed"]
-[connection signal="pressed" from="VBoxContainer/MarginContainer/GridContainer/jogo 2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="VBoxContainer/MarginContainer/GridContainer/jogo 3" to="." method="_on_jogo_3_pressed"]
-[connection signal="pressed" from="VBoxContainer/MarginContainer/GridContainer/jogo 4" to="." method="_on_button_4_pressed"]
-[connection signal="pressed" from="VBoxContainer/MarginContainer/GridContainer/jogo 5" to="." method="_on_jogo_5_pressed"]
-[connection signal="pressed" from="VBoxContainer/MarginContainer/GridContainer/jogo 6" to="." method="_on_jogo_6_pressed"]
+[connection signal="pressed" from="VBoxContainer/GridContainer/jogo 1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="VBoxContainer/GridContainer/jogo 2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="VBoxContainer/GridContainer/jogo 3" to="." method="_on_jogo_3_pressed"]
+[connection signal="pressed" from="VBoxContainer/GridContainer/jogo 4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="VBoxContainer/GridContainer/jogo 5" to="." method="_on_jogo_5_pressed"]
+[connection signal="pressed" from="VBoxContainer/GridContainer/jogo 6" to="." method="_on_jogo_6_pressed"]
