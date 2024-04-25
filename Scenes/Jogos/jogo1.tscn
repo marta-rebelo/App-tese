@@ -21,9 +21,6 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -4.0
-offset_top = 6.0
-offset_right = 6.0
 offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
@@ -35,13 +32,13 @@ anchor_left = 0.476
 anchor_top = 0.5
 anchor_right = 0.476
 anchor_bottom = 0.5
-offset_left = -157.24
-offset_top = 120.0
-offset_right = 182.76
-offset_bottom = 233.0
+offset_left = -174.48
+offset_top = 83.0
+offset_right = 199.52
+offset_bottom = 211.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_constants/separation = 80
+theme_override_constants/separation = 60
 
 [node name="Button" type="Button" parent="Control/respostas"]
 custom_minimum_size = Vector2(100, 20)
@@ -64,9 +61,9 @@ anchors_preset = -1
 anchor_left = 0.5
 anchor_right = 0.5
 offset_left = -211.0
-offset_top = 104.0
+offset_top = 114.0
 offset_right = 205.0
-offset_bottom = 478.0
+offset_bottom = 430.0
 grow_horizontal = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_pnirq")
 
@@ -75,38 +72,47 @@ layout_mode = 2
 expand_mode = 3
 stretch_mode = 5
 
+[node name="audio1" type="Button" parent="Control"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+offset_left = 94.0
+offset_top = 650.0
+offset_right = 174.0
+offset_bottom = 730.0
+size_flags_horizontal = 3
+theme = ExtResource("4_f0qy7")
+theme_override_font_sizes/font_size = 30
+icon = ExtResource("5_6mbt1")
+expand_icon = true
+
+[node name="audio 2" type="Button" parent="Control"]
+custom_minimum_size = Vector2(80, 80)
+layout_mode = 2
+offset_left = 306.0
+offset_top = 650.0
+offset_right = 386.0
+offset_bottom = 730.0
+size_flags_horizontal = 3
+theme = ExtResource("4_f0qy7")
+theme_override_font_sizes/font_size = 30
+icon = ExtResource("5_6mbt1")
+expand_icon = true
+
 [node name="audio" type="HBoxContainer" parent="Control"]
+visible = false
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -147.0
-offset_top = -150.0
-offset_right = 147.0
-offset_bottom = -70.0
+offset_left = -139.0
+offset_top = -153.0
+offset_right = -70.0
+offset_bottom = -73.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 120
-
-[node name="audio1" type="Button" parent="Control/audio"]
-custom_minimum_size = Vector2(80, 80)
-layout_mode = 2
-size_flags_horizontal = 3
-theme = ExtResource("4_f0qy7")
-theme_override_font_sizes/font_size = 30
-icon = ExtResource("5_6mbt1")
-expand_icon = true
-
-[node name="audio 2" type="Button" parent="Control/audio"]
-custom_minimum_size = Vector2(80, 80)
-layout_mode = 2
-size_flags_horizontal = 3
-theme = ExtResource("4_f0qy7")
-theme_override_font_sizes/font_size = 30
-icon = ExtResource("5_6mbt1")
-expand_icon = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
 
@@ -117,7 +123,7 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -228.0
+offset_left = -240.0
 offset_top = 24.0
 offset_right = -127.0
 offset_bottom = 102.0
@@ -181,6 +187,8 @@ theme = ExtResource("3_tsq0y")
 theme_override_font_sizes/font_size = 30
 text = "Menu"
 
+[connection signal="pressed" from="Control/audio1" to="." method="_on_audio_1_pressed"]
+[connection signal="pressed" from="Control/audio 2" to="." method="_on_audio_2_pressed"]
 [connection signal="pressed" from="Control/voltar" to="." method="_on_voltar_pressed"]
 [connection signal="pressed" from="Control/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="Control/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]

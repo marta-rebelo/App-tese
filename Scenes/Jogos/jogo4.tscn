@@ -7,9 +7,9 @@
 [ext_resource type="Texture2D" uid="uid://dchv76lm0kqtf" path="res://Images/Jogo 1/audio icon2.svg" id="5_dxi76"]
 [ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="6_220w6"]
 
-[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0lq51"]
-
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6h8ev"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0lq51"]
 
 [node name="CanvasLayer" type="CanvasLayer"]
 script = ExtResource("1_rfvy3")
@@ -20,8 +20,7 @@ layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_top = 30.0
-offset_bottom = 121.0
+offset_bottom = 89.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -46,15 +45,6 @@ text = "Pergunta"
 horizontal_alignment = 1
 vertical_alignment = 1
 autowrap_mode = 2
-
-[node name="voltar" type="Button" parent="Control/perguntas"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 30
-theme_override_styles/focus = SubResource("StyleBoxEmpty_0lq51")
-icon = ExtResource("6_220w6")
-flat = true
-icon_alignment = 1
-expand_icon = true
 
 [node name="respostas" type="HBoxContainer" parent="Control"]
 layout_mode = 1
@@ -142,10 +132,10 @@ anchor_left = 0.752
 anchor_top = 0.701
 anchor_right = 0.752
 anchor_bottom = 0.701
-offset_left = -36.96
-offset_top = -42.8
+offset_left = -33.96
+offset_top = -43.189
 offset_right = 41.04
-offset_bottom = 27.2
+offset_bottom = 31.811
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
@@ -162,10 +152,10 @@ anchor_left = 0.237
 anchor_top = 0.675
 anchor_right = 0.237
 anchor_bottom = 0.675
-offset_left = -42.76
-offset_top = -21.0
+offset_left = -35.76
+offset_top = -20.0751
 offset_right = 39.24
-offset_bottom = 49.0
+offset_bottom = 54.9249
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 3
@@ -179,10 +169,10 @@ layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
-offset_left = -230.0
-offset_top = -6.0
-offset_right = -122.0
-offset_bottom = 77.0
+offset_left = -240.0
+offset_top = 24.0
+offset_right = -127.0
+offset_bottom = 102.0
 grow_horizontal = 2
 theme_override_font_sizes/font_size = 30
 theme_override_styles/focus = SubResource("StyleBoxEmpty_6h8ev")
