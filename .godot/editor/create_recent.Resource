@@ -1,2 +1,2 @@
-GameQuestion
 GameType
+GameQuestion

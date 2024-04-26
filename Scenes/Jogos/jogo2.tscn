@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dnkwpa6hlcktb"]
+[gd_scene load_steps=14 format=3 uid="uid://dnkwpa6hlcktb"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo2_controller.gd" id="1_acap8"]
 [ext_resource type="Resource" uid="uid://cha60psmp1qud" path="res://Resources/Jogo 2/jogo 2.tres" id="2_wvkfa"]
@@ -10,6 +10,7 @@
 [ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://themes/botao 2.tres" id="7_j5k53"]
 [ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Audio/audio wrong.wav" id="8_5cp41"]
 [ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Audio/audio win.wav" id="9_6030w"]
+[ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Audio/Parabens.wav" id="11_ub3ue"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqjss"]
 bg_color = Color(0.968627, 0.905882, 0.815686, 1)
@@ -208,6 +209,9 @@ stream = ExtResource("8_5cp41")
 
 [node name="certo" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_6030w")
+
+[node name="Parabéns" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_ub3ue")
 
 [connection signal="pressed" from="Jogo 1/VBoxContainer/ImageHolder/Audio" to="." method="_on_audio_pressed"]
 [connection signal="pressed" from="Jogo 1/voltar" to="." method="_on_voltar_pressed"]

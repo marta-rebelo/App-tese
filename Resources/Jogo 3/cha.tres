@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=3 format=3 uid="uid://df3tphugbce0v"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_57kk3"]
+[ext_resource type="AudioStream" uid="uid://cgu6lwt8k47u2" path="res://Audio/Jogo 3/cha.wav" id="1_h8j2l"]
+
+[resource]
+script = ExtResource("1_57kk3")
+question_info = ""
+type = 0
+question_audio = ExtResource("1_h8j2l")
+options = Array[String](["chá", "já"])
+options_image = Array[Texture2D]([])
+correct = "chá"

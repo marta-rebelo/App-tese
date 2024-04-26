@@ -1,9 +1,10 @@
-[gd_resource type="Resource" script_class="GameType" load_steps=4 format=3 uid="uid://wgmm7b74c05a"]
+[gd_resource type="Resource" script_class="GameType" load_steps=5 format=3 uid="uid://wgmm7b74c05a"]
 
 [ext_resource type="Script" path="res://Scripts/Recursos/tipo_de_jogo.gd" id="1_3vaoq"]
-[ext_resource type="Resource" uid="uid://68kjjjqek8de" path="res://Resources/Jogo 3/estante.tres" id="2_0leh4"]
-[ext_resource type="Resource" uid="uid://chk1l4r5vpsm" path="res://Resources/Jogo 3/faca.tres" id="3_587b1"]
+[ext_resource type="Resource" uid="uid://df3tphugbce0v" path="res://Resources/Jogo 3/cha.tres" id="2_lc303"]
+[ext_resource type="Resource" uid="uid://crd2jqhhh2p8o" path="res://Resources/Jogo 3/do.tres" id="3_7gl46"]
+[ext_resource type="Resource" uid="uid://c5c4r6fpr5v7r" path="res://Resources/Jogo 3/mao.tres" id="4_6psio"]
 
 [resource]
 script = ExtResource("1_3vaoq")
-type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_0leh4"), ExtResource("3_587b1")])
+type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_lc303"), ExtResource("3_7gl46"), ExtResource("4_6psio")])

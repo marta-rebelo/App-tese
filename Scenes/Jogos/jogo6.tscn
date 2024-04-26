@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://3wslc2244aoc"]
+[gd_scene load_steps=12 format=3 uid="uid://3wslc2244aoc"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo6_controller.gd" id="1_ns8h0"]
 [ext_resource type="Resource" uid="uid://dvnu52u5tloq0" path="res://Resources/Jogo 6/jogo6.tres" id="2_ayfs4"]
@@ -9,6 +9,7 @@
 [ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://themes/botao 2.tres" id="6_xmq24"]
 [ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Audio/audio wrong.wav" id="7_ia5ql"]
 [ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Audio/audio win.wav" id="8_6pgow"]
+[ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Audio/Parabens.wav" id="10_o4jwf"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0rfhx"]
 
@@ -172,6 +173,9 @@ stream = ExtResource("7_ia5ql")
 
 [node name="certo" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("8_6pgow")
+
+[node name="Parabéns" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_o4jwf")
 
 [connection signal="pressed" from="Control/voltar" to="." method="_on_voltar_pressed"]
 [connection signal="pressed" from="Control/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]

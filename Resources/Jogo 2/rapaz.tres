@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=3 format=3 uid="uid://d0knqkgnlxg3f"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_08ccc"]
+[ext_resource type="AudioStream" uid="uid://cj1clttqxudx4" path="res://Audio/Jogo 2/rapaz.wav" id="1_14m8y"]
+
+[resource]
+script = ExtResource("1_08ccc")
+question_info = ""
+type = 0
+question_audio = ExtResource("1_14m8y")
+options = Array[String](["2", "3"])
+options_image = Array[Texture2D]([])
+correct = "2"

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=3 format=3 uid="uid://crd2jqhhh2p8o"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_a0wvg"]
+[ext_resource type="AudioStream" uid="uid://c22tkmshdkhrj" path="res://Audio/Jogo 3/do.wav" id="1_jy7br"]
+
+[resource]
+script = ExtResource("1_a0wvg")
+question_info = ""
+type = 0
+question_audio = ExtResource("1_jy7br")
+options = Array[String](["tó", "dó"])
+options_image = Array[Texture2D]([])
+correct = "dó"

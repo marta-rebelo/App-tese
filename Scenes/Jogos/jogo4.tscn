@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://dlgx2x1eskfle"]
+[gd_scene load_steps=14 format=3 uid="uid://dlgx2x1eskfle"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo4_controller.gd" id="1_rfvy3"]
 [ext_resource type="Resource" uid="uid://ds6jiwabyrkfk" path="res://Resources/Jogo 4/duas imagens.tres" id="2_crfvq"]
@@ -10,6 +10,7 @@
 [ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://themes/botao 2.tres" id="7_r7txx"]
 [ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Audio/audio win.wav" id="8_b0nue"]
 [ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Audio/audio wrong.wav" id="9_3prlr"]
+[ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Audio/Parabens.wav" id="11_02847"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6h8ev"]
 
@@ -279,6 +280,9 @@ stream = ExtResource("8_b0nue")
 
 [node name="errado" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("9_3prlr")
+
+[node name="Parabéns" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_02847")
 
 [connection signal="pressed" from="Control/audio 2" to="." method="_on_audio_2_pressed"]
 [connection signal="pressed" from="Control/audio1" to="." method="_on_audio_1_pressed"]

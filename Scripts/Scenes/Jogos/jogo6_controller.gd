@@ -59,7 +59,7 @@ func _next_question() -> void:
 	
 func _game_over() -> void:
 	$Control/ColorRect.show()
-
+	$"Parabéns".play()
 
 func _on_jogar_pressed():
 	get_tree().reload_current_scene()
