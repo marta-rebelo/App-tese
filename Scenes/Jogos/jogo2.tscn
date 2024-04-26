@@ -199,7 +199,7 @@ vertical_alignment = 1
 stream = ExtResource("7_28e1f")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 13.0
+wait_time = 5.0
 one_shot = true
 
 [node name="errado" type="AudioStreamPlayer" parent="."]

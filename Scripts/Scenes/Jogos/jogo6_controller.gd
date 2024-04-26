@@ -9,7 +9,7 @@ var current_game: GameQuestion:
 	get: return game.type[index]
 
 @onready var texto_das_perguntas = $"Control/perguntas/texto das perguntas"
-
+@onready var question_audio: AudioStreamPlayer = $Palavra
 
 func _ready() -> void:
 	for button in $Control/respostas.get_children():
@@ -22,6 +22,8 @@ func _ready() -> void:
 func load_game() -> void:
 
 	texto_das_perguntas.text = current_game.question_info
+	question_audio.stream = current_game.question_audio
+	question_audio.play()
 	
 	var options = current_game.options
 	options.shuffle()

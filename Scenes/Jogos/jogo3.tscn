@@ -202,7 +202,7 @@ stream = ExtResource("8_lhovl")
 stream = ExtResource("9_81lci")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 13.0
+wait_time = 5.0
 one_shot = true
 
 [node name="Parabéns" type="AudioStreamPlayer" parent="."]

@@ -1,9 +1,9 @@
+AudioStreamPlayer
 AspectRatioContainer
 CanvasLayer
 Timer
 Button
 Label
-AudioStreamPlayer
 VBoxContainer
 ColorRect
 GraphEdit

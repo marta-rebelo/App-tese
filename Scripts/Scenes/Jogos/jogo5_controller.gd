@@ -10,8 +10,11 @@ var current_game: GameQuestion:
 	get: return game.type[index]
 
 @onready var texto_das_perguntas = $"Control/perguntas/texto das perguntas"
-@onready var options_audio1: AudioStreamPlayer = $"Control/AudioStreamPlayer"
-@onready var options_audio2: AudioStreamPlayer = $"Control/AudioStreamPlayer2"
+@onready var options_audio1: AudioStreamPlayer = $Control/AudioStreamPlayer
+@onready var options_audio2: AudioStreamPlayer = $Control/AudioStreamPlayer2
+@onready var options_audio3: AudioStreamPlayer = $Control/AudioStreamPlayer3
+@onready var options_audio4: AudioStreamPlayer = $Control/AudioStreamPlayer4
+
 
 func _ready() -> void:
 	for button in $Control/respostas.get_children():
@@ -22,7 +25,13 @@ func _ready() -> void:
 	load_game()
 
 func load_game() -> void:
-
+	if index == 0:	
+		$Control/respostas2/audio1.disabled = true
+		$"Control/respostas2/audio 2".disabled = true
+		$"Control/respostas2/audio 3".disabled = true
+		$"Control/respostas2/audio 4".disabled = true
+		$"Control/Instruções".play()
+		$Timer.start()
 	texto_das_perguntas.text = current_game.question_info
 	var options = current_game.options
 #	var gameoptions_image = current_game.options_image
@@ -37,7 +46,8 @@ func load_game() -> void:
 		buttons[i].text = options[i]
 #		buttons[i].get_child(0).texture = gameoptions_image[i]
 		buttons [i].pressed.connect(_buttons_answer.bind(buttons[i]))
-	
+		if index == 0:	
+			buttons[i].disabled = true
 
 func _buttons_answer(button) -> void:
 	if current_game.correct == button.text:
@@ -60,7 +70,7 @@ func _next_question() -> void:
 	for bt in buttons:
 		bt.modulate=Color.WHITE
 	index +=1
-	if index >= 2:
+	if index >= 3:
 		_game_over()
 	else:
 		load_game()
@@ -77,7 +87,11 @@ func _on_jogar_pressed():
 func _on_menu_pressed():
 	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")
 
-
+func _on_audio_4_pressed():
+	options_audio4.play()
+	
+func _on_audio_3_pressed():
+	options_audio3.play()
 
 func _on_audio_2_pressed():
 	options_audio2.play()
@@ -88,3 +102,10 @@ func _on_audio_1_pressed():
 
 func _on_voltar_pressed():
 	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")
+
+
+func _on_timer_timeout():
+	for i in buttons.size():
+		buttons[i].disabled = false
+	$Control/audio1.disabled = false
+	$"Control/audio 2".disabled = false
