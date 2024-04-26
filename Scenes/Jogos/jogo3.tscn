@@ -134,15 +134,12 @@ expand_icon = true
 [node name="ColorRect" type="ColorRect" parent="Jogo 1"]
 visible = false
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 5
 anchor_left = 0.5
-anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.5
 offset_left = -241.5
-offset_top = -400.0
 offset_right = 241.5
-offset_bottom = 688.0
+offset_bottom = 1088.0
 grow_horizontal = 2
 color = Color(0.529412, 0.894118, 0.764706, 1)
 
