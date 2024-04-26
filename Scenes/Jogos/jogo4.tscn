@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://dlgx2x1eskfle"]
+[gd_scene load_steps=13 format=3 uid="uid://dlgx2x1eskfle"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo4_controller.gd" id="1_rfvy3"]
 [ext_resource type="Resource" uid="uid://ds6jiwabyrkfk" path="res://Resources/Jogo 4/duas imagens.tres" id="2_crfvq"]
@@ -6,6 +6,10 @@
 [ext_resource type="Theme" uid="uid://dduwhxbgsqkts" path="res://themes/botaoaudiopequeno.tres" id="4_ks6qt"]
 [ext_resource type="Texture2D" uid="uid://dchv76lm0kqtf" path="res://Images/Jogo 1/audio icon2.svg" id="5_dxi76"]
 [ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="6_220w6"]
+[ext_resource type="AudioStream" uid="uid://dhotaox0htu1l" path="res://Audio/Instruções/Jogo 4.wav" id="7_l75am"]
+[ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://themes/botao 2.tres" id="7_r7txx"]
+[ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Audio/audio win.wav" id="8_b0nue"]
+[ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Audio/audio wrong.wav" id="9_3prlr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6h8ev"]
 
@@ -26,13 +30,15 @@ grow_vertical = 2
 
 [node name="perguntas" type="VBoxContainer" parent="Control"]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
+anchor_top = 0.111
 anchor_right = 0.5
+anchor_bottom = 0.111
 offset_left = -239.0
-offset_top = 9.0
+offset_top = -89.679
 offset_right = 241.0
-offset_bottom = 304.0
+offset_bottom = 205.321
 grow_horizontal = 2
 
 [node name="texto das perguntas" type="Label" parent="Control/perguntas"]
@@ -50,13 +56,13 @@ autowrap_mode = 2
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.435
+anchor_top = 0.537
 anchor_right = 0.5
-anchor_bottom = 0.435
+anchor_bottom = 0.537
 offset_left = -225.0
-offset_top = -57.0
+offset_top = -147.678
 offset_right = 225.0
-offset_bottom = 141.0
+offset_bottom = 50.322
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
@@ -131,11 +137,11 @@ anchors_preset = -1
 anchor_left = 0.5
 anchor_top = 0.695
 anchor_right = 0.5
-anchor_bottom = 0.701
+anchor_bottom = 0.695
 offset_left = 87.0
-offset_top = -37.8551
+offset_top = -37.8552
 offset_right = 162.0
-offset_bottom = 31.811
+offset_bottom = 37.1449
 grow_horizontal = 2
 grow_vertical = 2
 size_flags_horizontal = 3
@@ -149,13 +155,13 @@ custom_minimum_size = Vector2(70, 70)
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.675
+anchor_top = 0.695
 anchor_right = 0.5
-anchor_bottom = 0.675
+anchor_bottom = 0.695
 offset_left = -162.0
-offset_top = -20.0751
+offset_top = -37.8551
 offset_right = -87.0
-offset_bottom = 54.9249
+offset_bottom = 37.1449
 grow_horizontal = 2
 grow_vertical = 0
 size_flags_horizontal = 3
@@ -183,26 +189,17 @@ expand_icon = true
 
 [node name="ColorRect" type="ColorRect" parent="Control"]
 visible = false
-layout_mode = 0
-offset_right = 482.0
-offset_bottom = 798.0
-color = Color(0.254902, 0.686275, 0.552941, 1)
-
-[node name="Label" type="Label" parent="Control/ColorRect"]
 layout_mode = 1
-anchors_preset = 5
+anchors_preset = -1
 anchor_left = 0.5
+anchor_top = 0.449
 anchor_right = 0.5
+anchor_bottom = 0.449
 offset_left = -240.0
-offset_top = 75.0
-offset_right = 240.0
-offset_bottom = 239.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0.168627, 0.168627, 0.168627, 1)
-theme_override_font_sizes/font_size = 50
-text = "Ronda terminada!"
-horizontal_alignment = 1
-vertical_alignment = 1
+offset_top = -399.161
+offset_right = 242.0
+offset_bottom = 688.839
+color = Color(0.529412, 0.894118, 0.764706, 1)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control/ColorRect"]
 layout_mode = 1
@@ -211,25 +208,50 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -244.0
-offset_top = -393.0
-offset_right = 237.0
-offset_bottom = -105.0
+offset_left = -132.0
+offset_top = -621.0
+offset_right = 145.0
+offset_bottom = -344.0
 grow_horizontal = 2
 grow_vertical = 0
-theme_override_constants/separation = 20
+theme_override_constants/separation = 55
 
 [node name="jogar" type="Button" parent="Control/ColorRect/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme = ExtResource("3_8v3gd")
 theme_override_font_sizes/font_size = 30
-text = "Jogar novamente"
+text = "Jogar de novo"
 
 [node name="menu" type="Button" parent="Control/ColorRect/VBoxContainer"]
 layout_mode = 2
 size_flags_vertical = 3
+theme = ExtResource("3_8v3gd")
 theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = ExtResource("7_r7txx")
+theme_override_styles/hover = ExtResource("7_r7txx")
+theme_override_styles/pressed = ExtResource("7_r7txx")
+theme_override_styles/disabled = ExtResource("7_r7txx")
 text = "Menu"
+
+[node name="Label" type="Label" parent="Control/ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -241.0
+offset_top = 43.0
+offset_right = 243.0
+offset_bottom = 412.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.168627, 0.168627, 0.168627, 1)
+theme_override_font_sizes/font_size = 60
+text = "Parabéns!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Instrucoes" type="AudioStreamPlayer" parent="Control"]
+stream = ExtResource("7_l75am")
 
 [node name="voltar" type="Button" parent="."]
 visible = false
@@ -247,6 +269,16 @@ icon = ExtResource("6_220w6")
 flat = true
 icon_alignment = 1
 expand_icon = true
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 13.0
+one_shot = true
+
+[node name="certo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_b0nue")
+
+[node name="errado" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_3prlr")
 
 [connection signal="pressed" from="Control/audio 2" to="." method="_on_audio_2_pressed"]
 [connection signal="pressed" from="Control/audio1" to="." method="_on_audio_1_pressed"]

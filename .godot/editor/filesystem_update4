@@ -1,29 +1,35 @@
-res://Scenes/selecionar_jogo.tscn
-res://themes/tema.tres
-res://botao 1.tres
-res://Scenes/Jogos/jogo5.tscn
-res://Resources/Jogo 5/teste intruso.tres
-res://themes/botaoaudiopequeno.tres
 res://menu.tscn
-res://botao 3.tres
-res://botao 4.tres
-res://botao 6.tres
-res://botao 5.tres
+res://Scripts/Scenes/Jogos/jogo1_controller.gd
+res://themes/tema.tres
+res://themes/botao sobre.tres
+res://botao 1.tres
 res://themes/botao1.tres
-res://themes/botao 4.tres
 res://themes/botao 2.tres
+res://botao 3.tres
+res://themes/botao 4.tres
+res://botao 5.tres
+res://botao 6.tres
 res://Resources/Jogo 1/Perguntas/chuva.tres
 res://Resources/Jogo 1/Perguntas/tulipa.tres
 res://Resources/Jogo 1/Perguntas/gato.tres
 res://Resources/Jogo 1/jogo1.tres
-res://Scenes/Jogos/jogo1.tscn
-res://Scripts/Scenes/Jogos/jogo1_controller.gd
-res://themes/botao sobre.tres
-res://themes/FONTE.tres
-res://Scripts/Scenes/selecionar_jogo.gd
+res://themes/botaoaudiopequeno.tres
 res://themes/botaoaudio.tres
-res://Scenes/Tutoriais/tutorial 1.tscn
-res://Resources/Jogo 3/estante.tres
-res://Scenes/Jogos/jogo4.tscn
 res://Resources/Jogo 4/vaca faca.tres
+res://Resources/Jogo 6/Perguntas/carta.tres
+res://Resources/Jogo 6/Perguntas/Pedro.tres
+res://Resources/Jogo 6/Perguntas/problema.tres
+res://Resources/Jogo 6/jogo6.tres
+res://Resources/Jogo 3/estante.tres
+res://Scripts/Scenes/Jogos/jogo4_controller.gd
+res://Scenes/selecionar_jogo.tscn
+res://Scenes/Jogos/jogo1.tscn
+res://Scenes/Jogos/jogo4.tscn
+res://Scenes/Jogos/jogo6.tscn
+res://Scenes/Jogos/jogo5.tscn
+res://Scenes/Jogos/jogo2.tscn
+res://Scenes/Jogos/jogo3.tscn
+res://Scripts/Scenes/Jogos/jogo6_controller.gd
+res://Scripts/Scenes/Jogos/jogo3_controller.gd
+res://Scripts/Scenes/Jogos/jogo2_controller.gd
 res://Scripts/Scenes/Jogos/jogo5_controller.gd

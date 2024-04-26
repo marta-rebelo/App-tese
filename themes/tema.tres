@@ -1,6 +1,13 @@
 [gd_resource type="Theme" load_steps=6 format=3 uid="uid://cothvl5gfbaww"]
 
-[ext_resource type="FontFile" uid="uid://dyoxr568nj7rb" path="res://themes/OpenSans-SemiBold.ttf" id="1_23jjy"]
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0ddlc"]
+bg_color = Color(0.360784, 0.623529, 0.890196, 1)
+border_width_bottom = 20
+border_color = Color(0.298039, 0.521569, 0.752941, 1)
+corner_radius_top_left = 20
+corner_radius_top_right = 20
+corner_radius_bottom_right = 20
+corner_radius_bottom_left = 20
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wkg2i"]
 
@@ -12,6 +19,7 @@ corner_radius_top_left = 20
 corner_radius_top_right = 20
 corner_radius_bottom_right = 20
 corner_radius_bottom_left = 20
+corner_detail = 20
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hx0kq"]
 bg_color = Color(0.360784, 0.623529, 0.890196, 1)
@@ -35,13 +43,14 @@ corner_radius_bottom_left = 20
 [resource]
 default_font_size = 50
 Button/colors/font_color = Color(0.141176, 0.137255, 0.14902, 1)
-Button/colors/font_disabled_color = Color(0.141176, 0.137255, 0.14902, 1)
+Button/colors/font_disabled_color = Color(0.141176, 0.137255, 0.14902, 0.439216)
 Button/colors/font_focus_color = Color(0.141176, 0.137255, 0.14902, 1)
 Button/colors/font_hover_color = Color(0.141176, 0.137255, 0.14902, 1)
 Button/colors/font_hover_pressed_color = Color(0.141176, 0.137255, 0.14902, 1)
 Button/colors/font_outline_color = Color(0.141176, 0.137255, 0.14902, 1)
 Button/colors/font_pressed_color = Color(0.168627, 0.164706, 0.176471, 1)
-Button/fonts/font = ExtResource("1_23jjy")
+Button/fonts/font = null
+Button/styles/disabled = SubResource("StyleBoxFlat_0ddlc")
 Button/styles/focus = SubResource("StyleBoxEmpty_wkg2i")
 Button/styles/hover = SubResource("StyleBoxFlat_gx768")
 Button/styles/normal = SubResource("StyleBoxFlat_hx0kq")

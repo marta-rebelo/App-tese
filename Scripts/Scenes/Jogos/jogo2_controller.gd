@@ -37,9 +37,11 @@ func _buttons_answer(button) -> void:
 
 	if current_game.correct == button.text:
 		button.modulate = Color(0, 1.1, 0.4)
+		$certo.play()
 		_next_question()
 	else:
 		button.modulate = Color(2.1, 0, 0.3)
+		$errado.play()
 #
 func _next_question() -> void:
 	

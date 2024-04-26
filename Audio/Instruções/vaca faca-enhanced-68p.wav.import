@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dc8mx4114e41n"
+path="res://.godot/imported/vaca faca-enhanced-68p.wav-2e87585485a3566b284418efaea0489c.sample"
+
+[deps]
+
+source_file="res://Audio/Instruções/vaca faca-enhanced-68p.wav"
+dest_files=["res://.godot/imported/vaca faca-enhanced-68p.wav-2e87585485a3566b284418efaea0489c.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

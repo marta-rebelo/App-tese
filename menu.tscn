@@ -17,15 +17,15 @@ script = ExtResource("1_0o3k3")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 0.702
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 0.702
 offset_left = -138.0
-offset_top = 22.0
+offset_top = -139.6
 offset_right = 139.0
-offset_bottom = 301.0
+offset_bottom = 139.4
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -58,13 +58,13 @@ text = "Sobre"
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.335
+anchor_top = 0.244
 anchor_right = 0.5
-anchor_bottom = 0.335
+anchor_bottom = 0.244
 offset_left = -194.0
-offset_top = -225.0
+offset_top = -152.2
 offset_right = 195.0
-offset_bottom = 144.0
+offset_bottom = 216.8
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("5_hyrht")
@@ -74,5 +74,7 @@ theme_override_font_sizes/font_size = 75
 text = "Dislexa"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [connection signal="pressed" from="MarginContainer/Botões/Jogar" to="." method="_on_jogar_pressed"]

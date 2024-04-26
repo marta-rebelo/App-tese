@@ -1,3 +1,5 @@
+AspectRatioContainer
+CanvasLayer
 Timer
 Button
 Label
@@ -5,8 +7,6 @@ AudioStreamPlayer
 VBoxContainer
 ColorRect
 GraphEdit
-CanvasLayer
-AspectRatioContainer
 PanelContainer
 Container
 TextureRect
