@@ -202,7 +202,7 @@ stream = ExtResource("8_lhovl")
 stream = ExtResource("9_81lci")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 5.0
+wait_time = 4.0
 one_shot = true
 
 [node name="Parabéns" type="AudioStreamPlayer" parent="."]
@@ -212,3 +212,4 @@ stream = ExtResource("11_8wvoc")
 [connection signal="pressed" from="Jogo 1/voltar" to="." method="_on_voltar_pressed"]
 [connection signal="pressed" from="Jogo 1/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="Jogo 1/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -149,6 +149,7 @@ size_flags_horizontal = 3
 theme = ExtResource("4_ks6qt")
 theme_override_font_sizes/font_size = 30
 icon = ExtResource("5_dxi76")
+icon_alignment = 1
 expand_icon = true
 
 [node name="audio1" type="Button" parent="Control"]
@@ -282,8 +283,11 @@ stream = ExtResource("9_3prlr")
 [node name="Parabéns" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_02847")
 
+[node name="Fonema" type="AudioStreamPlayer" parent="."]
+
 [connection signal="pressed" from="Control/audio 2" to="." method="_on_audio_2_pressed"]
 [connection signal="pressed" from="Control/audio1" to="." method="_on_audio_1_pressed"]
 [connection signal="pressed" from="Control/voltar" to="." method="_on_voltar_pressed"]
 [connection signal="pressed" from="Control/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="Control/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

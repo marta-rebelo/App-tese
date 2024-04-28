@@ -12,6 +12,7 @@ var current_game: GameQuestion:
 @onready var texto_das_perguntas = $"Control/perguntas/texto das perguntas"
 @onready var options_audio1: AudioStreamPlayer = $"Control/AudioStreamPlayer"
 @onready var options_audio2: AudioStreamPlayer = $"Control/AudioStreamPlayer2"
+@onready var question_audio: AudioStreamPlayer = $Fonema
 
 func _ready() -> void:
 	for button in $Control/respostas.get_children():
@@ -27,9 +28,19 @@ func load_game() -> void:
 	var options = current_game.options
 	var gameoptions_image = current_game.options_image
 	
+	if index == 0:	
+		$Control/audio1.disabled = true
+		$"Control/audio 2".disabled = true
+#		await get_tree().create_timer(1).timeout
+		$"Control/Instrucoes".play()
+		$Timer.start()
+		
 	options_audio1.stream = current_game.options_audio1
 	options_audio2.stream = current_game.options_audio2
-
+	
+	question_audio.stream = current_game.question_audio
+	if index >= 1:
+		question_audio.play()
 
 #	options.shuffle()
 
@@ -37,7 +48,8 @@ func load_game() -> void:
 		buttons[i].text = options[i]
 		buttons[i].get_child(0).texture = gameoptions_image[i]
 		buttons [i].pressed.connect(_buttons_answer.bind(buttons[i]))
-	
+		if index == 0:	
+			buttons[i].disabled = true
 
 func _buttons_answer(button) -> void:
 	if current_game.correct == button.text:
@@ -90,3 +102,10 @@ func _on_audio_1_pressed():
 
 func _on_voltar_pressed():
 	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")
+
+func _on_timer_timeout():
+	for i in buttons.size():
+		buttons[i].disabled = false
+	$Control/audio1.disabled = false
+	$"Control/audio 2".disabled = false
+	question_audio.play()

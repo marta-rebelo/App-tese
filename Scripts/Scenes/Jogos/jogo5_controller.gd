@@ -30,7 +30,7 @@ func load_game() -> void:
 		$"Control/respostas2/audio 2".disabled = true
 		$"Control/respostas2/audio 3".disabled = true
 		$"Control/respostas2/audio 4".disabled = true
-		$"Control/Instruções".play()
+		$"Control/Instrucoes".play()
 		$Timer.start()
 	texto_das_perguntas.text = current_game.question_info
 	var options = current_game.options
@@ -70,7 +70,7 @@ func _next_question() -> void:
 	for bt in buttons:
 		bt.modulate=Color.WHITE
 	index +=1
-	if index >= 3:
+	if index >= 2:
 		_game_over()
 	else:
 		load_game()
@@ -107,5 +107,8 @@ func _on_voltar_pressed():
 func _on_timer_timeout():
 	for i in buttons.size():
 		buttons[i].disabled = false
-	$Control/audio1.disabled = false
-	$"Control/audio 2".disabled = false
+	$Control/respostas2/audio1.disabled = false
+	$"Control/respostas2/audio 2".disabled = false
+	$"Control/respostas2/audio 3".disabled = false
+	$"Control/respostas2/audio 4".disabled = false
+	

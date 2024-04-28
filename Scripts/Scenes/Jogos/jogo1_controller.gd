@@ -117,13 +117,15 @@ func _on_button_pressed():
 	$"Control/Início".hide()
 	$"Control/Início/Instruções".stop()
 	question_audio.stream = current_game.question_audio
-	await get_tree().create_timer(0.25).timeout
+	
 #	question_audio.play()
 
 
 
 
 func _on_timer_timeout():
+	question_audio.play()
+	await get_tree().create_timer(0.5).timeout
 	for i in buttons.size():
 		buttons[i].disabled = false
 	$Control/audio1.disabled = false

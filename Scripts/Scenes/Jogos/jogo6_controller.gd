@@ -8,7 +8,7 @@ var index: int
 var current_game: GameQuestion:
 	get: return game.type[index]
 
-@onready var texto_das_perguntas = $"Control/perguntas/texto das perguntas"
+@onready var texto_das_perguntas: Label = $"Control/perguntas/texto das perguntas"
 @onready var question_audio: AudioStreamPlayer = $Palavra
 
 func _ready() -> void:
@@ -20,10 +20,14 @@ func _ready() -> void:
 	load_game()
 
 func load_game() -> void:
-
+	if index == 0:	
+		$Instrucoes.play()
+		$Timer.start()
+		
 	texto_das_perguntas.text = current_game.question_info
 	question_audio.stream = current_game.question_audio
-	question_audio.play()
+	if index >= 1:
+		question_audio.play()
 	
 	var options = current_game.options
 	options.shuffle()
@@ -31,7 +35,8 @@ func load_game() -> void:
 	for i in buttons.size():
 		buttons[i].text = options[i]
 		buttons [i].pressed.connect(_buttons_answer.bind(buttons[i]))
-	
+		if index == 0:	
+			buttons[i].disabled = true
 	
 
 func _buttons_answer(button) -> void:
@@ -72,3 +77,8 @@ func _on_menu_pressed():
 
 func _on_voltar_pressed():
 	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")
+
+func _on_timer_timeout():
+	for i in buttons.size():
+		buttons[i].disabled = false
+	question_audio.play()

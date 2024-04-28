@@ -19,18 +19,26 @@ func _ready() -> void:
 	load_game()
 	
 func load_game() -> void:
-	
-	
-	question_audio.stream = current_game.question_audio
-	question_audio.play()
+	if index == 0:	
+		
+#		await get_tree().create_timer(1).timeout
+		$"Instrucoes".play()
+		$Timer.start()
 	
 	var options = current_game.options
+	question_audio.stream = current_game.question_audio
+	if index >= 1:
+		question_audio.play()
+	
+	
 	
 #	options.shuffle()
 	
 	for i in buttons.size():
 		buttons[i].text = options[i]
 		buttons [i].pressed.connect(_buttons_answer.bind(buttons[i]))
+		if index == 0:	
+			buttons[i].disabled = true
 		
 func _buttons_answer(button) -> void:
 
@@ -75,3 +83,10 @@ func _on_audio_pressed():
 
 func _on_voltar_pressed():
 	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")
+
+func _on_timer_timeout():
+	question_audio.play()
+	await get_tree().create_timer(0.5).timeout
+	for i in buttons.size():
+		buttons[i].disabled = false
+	

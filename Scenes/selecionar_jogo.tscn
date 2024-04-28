@@ -115,10 +115,10 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -196.0
-offset_top = -291.0
-offset_right = 197.0
-offset_bottom = 348.0
+offset_left = -173.5
+offset_top = -319.5
+offset_right = 173.5
+offset_bottom = 319.5
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -150,7 +150,6 @@ expand_icon = true
 
 [node name="jogo 2" type="Button" parent="VBoxContainer/GridContainer"]
 layout_mode = 2
-size_flags_horizontal = 3
 size_flags_vertical = 3
 theme = ExtResource("3_hlyo0")
 theme_override_font_sizes/font_size = 40

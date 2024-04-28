@@ -180,3 +180,4 @@ stream = ExtResource("10_o4jwf")
 [connection signal="pressed" from="Control/voltar" to="." method="_on_voltar_pressed"]
 [connection signal="pressed" from="Control/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="Control/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
