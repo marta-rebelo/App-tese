@@ -1,9 +1,9 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1714319873
-botao 1.tres::Theme::2173697972286110823::1714150813::0::1::::<><>::uid://dyoxr568nj7rb::::res://themes/OpenSans-SemiBold.ttf
-botao 3.tres::StyleBoxFlat::5333796000649222265::1714150813::0::1::::<><>::
-botao 5.tres::StyleBoxFlat::8171564109986930058::1714150814::0::1::::<><>::
-botao 6.tres::StyleBoxFlat::883595914111552111::1714150814::0::1::::<><>::
+::res://::1714401242
+botao 1.tres::Theme::2173697972286110823::1714319877::0::1::::<><>::uid://dyoxr568nj7rb::::res://themes/OpenSans-SemiBold.ttf
+botao 3.tres::StyleBoxFlat::5333796000649222265::1714319877::0::1::::<><>::
+botao 5.tres::StyleBoxFlat::8171564109986930058::1714319877::0::1::::<><>::
+botao 6.tres::StyleBoxFlat::883595914111552111::1714319877::0::1::::<><>::
 export_presets.cfg::TextFile::-1::1714151604::0::1::::<><>::
 icon.svg::CompressedTexture2D::1689612228049455958::1714095731::1714095813::1::::<><>::
 menu.tscn::PackedScene::8223191860774169248::1714128375::0::1::::<><>::res://Scripts/Scenes/menu.gd<>uid://cothvl5gfbaww
@@ -43,14 +43,12 @@ mao.wav::AudioStreamWAV::8486064554501278433::1714149106::1714149108::1::::<><>:
 ::res://Audio/Jogo 5/::1713219587
 ::res://Audio/Jogo 6/::1713219592
 ::res://Audio/Outros/::1713219740
-::res://Images/::1714148323
+::res://Images/::1714323051
 audio icon.svg::CompressedTexture2D::160748799727024778::1713892214::1713894297::1::::<><>::
 bola.png::CompressedTexture2D::4978052342384629539::1708866140::1713219805::1::::<><>::
 desktop.ini::TextFile::-1::1708866140::0::1::::<><>::
 GOLA.svg::CompressedTexture2D::1287969754803762509::1714144993::1714148323::1::::<><>::
-melancia.png::CompressedTexture2D::805475569263563506::1708866140::1713219805::1::::<><>::
 NOTA.svg::CompressedTexture2D::9061970081198787981::1714144206::1714148323::1::::<><>::
-Screenshot 2024-02-18 213558.png::CompressedTexture2D::2414775806050659774::1708866140::1713219805::1::::<><>::
 seta icon.svg::CompressedTexture2D::8607575416750470830::1713906151::1713906153::1::::<><>::
 tulipa final copy3.svg::CompressedTexture2D::1421386257956399189::1713969106::1713969280::1::::<><>::
 vaca teste.svg::CompressedTexture2D::4437722179262730141::1713970975::1713971115::1::::<><>::
@@ -74,48 +72,48 @@ vaca teste2.svg::CompressedTexture2D::4793777665572908962::1713970993::171397103
 vaca.svg::CompressedTexture2D::6487122406932036573::1713969835::1713969836::1::::<><>::
 vecteezy_cartoon-of-cow-illustration-cow-in-png-format-image_13211278.png::CompressedTexture2D::5193044880269757595::1713215498::1713219810::1::::<><>::
 ::res://Resources/::1713916248
-::res://Resources/Jogo 1/::1714148501
-jogo1.tres::Resource/GameType::8476229546284753078::1714148501::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://c0k26ukiphm5l::::res://Resources/Jogo 1/Perguntas/chuva.tres<>uid://d2m2424os4nl7::::res://Resources/Jogo 1/Perguntas/tulipa.tres<>uid://bniugnt0blmms::::res://Resources/Jogo 1/Perguntas/gato.tres
+::res://Resources/Jogo 1/::1714321914
+jogo1.tres::Resource/GameType::8476229546284753078::1714321914::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://c0k26ukiphm5l::::res://Resources/Jogo 1/Perguntas/chuva.tres<>uid://d2m2424os4nl7::::res://Resources/Jogo 1/Perguntas/tulipa.tres<>uid://bniugnt0blmms::::res://Resources/Jogo 1/Perguntas/gato.tres
 melancia.png::CompressedTexture2D::6587361859956539449::1713199118::1713199118::1::::<><>::
 melancia.tres::Resource/Resource::-1::1713199118::0::1::::<><>::
-::res://Resources/Jogo 1/Perguntas/::1714148501
-chuva.tres::Resource/GameQuestion::6549902020592221279::1714148501::0::1::::<><>::uid://cgw0cke45yvkp::::res://Audio/Jogo 1/J.wav<>uid://7ogjfruhqglw::::res://Images/Jogo 1/chuva copy.svg<>res://Scripts/Recursos/perguntas.gd<>uid://c00gs2b32fj8i::::res://Audio/Jogo 1/CH.wav<>uid://b51mbd8vltuxw::::res://Audio/Jogo 1/CHUVA.wav
-gato.tres::Resource/GameQuestion::3316616440931263266::1714148501::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://bh8xriomae1gp::::res://Images/Jogo 1/gato.svg<>uid://b3syr5itsik02::::res://Audio/Jogo 1/C.wav<>uid://cnobg6dblf81r::::res://Audio/Jogo 1/G.wav<>uid://bvo5uuxaob3gt::::res://Audio/Jogo 1/GATO.wav
-tulipa.tres::Resource/GameQuestion::9080825972773918546::1714148501::0::1::::<><>::uid://uisa20l7jfvp::::res://Images/tulipa final copy3.svg<>uid://souvyluibis7::::res://Audio/Jogo 1/T.wav<>res://Scripts/Recursos/perguntas.gd<>uid://dydn3yip3ol2g::::res://Audio/Jogo 1/P.wav<>uid://5upt2f72glvx::::res://Audio/Jogo 1/TULIPA.wav
-::res://Resources/Jogo 2/::1714150813
-escola.tres::Resource/GameQuestion::8385217571186381100::1714150813::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://d07pptj3rb20j::::res://Audio/Jogo 2/escola.wav
-janela.tres::Resource/GameQuestion::6018227898106242432::1714150813::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://cia4w4aqtd4mc::::res://Audio/Jogo 2/janela.wav
-jogo 2.tres::Resource/GameType::5266090960698854443::1714150813::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://drp4kqnq26ysa::::res://Resources/Jogo 2/escola.tres<>uid://cr0jlmlx186uu::::res://Resources/Jogo 2/janela.tres<>uid://d0knqkgnlxg3f::::res://Resources/Jogo 2/rapaz.tres
-rapaz.tres::Resource/GameQuestion::8935445348287752925::1714150813::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://cj1clttqxudx4::::res://Audio/Jogo 2/rapaz.wav
+::res://Resources/Jogo 1/Perguntas/::1714321914
+chuva.tres::Resource/GameQuestion::6549902020592221279::1714321914::0::1::::<><>::uid://cgw0cke45yvkp::::res://Audio/Jogo 1/J.wav<>uid://7ogjfruhqglw::::res://Images/Jogo 1/chuva copy.svg<>res://Scripts/Recursos/perguntas.gd<>uid://c00gs2b32fj8i::::res://Audio/Jogo 1/CH.wav<>uid://b51mbd8vltuxw::::res://Audio/Jogo 1/CHUVA.wav
+gato.tres::Resource/GameQuestion::3316616440931263266::1714321914::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://bh8xriomae1gp::::res://Images/Jogo 1/gato.svg<>uid://b3syr5itsik02::::res://Audio/Jogo 1/C.wav<>uid://cnobg6dblf81r::::res://Audio/Jogo 1/G.wav<>uid://bvo5uuxaob3gt::::res://Audio/Jogo 1/GATO.wav
+tulipa.tres::Resource/GameQuestion::9080825972773918546::1714321914::0::1::::<><>::uid://uisa20l7jfvp::::res://Images/tulipa final copy3.svg<>uid://souvyluibis7::::res://Audio/Jogo 1/T.wav<>res://Scripts/Recursos/perguntas.gd<>uid://dydn3yip3ol2g::::res://Audio/Jogo 1/P.wav<>uid://5upt2f72glvx::::res://Audio/Jogo 1/TULIPA.wav
+::res://Resources/Jogo 2/::1714322108
+escola.tres::Resource/GameQuestion::8385217571186381100::1714322108::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://d07pptj3rb20j::::res://Audio/Jogo 2/escola.wav
+janela.tres::Resource/GameQuestion::6018227898106242432::1714322108::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://cia4w4aqtd4mc::::res://Audio/Jogo 2/janela.wav
+jogo 2.tres::Resource/GameType::5266090960698854443::1714322108::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://drp4kqnq26ysa::::res://Resources/Jogo 2/escola.tres<>uid://cr0jlmlx186uu::::res://Resources/Jogo 2/janela.tres<>uid://d0knqkgnlxg3f::::res://Resources/Jogo 2/rapaz.tres
+rapaz.tres::Resource/GameQuestion::8935445348287752925::1714322108::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://cj1clttqxudx4::::res://Audio/Jogo 2/rapaz.wav
 ::res://Resources/Jogo 3/::1714150813
-cha.tres::Resource/GameQuestion::7569189654987847383::1714150813::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://cgu6lwt8k47u2::::res://Audio/Jogo 3/cha.wav
-do.tres::Resource/GameQuestion::5973901124960485780::1714150813::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://c22tkmshdkhrj::::res://Audio/Jogo 3/do.wav
-jogo3.tres::Resource/GameType::1557292543785932288::1714150813::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://df3tphugbce0v::::res://Resources/Jogo 3/cha.tres<>uid://crd2jqhhh2p8o::::res://Resources/Jogo 3/do.tres<>uid://c5c4r6fpr5v7r::::res://Resources/Jogo 3/mao.tres
-mao.tres::Resource/GameQuestion::6884428219975233989::1714150813::0::1::::<><>::uid://ds5yijl6t2nd6::::res://Audio/Jogo 3/mao.wav<>res://Scripts/Recursos/perguntas.gd
-::res://Resources/Jogo 4/::1714140399
+cha.tres::Resource/Resource::7569189654987847383::1714150813::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://cgu6lwt8k47u2
+do.tres::Resource/Resource::5973901124960485780::1714150813::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://c22tkmshdkhrj
+jogo3.tres::Resource/Resource::1557292543785932288::1714150813::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://df3tphugbce0v
+mao.tres::Resource/Resource::6884428219975233989::1714150813::0::1::::<><>::uid://ds5yijl6t2nd6
+::res://Resources/Jogo 4/::1714320884
 duas imagens.tres::Resource/Resource::8487218841817767044::1713219790::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://prq4i0v1tf7b
-vaca faca.tres::Resource/Resource::1088950796093561197::1714140399::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://b184cko8f5nc1
-::res://Resources/Jogo 5/::1714101979
+vaca faca.tres::Resource/GameQuestion::1088950796093561197::1714320884::0::1::::<><>::res://Scripts/Recursos/perguntas.gd<>uid://b184cko8f5nc1::::res://Audio/faca.wav<>uid://ejne0lot4c7t::::res://Images/Jogo 4/Knife-Png-225.png<>uid://cggp6qedrsre::::res://Images/Jogo 4/vaca 3.svg
+::res://Resources/Jogo 5/::1714320539
 cama cadeira gaveta caneta.tres::Resource/Resource::931949568842131841::1714095337::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
-intruso type.tres::Resource/Resource::5999181992328801651::1714101979::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://njpcqwukmubp
-::res://Resources/Jogo 6/::1714153224
-jogo6.tres::Resource/GameType::8661334042368680889::1714153224::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://dowqp7tmqd7ad::::res://Resources/Jogo 6/Perguntas/carta.tres<>uid://hm1474go1k7d::::res://Resources/Jogo 6/Perguntas/Pedro.tres<>uid://bob5yqto8f0ul::::res://Resources/Jogo 6/Perguntas/broca.tres<>uid://bombfiu5dbxtk::::res://Resources/Jogo 6/Perguntas/porta.tres<>uid://c2ljx6xaoxqth::::res://Resources/Jogo 6/Perguntas/problema.tres
-::res://Resources/Jogo 6/Perguntas/::1714152658
-broca.tres::Resource/GameQuestion::3372994111621632975::1714152658::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
-carta.tres::Resource/GameQuestion::8188322142059158363::1714148501::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
-Pedro.tres::Resource/GameQuestion::517726594189002523::1714148501::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
-porta.tres::Resource/GameQuestion::3393907126086590436::1714152658::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
-prima.tres::Resource/GameQuestion::2125054245532983382::1714152658::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
-problema.tres::Resource/GameQuestion::6691237490876432677::1714148501::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
-::res://Scenes/::1714153263
-selecionar_jogo.tscn::PackedScene::1832842105212652695::1714153262::0::1::::<><>::res://Scripts/Scenes/selecionar_jogo.gd<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://577qufh1kjfj::::res://botao 1.tres<>uid://csw2vk16owcqm::::res://themes/botao1.tres<>uid://btt3ar1fy5l1l::::res://Images/botoes menu/jogo 1.svg<>uid://bwhvltpy2k7xi::::res://Images/botoes menu/jogo 2.svg<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://bj5hltlyr75w2::::res://Images/botoes menu/jogo 3.svg<>uid://xj2wbgvnmp5::::res://Images/botoes menu/jogo 4.svg<>uid://dofxdd5jm1gkh::::res://Images/botoes menu/jogo 5.svg<>uid://ch8y3ua5uhsld::::res://botao 3.tres<>uid://c1hobi24qg4xs::::res://Images/botoes menu/jogo 6.svg<>uid://2pvuyxcfdq12::::res://themes/botao 4.tres<>uid://doomp44nwaule::::res://botao 5.tres<>uid://muaxwejjhl0j::::res://botao 6.tres
-::res://Scenes/Jogos/::1714153263
-jogo1.tscn::PackedScene::9210529253115872909::1714151508::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo1_controller.gd<>uid://ds07i6e4vvqgs::::res://Resources/Jogo 1/jogo1.tres<>uid://bc240rb7sblyi::::res://Audio/Instruções/Jogo 1.wav<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://dduwhxbgsqkts::::res://themes/botaoaudiopequeno.tres<>uid://dchv76lm0kqtf::::res://Images/Jogo 1/audio icon2.svg<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://yog4a8cikohl::::res://Audio/Parabens.wav<>uid://f6o8n0xf263n::::res://Audio/audio win.wav<>uid://lgns6wsensd7::::res://Audio/audio wrong.wav<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://bswic40glfpoi::::res://themes/FONTE.tres<>uid://d135j847anoft::::res://themes/botaoaudio.tres
-jogo2.tscn::PackedScene::8093723404885532943::1714153263::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo2_controller.gd<>uid://cha60psmp1qud::::res://Resources/Jogo 2/jogo 2.tres<>uid://d135j847anoft::::res://themes/botaoaudio.tres<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://dchv76lm0kqtf::::res://Images/Jogo 1/audio icon2.svg<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://3xwjb1bdhomj::::res://Audio/Instruções/Jogo 2.wav<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://lgns6wsensd7::::res://Audio/audio wrong.wav<>uid://f6o8n0xf263n::::res://Audio/audio win.wav<>uid://yog4a8cikohl::::res://Audio/Parabens.wav
-jogo3.tscn::PackedScene::8736881735335365839::1714149110::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo3_controller.gd<>uid://wgmm7b74c05a::::res://Resources/Jogo 3/jogo3.tres<>uid://dchv76lm0kqtf::::res://Images/Jogo 1/audio icon2.svg<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://d135j847anoft::::res://themes/botaoaudio.tres<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://bst5xyknpwpkq::::res://Audio/Instruções/Jogo 3.wav<>uid://lgns6wsensd7::::res://Audio/audio wrong.wav<>uid://f6o8n0xf263n::::res://Audio/audio win.wav<>uid://yog4a8cikohl::::res://Audio/Parabens.wav
-jogo4.tscn::PackedScene::7945171553299241982::1714140504::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo4_controller.gd<>uid://ds6jiwabyrkfk
-jogo5.tscn::PackedScene::5901300128622541293::1714151507::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo5_controller.gd<>uid://crqbwep31am8b::::res://Resources/Jogo 5/intruso type.tres<>uid://dduwhxbgsqkts::::res://themes/botaoaudiopequeno.tres<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://dchv76lm0kqtf::::res://Images/Jogo 1/audio icon2.svg<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://tcs61b2c46xe::::res://Audio/Instruções/Jogo 5.wav<>uid://f6o8n0xf263n::::res://Audio/audio win.wav<>uid://lgns6wsensd7::::res://Audio/audio wrong.wav<>uid://yog4a8cikohl::::res://Audio/Parabens.wav
-jogo6.tscn::PackedScene::2011816630080042038::1714153262::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo6_controller.gd<>uid://dvnu52u5tloq0::::res://Resources/Jogo 6/jogo6.tres<>uid://dyoxr568nj7rb::::res://themes/OpenSans-SemiBold.ttf<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://ceoxbyqw3awuq::::res://Audio/Instruções/Jogo 6.wav<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://lgns6wsensd7::::res://Audio/audio wrong.wav<>uid://f6o8n0xf263n::::res://Audio/audio win.wav<>uid://yog4a8cikohl::::res://Audio/Parabens.wav
+intruso type.tres::Resource/GameType::5999181992328801651::1714320539::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://njpcqwukmubp::::res://Resources/Jogo 5/cama cadeira gaveta caneta.tres
+::res://Resources/Jogo 6/::1714320303
+jogo6.tres::Resource/GameType::8661334042368680889::1714320303::0::1::::<><>::res://Scripts/Recursos/tipo_de_jogo.gd<>uid://dowqp7tmqd7ad::::res://Resources/Jogo 6/Perguntas/carta.tres<>uid://hm1474go1k7d::::res://Resources/Jogo 6/Perguntas/Pedro.tres<>uid://bob5yqto8f0ul::::res://Resources/Jogo 6/Perguntas/broca.tres<>uid://bombfiu5dbxtk::::res://Resources/Jogo 6/Perguntas/porta.tres<>uid://c2ljx6xaoxqth::::res://Resources/Jogo 6/Perguntas/problema.tres
+::res://Resources/Jogo 6/Perguntas/::1714319877
+broca.tres::Resource/GameQuestion::3372994111621632975::1714319877::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
+carta.tres::Resource/GameQuestion::8188322142059158363::1714319877::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
+Pedro.tres::Resource/GameQuestion::517726594189002523::1714319877::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
+porta.tres::Resource/GameQuestion::3393907126086590436::1714319877::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
+prima.tres::Resource/Resource::2125054245532983382::1714152658::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
+problema.tres::Resource/GameQuestion::6691237490876432677::1714319877::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
+::res://Scenes/::1714320543
+selecionar_jogo.tscn::PackedScene::1832842105212652695::1714320543::0::1::::<><>::res://Scripts/Scenes/selecionar_jogo.gd<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://577qufh1kjfj::::res://botao 1.tres<>uid://csw2vk16owcqm::::res://themes/botao1.tres<>uid://btt3ar1fy5l1l::::res://Images/botoes menu/jogo 1.svg<>uid://bwhvltpy2k7xi::::res://Images/botoes menu/jogo 2.svg<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://bj5hltlyr75w2::::res://Images/botoes menu/jogo 3.svg<>uid://xj2wbgvnmp5::::res://Images/botoes menu/jogo 4.svg<>uid://dofxdd5jm1gkh::::res://Images/botoes menu/jogo 5.svg<>uid://ch8y3ua5uhsld::::res://botao 3.tres<>uid://c1hobi24qg4xs::::res://Images/botoes menu/jogo 6.svg<>uid://2pvuyxcfdq12::::res://themes/botao 4.tres<>uid://doomp44nwaule::::res://botao 5.tres<>uid://muaxwejjhl0j::::res://botao 6.tres
+::res://Scenes/Jogos/::1714322646
+jogo1.tscn::PackedScene::9210529253115872909::1714322108::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo1_controller.gd<>uid://ds07i6e4vvqgs::::res://Resources/Jogo 1/jogo1.tres<>uid://bc240rb7sblyi::::res://Audio/Instruções/Jogo 1.wav<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://dduwhxbgsqkts::::res://themes/botaoaudiopequeno.tres<>uid://dchv76lm0kqtf::::res://Images/Jogo 1/audio icon2.svg<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://yog4a8cikohl::::res://Audio/Parabens.wav<>uid://f6o8n0xf263n::::res://Audio/audio win.wav<>uid://lgns6wsensd7::::res://Audio/audio wrong.wav<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://bswic40glfpoi::::res://themes/FONTE.tres<>uid://d135j847anoft::::res://themes/botaoaudio.tres
+jogo2.tscn::PackedScene::8093723404885532943::1714322646::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo2_controller.gd<>uid://cha60psmp1qud::::res://Resources/Jogo 2/jogo 2.tres<>uid://d135j847anoft::::res://themes/botaoaudio.tres<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://dchv76lm0kqtf::::res://Images/Jogo 1/audio icon2.svg<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://3xwjb1bdhomj::::res://Audio/Instruções/Jogo 2.wav<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://lgns6wsensd7::::res://Audio/audio wrong.wav<>uid://f6o8n0xf263n::::res://Audio/audio win.wav<>uid://yog4a8cikohl::::res://Audio/Parabens.wav
+jogo3.tscn::PackedScene::8736881735335365839::1714149110::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo3_controller.gd<>uid://wgmm7b74c05a
+jogo4.tscn::PackedScene::7945171553299241982::1714322108::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo4_controller.gd<>uid://ds6jiwabyrkfk::::res://Resources/Jogo 4/duas imagens.tres<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://dduwhxbgsqkts::::res://themes/botaoaudiopequeno.tres<>uid://dchv76lm0kqtf::::res://Images/Jogo 1/audio icon2.svg<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://dhotaox0htu1l::::res://Audio/Instruções/Jogo 4.wav<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://f6o8n0xf263n::::res://Audio/audio win.wav<>uid://lgns6wsensd7::::res://Audio/audio wrong.wav<>uid://yog4a8cikohl::::res://Audio/Parabens.wav
+jogo5.tscn::PackedScene::5901300128622541293::1714320543::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo5_controller.gd<>uid://crqbwep31am8b::::res://Resources/Jogo 5/intruso type.tres<>uid://dduwhxbgsqkts::::res://themes/botaoaudiopequeno.tres<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://dchv76lm0kqtf::::res://Images/Jogo 1/audio icon2.svg<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://tcs61b2c46xe::::res://Audio/Instruções/Jogo 5.wav<>uid://f6o8n0xf263n::::res://Audio/audio win.wav<>uid://lgns6wsensd7::::res://Audio/audio wrong.wav<>uid://yog4a8cikohl::::res://Audio/Parabens.wav
+jogo6.tscn::PackedScene::2011816630080042038::1714320543::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo6_controller.gd<>uid://dvnu52u5tloq0::::res://Resources/Jogo 6/jogo6.tres<>uid://dyoxr568nj7rb::::res://themes/OpenSans-SemiBold.ttf<>uid://cothvl5gfbaww::::res://themes/tema.tres<>uid://duvtrlavd8o2i::::res://Images/seta icon.svg<>uid://ceoxbyqw3awuq::::res://Audio/Instruções/Jogo 6.wav<>uid://bbsrdsjryc1x1::::res://themes/botao 2.tres<>uid://lgns6wsensd7::::res://Audio/audio wrong.wav<>uid://f6o8n0xf263n::::res://Audio/audio win.wav<>uid://yog4a8cikohl::::res://Audio/Parabens.wav
 paleta.png::CompressedTexture2D::8442956976165056804::1713893829::1713893833::1::::<><>::
 ::res://Scenes/Tutoriais/::1714082581
 tutorial 1.tscn::PackedScene::2641245278924551849::1714082581::0::1::::<><>::uid://d135j847anoft
@@ -129,25 +127,25 @@ tipo_de_jogo.gd::GDScript::-1::1708866140::0::1::::GameType<>Resource<>::
 ::res://Scripts/Scenes/::1714073843
 menu.gd::GDScript::-1::1708866140::0::1::::<>Control<>::
 selecionar_jogo.gd::GDScript::-1::1714073843::0::1::::<>Control<>::
-::res://Scripts/Scenes/Jogos/::1714152416
-jogo1_controller.gd::GDScript::-1::1714152416::0::1::::<>Node<>::
+::res://Scripts/Scenes/Jogos/::1714321648
+jogo1_controller.gd::GDScript::-1::1714319877::0::1::::<>Node<>::
 jogo2_controller.gd::GDScript::-1::1714151440::0::1::::<>Node<>::
 jogo3_controller.gd::GDScript::-1::1714148923::0::1::::<>Node<>::
-jogo4_controller.gd::GDScript::-1::1714128192::0::1::::<>Node<>::
-jogo5_controller.gd::GDScript::-1::1714142243::0::1::::<>Node<>::
-jogo6_controller.gd::GDScript::-1::1714141346::0::1::::<>Node<>::
+jogo4_controller.gd::GDScript::-1::1714321648::0::1::::<>Node<>::
+jogo5_controller.gd::GDScript::-1::1714320540::0::1::::<>Node<>::
+jogo6_controller.gd::GDScript::-1::1714320254::0::1::::<>Node<>::
 ::res://sdk/::1714092489
-::res://themes/::1714150813
-botao1.tres::StyleBoxFlat::6083334290763288100::1714150813::0::1::::<><>::
-botao 2.tres::StyleBoxFlat::2494806833291080064::1714148501::0::1::::<><>::
+::res://themes/::1714321914
+botao1.tres::StyleBoxFlat::6083334290763288100::1714319877::0::1::::<><>::
+botao 2.tres::StyleBoxFlat::2494806833291080064::1714319877::0::1::::<><>::
 botao 3.tres::StyleBoxFlat::5333796000649222265::1714066696::0::1::::<><>::
-botao 4.tres::StyleBoxFlat::1927376513452559543::1714150813::0::1::::<><>::
+botao 4.tres::StyleBoxFlat::1927376513452559543::1714319877::0::1::::<><>::
 botao 5.tres::StyleBoxFlat::8171564109986930058::1714066703::0::1::::<><>::
 botao 6.tres::StyleBoxFlat::883595914111552111::1714066850::0::1::::<><>::
 botao sobre.tres::StyleBoxFlat::3029618123866420674::1714124613::0::1::::<><>::
-botaoaudio.tres::Theme::9043813924234300573::1714148501::0::1::::<><>::
-botaoaudiopequeno.tres::Theme::7412465621351957728::1714148501::0::1::::<><>::
+botaoaudio.tres::Theme::9043813924234300573::1714321914::0::1::::<><>::
+botaoaudiopequeno.tres::Theme::7412465621351957728::1714321876::0::1::::<><>::
 FONTE.tres::Theme::3695727049381731704::1714099431::0::1::::<><>::uid://dyoxr568nj7rb
 OpenSans-Bold.ttf::FontFile::5087946632583971715::1713231279::1713231279::1::::<><>::
 OpenSans-SemiBold.ttf::FontFile::8874124061385503035::1713230099::1713230100::1::::<><>::
-tema.tres::Theme::5795171500647477658::1714148501::0::1::::<><>::
+tema.tres::Theme::5795171500647477658::1714319877::0::1::::<><>::

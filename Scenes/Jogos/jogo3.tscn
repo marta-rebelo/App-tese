@@ -1,10 +1,11 @@
-[gd_scene load_steps=14 format=3 uid="uid://dwqhfvs6wtxtv"]
+[gd_scene load_steps=15 format=3 uid="uid://dwqhfvs6wtxtv"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo3_controller.gd" id="1_klwsd"]
 [ext_resource type="Resource" uid="uid://wgmm7b74c05a" path="res://Resources/Jogo 3/jogo3.tres" id="2_dh73e"]
 [ext_resource type="Texture2D" uid="uid://dchv76lm0kqtf" path="res://Images/Jogo 1/audio icon2.svg" id="4_dvrr1"]
 [ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="4_lvli8"]
 [ext_resource type="Theme" uid="uid://d135j847anoft" path="res://themes/botaoaudio.tres" id="5_1nr42"]
+[ext_resource type="Theme" uid="uid://divqfx1mbhnj3" path="res://themes/tema jogo 1.tres" id="5_jq6nf"]
 [ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="6_uik24"]
 [ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://themes/botao 2.tres" id="7_ia7yc"]
 [ext_resource type="AudioStream" uid="uid://bst5xyknpwpkq" path="res://Audio/Instruções/Jogo 3.wav" id="7_u4b6s"]
@@ -72,17 +73,20 @@ stretch_mode = 5
 [node name="Audio" type="Button" parent="Jogo 1/VBoxContainer/ImageHolder"]
 modulate = Color(1, 1, 1, 0.937255)
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 0.22
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.22
-offset_left = -91.5
-offset_right = 92.5
-offset_bottom = 191.0
+anchor_bottom = 0.5
+offset_left = -95.0
+offset_top = -95.0
+offset_right = 95.0
+offset_bottom = 95.0
 grow_horizontal = 2
+grow_vertical = 2
 theme = ExtResource("5_1nr42")
 icon = ExtResource("4_dvrr1")
+icon_alignment = 1
 expand_icon = true
 
 [node name="respostas" type="HBoxContainer" parent="Jogo 1"]
@@ -92,10 +96,10 @@ anchor_left = 0.5
 anchor_top = 0.731
 anchor_right = 0.5
 anchor_bottom = 0.731
-offset_left = -197.0
-offset_top = -75.8
-offset_right = 197.0
-offset_bottom = 76.2
+offset_left = -175.0
+offset_top = -54.8
+offset_right = 175.0
+offset_bottom = 75.2
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_constants/separation = 50
@@ -104,14 +108,14 @@ theme_override_constants/separation = 50
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("4_lvli8")
+theme = ExtResource("5_jq6nf")
 theme_override_font_sizes/font_size = 35
 
 [node name="Button2" type="Button" parent="Jogo 1/respostas"]
 custom_minimum_size = Vector2(100, 100)
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("4_lvli8")
+theme = ExtResource("5_jq6nf")
 theme_override_font_sizes/font_size = 35
 
 [node name="voltar" type="Button" parent="Jogo 1"]

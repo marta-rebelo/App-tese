@@ -6,28 +6,28 @@
 bg_color = Color(0.278431, 0.788235, 0.54902, 1)
 border_width_bottom = 15
 border_color = Color(0.235294, 0.670588, 0.462745, 1)
-corner_radius_top_left = 40
-corner_radius_top_right = 40
-corner_radius_bottom_right = 40
-corner_radius_bottom_left = 40
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tpiqt"]
 bg_color = Color(0.278431, 0.788235, 0.54902, 1)
 border_width_bottom = 15
 border_color = Color(0.235294, 0.670588, 0.462745, 1)
-corner_radius_top_left = 40
-corner_radius_top_right = 40
-corner_radius_bottom_right = 40
-corner_radius_bottom_left = 40
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_slib5"]
 bg_color = Color(0.278431, 0.788235, 0.54902, 1)
-border_width_bottom = 15
-border_color = Color(0.235294, 0.670588, 0.462745, 1)
-corner_radius_top_left = 40
-corner_radius_top_right = 40
-corner_radius_bottom_right = 40
-corner_radius_bottom_left = 40
+border_width_top = 15
+border_color = Color(0.968627, 0.905882, 0.815686, 1)
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
 
 [resource]
 Button/colors/font_color = Color(0.247059, 0.235294, 0.227451, 1)

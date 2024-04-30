@@ -1,14 +1,17 @@
-[gd_scene load_steps=12 format=3 uid="uid://3wslc2244aoc"]
+[gd_scene load_steps=15 format=3 uid="uid://3wslc2244aoc"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo6_controller.gd" id="1_ns8h0"]
 [ext_resource type="Resource" uid="uid://dvnu52u5tloq0" path="res://Resources/Jogo 6/jogo6.tres" id="2_ayfs4"]
 [ext_resource type="FontFile" uid="uid://dyoxr568nj7rb" path="res://themes/OpenSans-SemiBold.ttf" id="3_822rv"]
 [ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="3_quh60"]
 [ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="5_5bef1"]
+[ext_resource type="Theme" uid="uid://divqfx1mbhnj3" path="res://themes/tema jogo 1.tres" id="5_uriv3"]
 [ext_resource type="AudioStream" uid="uid://ceoxbyqw3awuq" path="res://Audio/Instruções/Jogo 6.wav" id="6_nql0c"]
 [ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://themes/botao 2.tres" id="6_xmq24"]
 [ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Audio/audio wrong.wav" id="7_ia5ql"]
+[ext_resource type="StyleBox" uid="uid://3chfguel1fv8" path="res://Scenes/Jogos/botao azul menu parabens.tres" id="7_xnvcn"]
 [ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Audio/audio win.wav" id="8_6pgow"]
+[ext_resource type="StyleBox" uid="uid://n8jsuk1mc25l" path="res://themes/botao 2 menu parabens.tres" id="9_5f787"]
 [ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Audio/Parabens.wav" id="10_o4jwf"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_0rfhx"]
@@ -50,33 +53,33 @@ autowrap_mode = 2
 
 [node name="respostas" type="HBoxContainer" parent="Control"]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.588
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.588
-offset_left = -205.0
-offset_top = 56.6
-offset_right = 205.0
-offset_bottom = 193.6
+anchor_bottom = 1.0
+offset_left = -175.0
+offset_top = -270.0
+offset_right = 175.0
+offset_bottom = -140.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 theme = ExtResource("3_quh60")
 theme_override_constants/separation = 50
 
 [node name="Button" type="Button" parent="Control/respostas"]
-custom_minimum_size = Vector2(180, 20)
+custom_minimum_size = Vector2(90, 20)
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("3_quh60")
+theme = ExtResource("5_uriv3")
 theme_override_font_sizes/font_size = 45
 button_mask = 5
 
 [node name="Button2" type="Button" parent="Control/respostas"]
-custom_minimum_size = Vector2(180, 20)
+custom_minimum_size = Vector2(90, 20)
 layout_mode = 2
 size_flags_horizontal = 3
-theme = ExtResource("3_quh60")
+theme = ExtResource("5_uriv3")
 theme_override_font_sizes/font_size = 45
 
 [node name="voltar" type="Button" parent="Control"]
@@ -129,6 +132,7 @@ size_flags_vertical = 3
 theme = ExtResource("3_quh60")
 theme_override_fonts/font = ExtResource("3_822rv")
 theme_override_font_sizes/font_size = 30
+theme_override_styles/pressed = ExtResource("7_xnvcn")
 text = "Jogar de novo"
 
 [node name="menu" type="Button" parent="Control/ColorRect/VBoxContainer"]
@@ -139,7 +143,7 @@ theme_override_fonts/font = ExtResource("3_822rv")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = ExtResource("6_xmq24")
 theme_override_styles/hover = ExtResource("6_xmq24")
-theme_override_styles/pressed = ExtResource("6_xmq24")
+theme_override_styles/pressed = ExtResource("9_5f787")
 theme_override_styles/disabled = ExtResource("6_xmq24")
 text = "Menu"
 
