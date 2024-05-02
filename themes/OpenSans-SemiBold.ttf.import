@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dyoxr568nj7rb"
-path="res://.godot/imported/OpenSans-SemiBold.ttf-84380da64ab3cd54e631193e60b52cc1.fontdata"
+path="res://.godot/imported/OpenSans-SemiBold.ttf-9119394e31a69fcc95d89a2c6875e300.fontdata"
 
 [deps]
 
-source_file="res://themes/OpenSans-SemiBold.ttf"
-dest_files=["res://.godot/imported/OpenSans-SemiBold.ttf-84380da64ab3cd54e631193e60b52cc1.fontdata"]
+source_file="res://Themes/OpenSans-SemiBold.ttf"
+dest_files=["res://.godot/imported/OpenSans-SemiBold.ttf-9119394e31a69fcc95d89a2c6875e300.fontdata"]
 
 [params]
 

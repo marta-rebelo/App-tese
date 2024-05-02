@@ -1,11 +1,11 @@
 [gd_scene load_steps=7 format=3 uid="uid://dpfm1eoby5gsu"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/menu.gd" id="1_0o3k3"]
-[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://themes/tema.tres" id="2_3omfh"]
-[ext_resource type="FontFile" uid="uid://dyoxr568nj7rb" path="res://themes/OpenSans-SemiBold.ttf" id="2_e7d0x"]
-[ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://themes/botao 2.tres" id="4_0sjrp"]
-[ext_resource type="StyleBox" uid="uid://c6etivujsdsvc" path="res://themes/botao 2 pressed.tres" id="5_71k27"]
-[ext_resource type="Theme" uid="uid://bswic40glfpoi" path="res://themes/FONTE.tres" id="5_hyrht"]
+[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://Themes/tema.tres" id="2_3omfh"]
+[ext_resource type="FontFile" uid="uid://dyoxr568nj7rb" path="res://Themes/OpenSans-SemiBold.ttf" id="2_e7d0x"]
+[ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://Themes/botao 2.tres" id="4_0sjrp"]
+[ext_resource type="StyleBox" uid="uid://c6etivujsdsvc" path="res://Themes/botao 2 pressed.tres" id="5_71k27"]
+[ext_resource type="Theme" uid="uid://bswic40glfpoi" path="res://Themes/FONTE.tres" id="5_hyrht"]
 
 [node name="Menu" type="Control"]
 layout_mode = 3
