@@ -30,4 +30,4 @@ func _on_jogo_6_pressed():
 
 
 func _on_voltar_pressed():
-	get_tree().change_scene_to_file("res://Scenes/menu.tscn")
+	get_tree().change_scene_to_file("res://main.tscn")

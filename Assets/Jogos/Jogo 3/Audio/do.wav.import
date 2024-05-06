@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c22tkmshdkhrj"
+path="res://.godot/imported/do.wav-02e6c2a48d1b374a47a7236ebc1ebcbd.sample"
+
+[deps]
+
+source_file="res://Assets/Jogos/Jogo 3/Audio/do.wav"
+dest_files=["res://.godot/imported/do.wav-02e6c2a48d1b374a47a7236ebc1ebcbd.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

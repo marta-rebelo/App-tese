@@ -1,21 +1,21 @@
 [gd_scene load_steps=23 format=3 uid="uid://1d3v22be545x"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/selecionar_jogo.gd" id="1_yqoph"]
-[ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="2_hxhun"]
-[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://Themes/tema.tres" id="3_hlyo0"]
-[ext_resource type="Theme" uid="uid://577qufh1kjfj" path="res://Themes/botao 1.tres" id="3_p3vlm"]
-[ext_resource type="StyleBox" uid="uid://csw2vk16owcqm" path="res://Themes/botao1.tres" id="4_0ncn8"]
-[ext_resource type="Texture2D" uid="uid://btt3ar1fy5l1l" path="res://Images/botoes menu/jogo 1.svg" id="5_cuc7c"]
-[ext_resource type="Texture2D" uid="uid://bwhvltpy2k7xi" path="res://Images/botoes menu/jogo 2.svg" id="7_feio7"]
-[ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://Themes/botao 2.tres" id="7_lshuv"]
-[ext_resource type="Texture2D" uid="uid://bj5hltlyr75w2" path="res://Images/botoes menu/jogo 3.svg" id="8_2m3n4"]
-[ext_resource type="Texture2D" uid="uid://xj2wbgvnmp5" path="res://Images/botoes menu/jogo 4.svg" id="9_axs1a"]
-[ext_resource type="StyleBox" uid="uid://ch8y3ua5uhsld" path="res://Themes/botao 3.tres" id="9_uamck"]
-[ext_resource type="Texture2D" uid="uid://dofxdd5jm1gkh" path="res://Images/botoes menu/jogo 5.svg" id="10_6tg60"]
-[ext_resource type="Texture2D" uid="uid://c1hobi24qg4xs" path="res://Images/botoes menu/jogo 6.svg" id="11_1f4p3"]
-[ext_resource type="StyleBox" uid="uid://2pvuyxcfdq12" path="res://Themes/botao 4.tres" id="12_g3vsu"]
-[ext_resource type="StyleBox" uid="uid://doomp44nwaule" path="res://Themes/botao 5.tres" id="13_a5xpk"]
-[ext_resource type="StyleBox" uid="uid://muaxwejjhl0j" path="res://Themes/botao 6.tres" id="15_7a0cx"]
+[ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Assets/Common/UI/seta icon.svg" id="2_hxhun"]
+[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://Themes/Botões/tema.tres" id="3_hlyo0"]
+[ext_resource type="Theme" uid="uid://577qufh1kjfj" path="res://Themes/Botões/botao 1.tres" id="3_p3vlm"]
+[ext_resource type="StyleBox" uid="uid://csw2vk16owcqm" path="res://Themes/Botões/botao1.tres" id="4_0ncn8"]
+[ext_resource type="Texture2D" uid="uid://btt3ar1fy5l1l" path="res://Assets/Common/UI/botoes menu/jogo 1.svg" id="5_cuc7c"]
+[ext_resource type="Texture2D" uid="uid://bwhvltpy2k7xi" path="res://Assets/Common/UI/botoes menu/jogo 2.svg" id="7_feio7"]
+[ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://Themes/Botões/botao 2.tres" id="7_lshuv"]
+[ext_resource type="Texture2D" uid="uid://bj5hltlyr75w2" path="res://Assets/Common/UI/botoes menu/jogo 3.svg" id="8_2m3n4"]
+[ext_resource type="Texture2D" uid="uid://xj2wbgvnmp5" path="res://Assets/Common/UI/botoes menu/jogo 4.svg" id="9_axs1a"]
+[ext_resource type="StyleBox" uid="uid://ch8y3ua5uhsld" path="res://Themes/Botões/botao 3.tres" id="9_uamck"]
+[ext_resource type="Texture2D" uid="uid://dofxdd5jm1gkh" path="res://Assets/Common/UI/botoes menu/jogo 5.svg" id="10_6tg60"]
+[ext_resource type="Texture2D" uid="uid://c1hobi24qg4xs" path="res://Assets/Common/UI/botoes menu/jogo 6.svg" id="11_1f4p3"]
+[ext_resource type="StyleBox" uid="uid://2pvuyxcfdq12" path="res://Themes/Botões/botao 4.tres" id="12_g3vsu"]
+[ext_resource type="StyleBox" uid="uid://doomp44nwaule" path="res://Themes/Botões/botao 5.tres" id="13_a5xpk"]
+[ext_resource type="StyleBox" uid="uid://muaxwejjhl0j" path="res://Themes/Botões/botao 6.tres" id="15_7a0cx"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6i55p"]
 
@@ -88,8 +88,6 @@ theme_override_font_sizes/font_size = 35
 text = "Seleciona um jogo
 "
 vertical_alignment = 1
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="voltar" type="Button" parent="."]
 layout_mode = 1
@@ -231,9 +229,6 @@ text = "
 icon = ExtResource("11_1f4p3")
 icon_alignment = 1
 expand_icon = true
-
-[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
-layout_mode = 2
 
 [connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]
 [connection signal="pressed" from="VBoxContainer/GridContainer/jogo 1" to="." method="_on_button_pressed"]

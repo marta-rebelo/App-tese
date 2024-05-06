@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b184cko8f5nc1"
+path="res://.godot/imported/faca.wav-9454209cbd07750a1b742161f8d3a392.sample"
+
+[deps]
+
+source_file="res://Assets/Jogos/Jogo 4/Audio/faca.wav"
+dest_files=["res://.godot/imported/faca.wav-9454209cbd07750a1b742161f8d3a392.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

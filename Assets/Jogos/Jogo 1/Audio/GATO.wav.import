@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bvo5uuxaob3gt"
+path="res://.godot/imported/GATO.wav-cda9080a06b3f2ec2bf502bb4483610d.sample"
+
+[deps]
+
+source_file="res://Assets/Jogos/Jogo 1/Audio/GATO.wav"
+dest_files=["res://.godot/imported/GATO.wav-cda9080a06b3f2ec2bf502bb4483610d.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

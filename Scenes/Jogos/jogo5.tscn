@@ -1,16 +1,16 @@
 [gd_scene load_steps=13 format=3 uid="uid://cqcvsy4wqp582"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo5_controller.gd" id="1_qq7we"]
-[ext_resource type="Resource" uid="uid://crqbwep31am8b" path="res://Resources/Jogo 5/intruso type.tres" id="2_h3jjv"]
-[ext_resource type="Theme" uid="uid://dduwhxbgsqkts" path="res://Themes/botaoaudiopequeno.tres" id="4_3np5u"]
-[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://Themes/tema.tres" id="4_p8qcq"]
-[ext_resource type="Texture2D" uid="uid://dchv76lm0kqtf" path="res://Images/Jogo 1/audio icon2.svg" id="4_r5mbd"]
-[ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="6_nuuax"]
-[ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://Themes/botao 2.tres" id="7_jbub4"]
-[ext_resource type="AudioStream" uid="uid://tcs61b2c46xe" path="res://Audio/Instruções/Jogo 5.wav" id="7_tgvki"]
-[ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Audio/audio win.wav" id="8_m170p"]
-[ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Audio/audio wrong.wav" id="9_46pe2"]
-[ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Audio/Parabens.wav" id="11_gxfqa"]
+[ext_resource type="Resource" uid="uid://crqbwep31am8b" path="res://Perguntas/Categorias/jogo5.tres" id="2_h3jjv"]
+[ext_resource type="Theme" uid="uid://dduwhxbgsqkts" path="res://Themes/Botões/botaoaudiopequeno.tres" id="4_3np5u"]
+[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://Themes/Botões/tema.tres" id="4_p8qcq"]
+[ext_resource type="Texture2D" uid="uid://dchv76lm0kqtf" path="res://Assets/Common/UI/audio icon2.svg" id="4_r5mbd"]
+[ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Assets/Common/UI/seta icon.svg" id="6_nuuax"]
+[ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://Themes/Botões/botao 2.tres" id="7_jbub4"]
+[ext_resource type="AudioStream" uid="uid://tcs61b2c46xe" path="res://Assets/Instruções/Jogo 5.wav" id="7_tgvki"]
+[ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Assets/Common/Audio/audio win.wav" id="8_m170p"]
+[ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Assets/Common/Audio/audio wrong.wav" id="9_46pe2"]
+[ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Assets/Common/Audio/Parabens.wav" id="11_gxfqa"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_41xrn"]
 
@@ -26,29 +26,6 @@ anchor_bottom = 1.0
 offset_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-
-[node name="perguntas" type="VBoxContainer" parent="Control"]
-visible = false
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -239.0
-offset_top = 9.0
-offset_right = 241.0
-offset_bottom = 304.0
-grow_horizontal = 2
-
-[node name="texto das perguntas" type="Label" parent="Control/perguntas"]
-custom_minimum_size = Vector2(0, 60)
-layout_mode = 2
-size_flags_vertical = 6
-theme_override_colors/font_color = Color(0.141176, 0.141176, 0.141176, 1)
-theme_override_font_sizes/font_size = 90
-text = "Pergunta"
-horizontal_alignment = 1
-vertical_alignment = 1
-autowrap_mode = 2
 
 [node name="respostas" type="VBoxContainer" parent="Control"]
 layout_mode = 1
@@ -143,22 +120,6 @@ theme = ExtResource("4_3np5u")
 theme_override_font_sizes/font_size = 30
 icon = ExtResource("4_r5mbd")
 expand_icon = true
-
-[node name="audio" type="HBoxContainer" parent="Control"]
-visible = false
-layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.5
-anchor_top = 0.594
-anchor_right = 0.5
-anchor_bottom = 0.594
-offset_left = -189.0
-offset_top = 103.8
-offset_right = 189.0
-offset_bottom = 230.8
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_constants/separation = 100
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
 

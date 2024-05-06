@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=6 format=3 uid="uid://bniugnt0blmms"]
+
+[ext_resource type="AudioStream" uid="uid://b3syr5itsik02" path="res://Assets/Jogos/Jogo 1/Audio/C.wav" id="1_40mja"]
+[ext_resource type="AudioStream" uid="uid://cnobg6dblf81r" path="res://Assets/Jogos/Jogo 1/Audio/G.wav" id="2_tdtpg"]
+[ext_resource type="AudioStream" uid="uid://bvo5uuxaob3gt" path="res://Assets/Jogos/Jogo 1/Audio/GATO.wav" id="3_4cqla"]
+[ext_resource type="Texture2D" uid="uid://bh8xriomae1gp" path="res://Assets/Jogos/Jogo 1/Imagens/gato.svg" id="4_of2rp"]
+[ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="5_miu48"]
+
+[resource]
+script = ExtResource("5_miu48")
+question_info = ""
+type = 0
+question_image = ExtResource("4_of2rp")
+question_audio = ExtResource("3_4cqla")
+options = Array[String](["c", "g"])
+options_image = Array[Texture2D]([])
+options_audio1 = ExtResource("1_40mja")
+options_audio2 = ExtResource("2_tdtpg")
+correct = "g"

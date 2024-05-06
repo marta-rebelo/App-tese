@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GameType" load_steps=5 format=3 uid="uid://ds07i6e4vvqgs"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/lista_de_perguntas.gd" id="1_flgnn"]
+[ext_resource type="Resource" uid="uid://c0k26ukiphm5l" path="res://Perguntas/Jogo 1/chuva.tres" id="3_b2oo8"]
+[ext_resource type="Resource" uid="uid://d2m2424os4nl7" path="res://Perguntas/Jogo 1/tulipa.tres" id="4_ipsw6"]
+[ext_resource type="Resource" uid="uid://bniugnt0blmms" path="res://Perguntas/Jogo 1/gato.tres" id="4_qqt6b"]
+
+[resource]
+script = ExtResource("1_flgnn")
+type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("4_qqt6b"), ExtResource("3_b2oo8"), ExtResource("4_ipsw6")])

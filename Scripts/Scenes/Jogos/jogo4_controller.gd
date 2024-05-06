@@ -31,7 +31,6 @@ func load_game() -> void:
 	if index == 0:	
 		$Control/audio1.disabled = true
 		$"Control/audio 2".disabled = true
-#		await get_tree().create_timer(1).timeout
 		$"Control/Instrucoes".play()
 		$Timer.start()
 		
@@ -74,7 +73,7 @@ func _next_question() -> void:
 	for bt in buttons:
 		bt.self_modulate=Color.WHITE
 	index +=1
-	if index >= 2:
+	if index >= 3:
 		_game_over()
 	else:
 		load_game()

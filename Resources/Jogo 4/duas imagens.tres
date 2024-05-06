@@ -1,8 +1,0 @@
-[gd_resource type="Resource" script_class="GameType" load_steps=3 format=3 uid="uid://ds6jiwabyrkfk"]
-
-[ext_resource type="Script" path="res://Scripts/Recursos/tipo_de_jogo.gd" id="1_b7cjl"]
-[ext_resource type="Resource" uid="uid://prq4i0v1tf7b" path="res://Resources/Jogo 4/vaca faca.tres" id="2_qmcif"]
-
-[resource]
-script = ExtResource("1_b7cjl")
-type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_qmcif"), ExtResource("2_qmcif")])

@@ -1,21 +1,19 @@
-[gd_scene load_steps=19 format=3 uid="uid://d4hwcohpdl44x"]
+[gd_scene load_steps=17 format=3 uid="uid://d4hwcohpdl44x"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo1_controller.gd" id="1_sjwyw"]
-[ext_resource type="Resource" uid="uid://ds07i6e4vvqgs" path="res://Resources/Jogo 1/jogo1.tres" id="2_3lcda"]
-[ext_resource type="AudioStream" uid="uid://bc240rb7sblyi" path="res://Audio/Instruções/Jogo 1.wav" id="3_cc05o"]
-[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://Themes/tema.tres" id="3_tsq0y"]
-[ext_resource type="Theme" uid="uid://dduwhxbgsqkts" path="res://Themes/botaoaudiopequeno.tres" id="4_f0qy7"]
-[ext_resource type="Texture2D" uid="uid://dchv76lm0kqtf" path="res://Images/Jogo 1/audio icon2.svg" id="5_6mbt1"]
-[ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Images/seta icon.svg" id="6_xfctd"]
-[ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Audio/Parabens.wav" id="7_4qoid"]
-[ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Audio/audio win.wav" id="7_xhlxp"]
-[ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Audio/audio wrong.wav" id="9_70e3n"]
-[ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://Themes/botao 2.tres" id="11_14aju"]
-[ext_resource type="Theme" uid="uid://bswic40glfpoi" path="res://Themes/FONTE.tres" id="11_hmij5"]
-[ext_resource type="Theme" uid="uid://divqfx1mbhnj3" path="res://Themes/tema jogo 1.tres" id="11_qmpis"]
-[ext_resource type="Theme" uid="uid://d135j847anoft" path="res://Themes/botaoaudio.tres" id="11_re3af"]
-[ext_resource type="StyleBox" uid="uid://3chfguel1fv8" path="res://Scenes/Jogos/botao azul menu parabens.tres" id="14_gstmq"]
-[ext_resource type="StyleBox" uid="uid://n8jsuk1mc25l" path="res://Themes/botao 2 menu parabens.tres" id="15_i5rpi"]
+[ext_resource type="Resource" uid="uid://ds07i6e4vvqgs" path="res://Perguntas/Categorias/jogo1.tres" id="2_3lcda"]
+[ext_resource type="AudioStream" uid="uid://bc240rb7sblyi" path="res://Assets/Instruções/Jogo 1.wav" id="3_cc05o"]
+[ext_resource type="Theme" uid="uid://cothvl5gfbaww" path="res://Themes/Botões/tema.tres" id="3_tsq0y"]
+[ext_resource type="Theme" uid="uid://dduwhxbgsqkts" path="res://Themes/Botões/botaoaudiopequeno.tres" id="4_f0qy7"]
+[ext_resource type="Texture2D" uid="uid://dchv76lm0kqtf" path="res://Assets/Common/UI/audio icon2.svg" id="5_6mbt1"]
+[ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Assets/Common/UI/seta icon.svg" id="6_xfctd"]
+[ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Assets/Common/Audio/Parabens.wav" id="7_4qoid"]
+[ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Assets/Common/Audio/audio win.wav" id="7_xhlxp"]
+[ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Assets/Common/Audio/audio wrong.wav" id="9_70e3n"]
+[ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://Themes/Botões/botao 2.tres" id="11_14aju"]
+[ext_resource type="Theme" uid="uid://divqfx1mbhnj3" path="res://Themes/Botões/tema jogo 1.tres" id="11_qmpis"]
+[ext_resource type="StyleBox" uid="uid://3chfguel1fv8" path="res://Themes/Botões/botao azul menu parabens.tres" id="14_gstmq"]
+[ext_resource type="StyleBox" uid="uid://n8jsuk1mc25l" path="res://Themes/Botões/botao 2 menu parabens.tres" id="15_i5rpi"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_pki21"]
 
@@ -38,22 +36,6 @@ offset_bottom = 6.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="audio" type="HBoxContainer" parent="Control"]
-visible = false
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -139.0
-offset_top = -153.0
-offset_right = -70.0
-offset_bottom = -73.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_constants/separation = 120
-
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Control"]
@@ -63,81 +45,6 @@ stream = ExtResource("9_70e3n")
 
 [node name="certo" type="AudioStreamPlayer" parent="Control"]
 stream = ExtResource("7_xhlxp")
-
-[node name="Início" type="ColorRect" parent="Control"]
-visible = false
-layout_mode = 0
-offset_left = -3.0
-offset_top = 4.0
-offset_right = 480.0
-offset_bottom = 802.0
-color = Color(0.968627, 0.905882, 0.815686, 1)
-
-[node name="Button2" type="Button" parent="Control/Início"]
-visible = false
-custom_minimum_size = Vector2(150, 150)
-layout_mode = 1
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-offset_left = -87.5
-offset_top = -170.0
-offset_right = 92.5
-offset_bottom = 23.0
-grow_horizontal = 2
-grow_vertical = 2
-theme = ExtResource("11_re3af")
-theme_override_colors/font_color = Color(0.141176, 0.137255, 0.14902, 1)
-theme_override_colors/font_pressed_color = Color(0.141176, 0.137255, 0.14902, 1)
-theme_override_colors/font_hover_color = Color(0.141176, 0.137255, 0.14902, 1)
-theme_override_font_sizes/font_size = 130
-text = "?"
-
-[node name="Instruções" type="AudioStreamPlayer" parent="Control/Início"]
-stream = ExtResource("3_cc05o")
-
-[node name="Início2" type="ColorRect" parent="Control/Início"]
-visible = false
-layout_mode = 2
-offset_left = -2.0
-offset_top = -12.0
-offset_right = 501.0
-offset_bottom = 727.0
-color = Color(0.631373, 0.580392, 0.505882, 1)
-
-[node name="Button" type="Button" parent="Control/Início"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -94.0
-offset_top = -240.0
-offset_right = 98.0
-offset_bottom = -138.0
-grow_horizontal = 2
-grow_vertical = 0
-theme = ExtResource("3_tsq0y")
-theme_override_font_sizes/font_size = 40
-theme_override_styles/normal = ExtResource("11_14aju")
-text = "Começar"
-
-[node name="Label" type="Label" parent="Control/Início"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -220.5
-offset_top = 99.0
-offset_right = 221.5
-offset_bottom = 196.0
-grow_horizontal = 2
-theme = ExtResource("11_hmij5")
-text = "Como jogar"
-horizontal_alignment = 1
 
 [node name="voltar" type="Button" parent="Control"]
 layout_mode = 1
@@ -155,9 +62,6 @@ icon = ExtResource("6_xfctd")
 flat = true
 icon_alignment = 1
 expand_icon = true
-
-[node name="CanvasLayer" type="CanvasLayer" parent="Control"]
-visible = false
 
 [node name="respostas" type="HBoxContainer" parent="Control"]
 layout_mode = 1
@@ -314,8 +218,10 @@ text = "Menu"
 [node name="Parabéns" type="AudioStreamPlayer" parent="Control/ColorRect"]
 stream = ExtResource("7_4qoid")
 
+[node name="Instrucoes" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_cc05o")
+
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="pressed" from="Control/Início/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Control/voltar" to="." method="_on_voltar_pressed"]
 [connection signal="pressed" from="Control/audio1" to="." method="_on_audio_1_pressed"]
 [connection signal="pressed" from="Control/audio 2" to="." method="_on_audio_2_pressed"]

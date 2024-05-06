@@ -20,8 +20,6 @@ func _ready() -> void:
 	
 func load_game() -> void:
 	if index == 0:	
-		
-#		await get_tree().create_timer(1).timeout
 		$"Instrucoes".play()
 		$Timer.start()
 	

@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://ds5yijl6t2nd6"
+path="res://.godot/imported/mao.wav-663e43915e4925361c6f57b3e456a87b.sample"
+
+[deps]
+
+source_file="res://Assets/Jogos/Jogo 3/Audio/mao.wav"
+dest_files=["res://.godot/imported/mao.wav-663e43915e4925361c6f57b3e456a87b.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -27,8 +27,7 @@ func load_game() -> void:
 	if index == 0:	
 		$Control/audio1.disabled = true
 		$"Control/audio 2".disabled = true
-#		await get_tree().create_timer(1).timeout
-		$"Control/Início/Instruções".play()
+		$Instrucoes.play()
 		$Timer.start()
 		
 	question_image.texture = current_game.question_image
@@ -41,12 +40,9 @@ func load_game() -> void:
 
 	
 	
-#	$"Control/Início".hide()
-	
 	
 	question_audio.stream = current_game.question_audio
-	
-#	await get_tree().create_timer(13).timeout
+
 	if index >= 1:
 		question_audio.play()
 	
@@ -69,7 +65,7 @@ func _buttons_answer(button) -> void:
 		button.modulate = Color(2.1, 0, 0.3)
 		set("theme_override_colors/font_color", Color("fcff00"))
 		$Control/errado.play()
-#.show()
+
 func _next_question() -> void:
 	
 	for bt in buttons:
@@ -118,9 +114,6 @@ func _on_button_pressed():
 	$"Control/Início/Instruções".stop()
 	question_audio.stream = current_game.question_audio
 	
-#	question_audio.play()
-
-
 
 
 func _on_timer_timeout():
@@ -130,4 +123,4 @@ func _on_timer_timeout():
 		buttons[i].disabled = false
 	$Control/audio1.disabled = false
 	$"Control/audio 2".disabled = false
-	question_audio.play()
+	

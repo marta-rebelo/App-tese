@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=6 format=3 uid="uid://c0k26ukiphm5l"]
+
+[ext_resource type="AudioStream" uid="uid://cgw0cke45yvkp" path="res://Assets/Jogos/Jogo 1/Audio/J.wav" id="1_oxy6i"]
+[ext_resource type="AudioStream" uid="uid://c00gs2b32fj8i" path="res://Assets/Jogos/Jogo 1/Audio/CH.wav" id="2_1qwvb"]
+[ext_resource type="AudioStream" uid="uid://b51mbd8vltuxw" path="res://Assets/Jogos/Jogo 1/Audio/CHUVA.wav" id="3_rtb8j"]
+[ext_resource type="Texture2D" uid="uid://7ogjfruhqglw" path="res://Assets/Jogos/Jogo 1/Imagens/chuva copy.svg" id="4_3fhnb"]
+[ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="5_2dkk5"]
+
+[resource]
+script = ExtResource("5_2dkk5")
+question_info = ""
+options = Array[String](["j", "ch"])
+correct = "ch"
+question_image = ExtResource("4_3fhnb")
+options_image = Array[Texture2D]([])
+question_audio = ExtResource("3_rtb8j")
+options_audio1 = ExtResource("1_oxy6i")
+options_audio2 = ExtResource("2_1qwvb")

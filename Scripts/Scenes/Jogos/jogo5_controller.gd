@@ -9,7 +9,6 @@ var index: int
 var current_game: GameQuestion:
 	get: return game.type[index]
 
-@onready var texto_das_perguntas = $"Control/perguntas/texto das perguntas"
 @onready var options_audio1: AudioStreamPlayer = $Control/AudioStreamPlayer
 @onready var options_audio2: AudioStreamPlayer = $Control/AudioStreamPlayer2
 @onready var options_audio3: AudioStreamPlayer = $Control/AudioStreamPlayer3
@@ -32,9 +31,9 @@ func load_game() -> void:
 		$"Control/respostas2/audio 4".disabled = true
 		$"Control/Instrucoes".play()
 		$Timer.start()
-	texto_das_perguntas.text = current_game.question_info
+	
 	var options = current_game.options
-#	var gameoptions_image = current_game.options_image
+
 	
 	options_audio1.stream = current_game.options_audio1
 	options_audio2.stream = current_game.options_audio2
@@ -44,7 +43,6 @@ func load_game() -> void:
 
 	for i in buttons.size():
 		buttons[i].text = options[i]
-#		buttons[i].get_child(0).texture = gameoptions_image[i]
 		buttons [i].pressed.connect(_buttons_answer.bind(buttons[i]))
 		if index == 0:	
 			buttons[i].disabled = true
@@ -70,7 +68,7 @@ func _next_question() -> void:
 	for bt in buttons:
 		bt.modulate=Color.WHITE
 	index +=1
-	if index >= 2:
+	if index >=3:
 		_game_over()
 	else:
 		load_game()

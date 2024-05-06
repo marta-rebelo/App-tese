@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://d07pptj3rb20j"
+path="res://.godot/imported/escola.wav-1105d63abc492672a9e003f07bd0f74a.sample"
+
+[deps]
+
+source_file="res://Assets/Jogos/Jogo 2/escola.wav"
+dest_files=["res://.godot/imported/escola.wav-1105d63abc492672a9e003f07bd0f74a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

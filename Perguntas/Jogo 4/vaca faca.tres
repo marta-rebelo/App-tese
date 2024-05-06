@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=5 format=3 uid="uid://prq4i0v1tf7b"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_26min"]
+[ext_resource type="AudioStream" uid="uid://b184cko8f5nc1" path="res://Assets/Jogos/Jogo 4/Audio/faca.wav" id="2_kfnnn"]
+[ext_resource type="Texture2D" uid="uid://ejne0lot4c7t" path="res://Assets/Jogos/Jogo 4/Imagens/Knife-Png-225.png" id="2_vnjha"]
+[ext_resource type="Texture2D" uid="uid://cggp6qedrsre" path="res://Assets/Jogos/Jogo 4/Imagens/vaca 3.svg" id="3_3hvyx"]
+
+[resource]
+script = ExtResource("1_26min")
+question_info = "F"
+options = Array[String](["vaca", "faca"])
+correct = "faca"
+options_image = Array[Texture2D]([ExtResource("3_3hvyx"), ExtResource("2_vnjha")])
+options_audio1 = ExtResource("2_kfnnn")
+options_audio2 = ExtResource("2_kfnnn")

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GameType" load_steps=5 format=3 uid="uid://ds6jiwabyrkfk"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/lista_de_perguntas.gd" id="1_b7cjl"]
+[ext_resource type="Resource" uid="uid://prq4i0v1tf7b" path="res://Perguntas/Jogo 4/vaca faca.tres" id="2_qmcif"]
+[ext_resource type="Resource" uid="uid://4qfxm0gt5hl4" path="res://Perguntas/Jogo 4/mota nota.tres" id="3_gq8v8"]
+[ext_resource type="Resource" uid="uid://bu2r5ltp56sf0" path="res://Perguntas/Jogo 4/gola cola.tres" id="4_ec1i4"]
+
+[resource]
+script = ExtResource("1_b7cjl")
+type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_qmcif"), ExtResource("3_gq8v8"), ExtResource("4_ec1i4")])

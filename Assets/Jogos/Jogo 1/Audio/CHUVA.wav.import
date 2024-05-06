@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b51mbd8vltuxw"
+path="res://.godot/imported/CHUVA.wav-fdfa0fb35ea328ef9904ac8123cf4852.sample"
+
+[deps]
+
+source_file="res://Assets/Jogos/Jogo 1/Audio/CHUVA.wav"
+dest_files=["res://.godot/imported/CHUVA.wav-fdfa0fb35ea328ef9904ac8123cf4852.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GameType" load_steps=5 format=3 uid="uid://crqbwep31am8b"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/lista_de_perguntas.gd" id="1_vj44n"]
+[ext_resource type="Resource" uid="uid://njpcqwukmubp" path="res://Perguntas/Jogo 5/cama cadeira gaveta caneta.tres" id="2_pv4pc"]
+[ext_resource type="Resource" uid="uid://cv2tnn41cens2" path="res://Perguntas/Jogo 5/fato familia fada borracha.tres" id="3_803c2"]
+[ext_resource type="Resource" uid="uid://xkt4ejm042k5" path="res://Perguntas/Jogo 5/livro limao lilas lapis.tres" id="4_ojs4r"]
+
+[resource]
+script = ExtResource("1_vj44n")
+type = Array[Resource("res://Scripts/Recursos/perguntas.gd")]([ExtResource("2_pv4pc"), ExtResource("3_803c2"), ExtResource("4_ojs4r")])
