@@ -12,8 +12,6 @@ var current_game: GameQuestion:
 @onready var options_audio1: AudioStreamPlayer = $"Control/AudioStreamPlayer"
 @onready var options_audio2: AudioStreamPlayer = $"Control/AudioStreamPlayer2"
 @onready var question_audio: AudioStreamPlayer = $Control/Imagem/PALAVRA
-#@onready var win_animation: CPUParticles2D = $Control/ColorRect/WinExplosion
-
 
 func _ready() -> void:
 	for button in $Control/respostas.get_children():
@@ -86,10 +84,9 @@ func _next_question() -> void:
 
 func _game_over() -> void:
 	
-	$Control/ColorRect.show()
-	$"Control/ColorRect/Parabéns".play()
-	#$Control/ColorRect/WinExplosion.emitting = true
-	
+	$ColorRect.show()
+	$"ColorRect/Parabéns".play()
+
 func _on_jogar_pressed():
 	get_tree().reload_current_scene()
 
@@ -121,9 +118,16 @@ func _on_button_pressed():
 
 func _on_timer_timeout():
 	question_audio.play()
+	$ColorRect2.hide()
 	await get_tree().create_timer(0.5).timeout
 	for i in buttons.size():
 		buttons[i].disabled = false
 	$Control/audio1.disabled = false
 	$"Control/audio 2".disabled = false
 	
+
+
+func _on_skip_pressed():
+	$Instrucoes.stop()
+	$Timer.stop()
+	_on_timer_timeout()

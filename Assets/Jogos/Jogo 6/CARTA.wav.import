@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://b14f1om4vmmgf"
+path="res://.godot/imported/CARTA.wav-6a11a6b804f4985244f2fae034d0f47a.sample"
+
+[deps]
+
+source_file="res://Assets/Jogos/Jogo 6/CARTA.wav"
+dest_files=["res://.godot/imported/CARTA.wav-6a11a6b804f4985244f2fae034d0f47a.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

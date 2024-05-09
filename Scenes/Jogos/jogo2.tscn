@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=3 uid="uid://dnkwpa6hlcktb"]
+[gd_scene load_steps=18 format=3 uid="uid://dnkwpa6hlcktb"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo2_controller.gd" id="1_acap8"]
 [ext_resource type="Resource" uid="uid://cha60psmp1qud" path="res://Perguntas/Categorias/jogo2.tres" id="2_wvkfa"]
@@ -12,6 +12,9 @@
 [ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Assets/Common/Audio/audio wrong.wav" id="8_5cp41"]
 [ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Assets/Common/Audio/audio win.wav" id="9_6030w"]
 [ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Assets/Common/Audio/Parabens.wav" id="11_ub3ue"]
+[ext_resource type="StyleBox" uid="uid://3chfguel1fv8" path="res://Themes/Botões/botao azul menu parabens.tres" id="12_h4sv8"]
+[ext_resource type="StyleBox" uid="uid://n8jsuk1mc25l" path="res://Themes/Botões/botao 2 menu parabens.tres" id="14_44d0x"]
+[ext_resource type="Texture2D" uid="uid://bx1fj26befch1" path="res://Assets/Common/UI/3249401.png" id="15_b3ajm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dqjss"]
 bg_color = Color(0.968627, 0.905882, 0.815686, 1)
@@ -29,6 +32,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+metadata/_edit_lock_ = true
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Jogo 1"]
 layout_mode = 1
@@ -38,9 +42,9 @@ anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -238.0
-offset_top = -317.0
+offset_top = -319.0
 offset_right = 239.0
-offset_bottom = 157.0
+offset_bottom = 81.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -54,15 +58,15 @@ volume_db = 1.0
 
 [node name="Audio" type="Button" parent="Jogo 1/VBoxContainer/ImageHolder"]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 0.275
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.275
+anchor_bottom = 0.5
 offset_left = -95.0
-offset_top = -5.0
+offset_top = -95.0
 offset_right = 95.0
-offset_bottom = 185.0
+offset_bottom = 95.0
 grow_horizontal = 2
 grow_vertical = 2
 theme = ExtResource("3_35dgg")
@@ -73,111 +77,30 @@ expand_icon = true
 layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.5
-anchor_top = 0.595
+anchor_top = 0.754
 anchor_right = 0.5
-anchor_bottom = 0.595
-offset_left = -175.0
-offset_top = 40.0
-offset_right = 175.0
-offset_bottom = 190.0
+anchor_bottom = 0.754
+offset_left = -165.0
+offset_top = -87.2
+offset_right = 165.0
+offset_bottom = 55.8
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 50
 
 [node name="Button" type="Button" parent="Jogo 1/respostas"]
 texture_filter = 1
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(130, 130)
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("5_c5p81")
-theme_override_font_sizes/font_size = 60
 
 [node name="Button2" type="Button" parent="Jogo 1/respostas"]
 texture_filter = 1
-custom_minimum_size = Vector2(150, 150)
+custom_minimum_size = Vector2(130, 130)
 layout_mode = 2
 size_flags_horizontal = 3
 theme = ExtResource("5_c5p81")
-theme_override_font_sizes/font_size = 60
-
-[node name="voltar" type="Button" parent="Jogo 1"]
-texture_filter = 1
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -240.0
-offset_top = 24.0
-offset_right = -127.0
-offset_bottom = 102.0
-grow_horizontal = 2
-theme_override_font_sizes/font_size = 30
-theme_override_styles/focus = SubResource("StyleBoxEmpty_o4yvk")
-icon = ExtResource("6_3g2ge")
-flat = true
-icon_alignment = 1
-expand_icon = true
-
-[node name="ColorRect" type="ColorRect" parent="Jogo 1"]
-visible = false
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -241.5
-offset_right = 241.5
-offset_bottom = 1088.0
-grow_horizontal = 2
-color = Color(0.529412, 0.894118, 0.764706, 1)
-
-[node name="VBoxContainer" type="VBoxContainer" parent="Jogo 1/ColorRect"]
-layout_mode = 1
-anchors_preset = 7
-anchor_left = 0.5
-anchor_top = 1.0
-anchor_right = 0.5
-anchor_bottom = 1.0
-offset_left = -132.5
-offset_top = -621.0
-offset_right = 144.5
-offset_bottom = -344.0
-grow_horizontal = 2
-grow_vertical = 0
-theme_override_constants/separation = 55
-
-[node name="jogar" type="Button" parent="Jogo 1/ColorRect/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme = ExtResource("4_1qkvh")
-theme_override_font_sizes/font_size = 30
-text = "Jogar de novo"
-
-[node name="menu" type="Button" parent="Jogo 1/ColorRect/VBoxContainer"]
-layout_mode = 2
-size_flags_vertical = 3
-theme = ExtResource("4_1qkvh")
-theme_override_font_sizes/font_size = 30
-theme_override_styles/normal = ExtResource("7_j5k53")
-theme_override_styles/hover = ExtResource("7_j5k53")
-theme_override_styles/pressed = ExtResource("7_j5k53")
-theme_override_styles/disabled = ExtResource("7_j5k53")
-text = "Menu"
-
-[node name="Label" type="Label" parent="Jogo 1/ColorRect"]
-layout_mode = 1
-anchors_preset = 5
-anchor_left = 0.5
-anchor_right = 0.5
-offset_left = -241.0
-offset_top = 43.0
-offset_right = 243.0
-offset_bottom = 412.0
-grow_horizontal = 2
-theme_override_colors/font_color = Color(0.168627, 0.168627, 0.168627, 1)
-theme_override_font_sizes/font_size = 60
-text = "Parabéns!"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="Instrucoes" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("7_28e1f")
@@ -195,8 +118,112 @@ stream = ExtResource("9_6030w")
 [node name="Parabéns" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_ub3ue")
 
+[node name="ColorRect2" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.231373, 0.231373, 0.231373, 0.639216)
+
+[node name="Skip" type="Button" parent="ColorRect2"]
+modulate = Color(0, 0, 0, 0.831373)
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -33.0
+offset_top = -157.0
+offset_right = 33.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/font_size = 35
+icon = ExtResource("15_b3ajm")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="voltar" type="Button" parent="."]
+texture_filter = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -240.0
+offset_top = 24.0
+offset_right = -127.0
+offset_bottom = 102.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 30
+theme_override_styles/focus = SubResource("StyleBoxEmpty_o4yvk")
+icon = ExtResource("6_3g2ge")
+flat = true
+icon_alignment = 1
+expand_icon = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.529412, 0.894118, 0.764706, 1)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -147.5
+offset_top = -378.0
+offset_right = 147.5
+offset_bottom = -99.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 55
+
+[node name="jogar" type="Button" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("4_1qkvh")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/pressed = ExtResource("12_h4sv8")
+text = "Jogar de novo"
+
+[node name="menu" type="Button" parent="ColorRect/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme = ExtResource("4_1qkvh")
+theme_override_font_sizes/font_size = 38
+theme_override_styles/normal = ExtResource("7_j5k53")
+theme_override_styles/hover = ExtResource("7_j5k53")
+theme_override_styles/pressed = ExtResource("14_44d0x")
+theme_override_styles/disabled = ExtResource("7_j5k53")
+text = "Menu"
+
+[node name="Label" type="Label" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -241.0
+offset_top = 45.0
+offset_right = 243.0
+offset_bottom = 381.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.168627, 0.168627, 0.168627, 1)
+theme_override_font_sizes/font_size = 70
+text = "Parabéns!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
 [connection signal="pressed" from="Jogo 1/VBoxContainer/ImageHolder/Audio" to="." method="_on_audio_pressed"]
-[connection signal="pressed" from="Jogo 1/voltar" to="." method="_on_voltar_pressed"]
-[connection signal="pressed" from="Jogo 1/ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
-[connection signal="pressed" from="Jogo 1/ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
+[connection signal="pressed" from="ColorRect2/Skip" to="." method="_on_skip_pressed"]
+[connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
+[connection signal="pressed" from="ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]

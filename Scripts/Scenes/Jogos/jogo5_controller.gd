@@ -75,7 +75,7 @@ func _next_question() -> void:
 
 	
 func _game_over() -> void:
-	$Control/ColorRect.show()
+	$ColorRect.show()
 	$"Parabéns".play()
 
 

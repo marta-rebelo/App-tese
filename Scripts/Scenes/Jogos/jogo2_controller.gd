@@ -65,7 +65,7 @@ func _next_question() -> void:
 		load_game()
 
 func _game_over() -> void:
-	$"Jogo 1/ColorRect".show()
+	$ColorRect.show()
 	$"Parabéns".play()
 
 func _on_jogar_pressed():
@@ -83,8 +83,14 @@ func _on_voltar_pressed():
 	get_tree().change_scene_to_file("res://Scenes/selecionar_jogo.tscn")
 
 func _on_timer_timeout():
+	$ColorRect2.hide()
 	question_audio.play()
 	await get_tree().create_timer(0.5).timeout
 	for i in buttons.size():
 		buttons[i].disabled = false
 	
+func _on_skip_pressed():
+	$Instrucoes.stop()
+	$Timer.stop()
+	_on_timer_timeout()
+

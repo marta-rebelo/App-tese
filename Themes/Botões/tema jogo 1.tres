@@ -44,7 +44,7 @@ corner_radius_bottom_right = 35
 corner_radius_bottom_left = 35
 
 [resource]
-default_font_size = 50
+default_font_size = 45
 Button/colors/font_color = Color(0.141176, 0.137255, 0.14902, 1)
 Button/colors/font_disabled_color = Color(0.141176, 0.137255, 0.14902, 0.439216)
 Button/colors/font_focus_color = Color(0.141176, 0.137255, 0.14902, 1)

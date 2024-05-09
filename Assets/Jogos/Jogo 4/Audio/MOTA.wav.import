@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://drvle6yqpvasb"
+path="res://.godot/imported/MOTA.wav-3aa7bef5f27755d330655c58f259dba6.sample"
+
+[deps]
+
+source_file="res://Assets/Jogos/Jogo 4/Audio/MOTA.wav"
+dest_files=["res://.godot/imported/MOTA.wav-3aa7bef5f27755d330655c58f259dba6.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

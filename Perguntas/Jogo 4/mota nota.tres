@@ -1,10 +1,18 @@
-[gd_resource type="Resource" script_class="GameQuestion" load_steps=2 format=3 uid="uid://4qfxm0gt5hl4"]
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=7 format=3 uid="uid://4qfxm0gt5hl4"]
 
 [ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_8ilqi"]
+[ext_resource type="AudioStream" uid="uid://drvle6yqpvasb" path="res://Assets/Jogos/Jogo 4/Audio/MOTA.wav" id="1_dt2sr"]
+[ext_resource type="Texture2D" uid="uid://muqg6ocbf8o8" path="res://Assets/Jogos/Jogo 4/Imagens/mota.png" id="1_md8lr"]
+[ext_resource type="AudioStream" uid="uid://c48mmw2li1xka" path="res://Assets/Jogos/Jogo 4/Audio/NOTA.wav" id="2_025c8"]
+[ext_resource type="Texture2D" uid="uid://bnnd0fsl3aw2d" path="res://Assets/Jogos/Jogo 4/Imagens/NOTA.png" id="2_it4se"]
+[ext_resource type="AudioStream" uid="uid://cmk6yy58clw6s" path="res://Assets/Jogos/Jogo 4/Audio/N.wav" id="5_em37l"]
 
 [resource]
 script = ExtResource("1_8ilqi")
 question_info = "N"
 options = Array[String](["mota", "nota"])
 correct = "nota"
-options_image = Array[Texture2D]([])
+options_image = Array[Texture2D]([ExtResource("1_md8lr"), ExtResource("2_it4se")])
+question_audio = ExtResource("5_em37l")
+options_audio1 = ExtResource("1_dt2sr")
+options_audio2 = ExtResource("2_025c8")

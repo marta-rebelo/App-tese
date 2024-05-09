@@ -1,10 +1,18 @@
-[gd_resource type="Resource" script_class="GameQuestion" load_steps=2 format=3 uid="uid://bu2r5ltp56sf0"]
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=7 format=3 uid="uid://bu2r5ltp56sf0"]
 
+[ext_resource type="AudioStream" uid="uid://c3qmd584ldknv" path="res://Assets/Jogos/Jogo 4/Audio/GOLA.wav" id="1_jwgd1"]
 [ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_vnuwp"]
+[ext_resource type="Texture2D" uid="uid://dwdfrr42ecowg" path="res://Assets/Jogos/Jogo 4/Imagens/cola.png" id="1_ww73h"]
+[ext_resource type="AudioStream" uid="uid://doqq0x3xlxxi1" path="res://Assets/Jogos/Jogo 4/Audio/COLA.wav" id="2_0fh5i"]
+[ext_resource type="Texture2D" uid="uid://bmapgl3x70n0o" path="res://Assets/Jogos/Jogo 4/Imagens/gola.png" id="2_hfkvu"]
+[ext_resource type="AudioStream" uid="uid://cnobg6dblf81r" path="res://Assets/Jogos/Jogo 1/Audio/G.wav" id="3_w5r6d"]
 
 [resource]
 script = ExtResource("1_vnuwp")
 question_info = "G"
 options = Array[String](["gola", "cola"])
-correct = "cola"
-options_image = Array[Texture2D]([])
+correct = "gola"
+options_image = Array[Texture2D]([ExtResource("2_hfkvu"), ExtResource("1_ww73h")])
+question_audio = ExtResource("3_w5r6d")
+options_audio1 = ExtResource("1_jwgd1")
+options_audio2 = ExtResource("2_0fh5i")

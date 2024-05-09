@@ -1,11 +1,12 @@
-[gd_resource type="Resource" script_class="GameQuestion" load_steps=2 format=3 uid="uid://dowqp7tmqd7ad"]
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=3 format=3 uid="uid://dowqp7tmqd7ad"]
 
+[ext_resource type="AudioStream" uid="uid://b14f1om4vmmgf" path="res://Assets/Jogos/Jogo 6/CARTA.wav" id="1_d5sec"]
 [ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_gohff"]
 
 [resource]
 script = ExtResource("1_gohff")
 question_info = "___ta"
-type = 0
 options = Array[String](["cra", "car"])
-options_image = Array[Texture2D]([])
 correct = "car"
+options_image = Array[Texture2D]([])
+question_audio = ExtResource("1_d5sec")

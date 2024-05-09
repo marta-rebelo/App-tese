@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://c3qmd584ldknv"
+path="res://.godot/imported/GOLA.wav-cdd88f3560d2821e3539a8c9d978cdc8.sample"
+
+[deps]
+
+source_file="res://Assets/Jogos/Jogo 4/Audio/GOLA.wav"
+dest_files=["res://.godot/imported/GOLA.wav-cdd88f3560d2821e3539a8c9d978cdc8.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

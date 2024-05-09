@@ -5,7 +5,6 @@
 [resource]
 script = ExtResource("1_4i1w5")
 question_info = "___ca"
-type = 0
 options = Array[String](["bor", "bro"])
-options_image = Array[Texture2D]([])
 correct = "bro"
+options_image = Array[Texture2D]([])

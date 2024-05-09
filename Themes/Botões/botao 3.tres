@@ -4,7 +4,7 @@
 bg_color = Color(0.996078, 0.831373, 0.388235, 1)
 border_width_bottom = 20
 border_color = Color(0.72549, 0.596078, 0.286275, 1)
-corner_radius_top_left = 20
-corner_radius_top_right = 20
-corner_radius_bottom_right = 20
-corner_radius_bottom_left = 20
+corner_radius_top_left = 35
+corner_radius_top_right = 35
+corner_radius_bottom_right = 35
+corner_radius_bottom_left = 35
