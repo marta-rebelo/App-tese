@@ -12,6 +12,8 @@ var current_game: GameQuestion:
 @onready var options_audio1: AudioStreamPlayer = $"Control/AudioStreamPlayer"
 @onready var options_audio2: AudioStreamPlayer = $"Control/AudioStreamPlayer2"
 @onready var question_audio: AudioStreamPlayer = $Control/Imagem/PALAVRA
+#@onready var win_animation: CPUParticles2D = $Control/ColorRect/WinExplosion
+
 
 func _ready() -> void:
 	for button in $Control/respostas.get_children():
@@ -86,6 +88,7 @@ func _game_over() -> void:
 	
 	$Control/ColorRect.show()
 	$"Control/ColorRect/Parabéns".play()
+	#$Control/ColorRect/WinExplosion.emitting = true
 	
 func _on_jogar_pressed():
 	get_tree().reload_current_scene()

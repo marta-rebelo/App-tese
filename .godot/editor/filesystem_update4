@@ -1,3 +1,8 @@
 res://main.tscn
 res://Scripts/Scenes/Jogos/jogo1_controller.gd
 res://Themes/Botões/tema.tres
+res://Perguntas/Jogo 1/chuva.tres
+res://Perguntas/Categorias/jogo1.tres
+res://Themes/Botões/botaoaudiopequeno.tres
+res://Themes/Botões/tema jogo 1.tres
+res://Scenes/Jogos/jogo1.tscn

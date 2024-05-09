@@ -1,8 +1,8 @@
 fc8a56933c4b1c8d796fdb8f7a9f9475
-::res://::1715012727
-export_presets.cfg::TextFile::-1::1714408772::0::1::::<><>::
+::res://::1715278387
+export_presets.cfg::TextFile::-1::1715020614::0::1::::<><>::
 icon.svg::CompressedTexture2D::1689612228049455958::1714095731::1714095813::1::::<><>::
-main.tscn::PackedScene::8223191860774169248::1715012254::0::1::::<><>::res://Scripts/Scenes/menu.gd<>uid://cothvl5gfbaww::::res://Themes/Botões/tema.tres<>uid://dyoxr568nj7rb::::res://Themes/Fontes/OpenSans-SemiBold.ttf<>uid://bbsrdsjryc1x1::::res://Themes/Botões/botao 2.tres<>uid://c6etivujsdsvc::::res://Themes/Botões/botao 2 pressed.tres<>uid://bswic40glfpoi::::res://Themes/Fontes/FONTE.tres
+main.tscn::PackedScene::8223191860774169248::1715046740::0::1::::<><>::res://Scripts/Scenes/menu.gd<>uid://cothvl5gfbaww::::res://Themes/Botões/tema.tres<>uid://dyoxr568nj7rb::::res://Themes/Fontes/OpenSans-SemiBold.ttf<>uid://bbsrdsjryc1x1::::res://Themes/Botões/botao 2.tres<>uid://c6etivujsdsvc::::res://Themes/Botões/botao 2 pressed.tres<>uid://bswic40glfpoi::::res://Themes/Fontes/FONTE.tres
 ::res://Assets/::1714682119
 ::res://Assets/Common/::1714663871
 ::res://Assets/Common/Audio/::1714682120
@@ -40,8 +40,9 @@ J.wav::AudioStreamWAV::5240912768982087287::1714010227::1714664849::1::::<><>::
 P.wav::AudioStreamWAV::8850828028427912280::1714013986::1714664846::1::::<><>::
 T.wav::AudioStreamWAV::1293553594041452268::1714009557::1714664840::1::::<><>::
 TULIPA.wav::AudioStreamWAV::2147898976542596909::1714014048::1714664842::1::::<><>::
-::res://Assets/Jogos/Jogo 1/Imagens/::1714664781
+::res://Assets/Jogos/Jogo 1/Imagens/::1715175310
 chuva copy.svg::CompressedTexture2D::2275324948872740820::1713932749::1714664781::1::::<><>::
+gato.png::CompressedTexture2D::3595059796515379431::1715145132::1715278390::1::::<><>::
 gato.svg::CompressedTexture2D::2947294346732787811::1713933732::1714664781::1::::<><>::
 tulipa final copy3.svg::CompressedTexture2D::1421386257956399189::1713969106::1714664781::1::::<><>::
 ::res://Assets/Jogos/Jogo 2/::1714664778
@@ -56,9 +57,13 @@ mao.wav::AudioStreamWAV::8486064554501278433::1714149106::1714664776::1::::<><>:
 ::res://Assets/Jogos/Jogo 4/::1714664469
 ::res://Assets/Jogos/Jogo 4/Audio/::1714664775
 faca.wav::AudioStreamWAV::4281219996911961074::1708866140::1714664775::1::::<><>::
-::res://Assets/Jogos/Jogo 4/Imagens/::1714683958
+::res://Assets/Jogos/Jogo 4/Imagens/::1715175295
+cola.png::CompressedTexture2D::3297266003573879716::1715171807::1715278390::1::::<><>::
+gola.png::CompressedTexture2D::7399139536973848394::1715174093::1715278390::1::::<><>::
 GOLA.svg::CompressedTexture2D::1287969754803762509::1714144993::1714664774::1::::<><>::
 Knife-Png-225.png::CompressedTexture2D::300132569159482867::1713215416::1714664774::1::::<><>::
+mota.png::CompressedTexture2D::1659400170206678183::1715143437::1715278390::1::::<><>::
+NOTA3.png::CompressedTexture2D::4480031996792332526::1715145706::1715278391::1::::<><>::
 NOTA.svg::CompressedTexture2D::9061970081198787981::1714144206::1714664774::1::::<><>::
 vaca 3.svg::CompressedTexture2D::153156695792761030::1713972985::1714664774::1::::<><>::
 vaca teste2.svg::CompressedTexture2D::4793777665572908962::1713970993::1714664774::1::::<><>::
@@ -67,15 +72,15 @@ vaca.svg::CompressedTexture2D::6487122406932036573::1713969835::1714664774::1:::
 ::res://Assets/Jogos/Jogo 5/::1714663822
 ::res://Assets/Jogos/Jogo 6/::1714663828
 ::res://Perguntas/::1714664920
-::res://Perguntas/Categorias/::1714682359
-jogo1.tres::Resource/Resource::8476229546284753078::1714682359::0::1::::<><>::res://Scripts/Recursos/lista_de_perguntas.gd<>uid://c0k26ukiphm5l::::res://Perguntas/Jogo 1/chuva.tres<>uid://d2m2424os4nl7::::res://Perguntas/Jogo 1/tulipa.tres<>uid://bniugnt0blmms::::res://Perguntas/Jogo 1/gato.tres
+::res://Perguntas/Categorias/::1715046740
+jogo1.tres::Resource/GameType::8476229546284753078::1715046740::0::1::::<><>::res://Scripts/Recursos/lista_de_perguntas.gd<>uid://c0k26ukiphm5l::::res://Perguntas/Jogo 1/chuva.tres<>uid://d2m2424os4nl7::::res://Perguntas/Jogo 1/tulipa.tres<>uid://bniugnt0blmms::::res://Perguntas/Jogo 1/gato.tres
 jogo2.tres::Resource/Resource::5266090960698854443::1714682359::0::1::::<><>::res://Scripts/Recursos/lista_de_perguntas.gd<>uid://drp4kqnq26ysa::::res://Perguntas/Jogo 2/escola.tres<>uid://cr0jlmlx186uu::::res://Perguntas/Jogo 2/janela.tres<>uid://d0knqkgnlxg3f::::res://Perguntas/Jogo 2/rapaz.tres
 jogo3.tres::Resource/Resource::1557292543785932288::1714682359::0::1::::<><>::res://Scripts/Recursos/lista_de_perguntas.gd<>uid://df3tphugbce0v::::res://Perguntas/Jogo 3/cha.tres<>uid://crd2jqhhh2p8o::::res://Perguntas/Jogo 3/do.tres<>uid://c5c4r6fpr5v7r::::res://Perguntas/Jogo 3/mao.tres
 jogo4.tres::Resource/Resource::8487218841817767044::1714682359::0::1::::<><>::res://Scripts/Recursos/lista_de_perguntas.gd<>uid://prq4i0v1tf7b::::res://Perguntas/Jogo 4/vaca faca.tres<>uid://4qfxm0gt5hl4::::res://Perguntas/Jogo 4/mota nota.tres<>uid://bu2r5ltp56sf0::::res://Perguntas/Jogo 4/gola cola.tres
 jogo5.tres::Resource/Resource::5999181992328801651::1714682359::0::1::::<><>::res://Scripts/Recursos/lista_de_perguntas.gd<>uid://njpcqwukmubp::::res://Perguntas/Jogo 5/cama cadeira gaveta caneta.tres<>uid://cv2tnn41cens2::::res://Perguntas/Jogo 5/fato familia fada borracha.tres<>uid://xkt4ejm042k5::::res://Perguntas/Jogo 5/livro limao lilas lapis.tres
 jogo6.tres::Resource/Resource::8661334042368680889::1714682359::0::1::::<><>::res://Scripts/Recursos/lista_de_perguntas.gd<>uid://dowqp7tmqd7ad::::res://Perguntas/Jogo 6/carta.tres<>uid://hm1474go1k7d::::res://Perguntas/Jogo 6/Pedro.tres<>uid://bob5yqto8f0ul::::res://Perguntas/Jogo 6/broca.tres<>uid://bombfiu5dbxtk::::res://Perguntas/Jogo 6/porta.tres<>uid://c2ljx6xaoxqth::::res://Perguntas/Jogo 6/problema.tres
-::res://Perguntas/Jogo 1/::1714682174
-chuva.tres::Resource/Resource::6549902020592221279::1714682174::0::1::::<><>::uid://cgw0cke45yvkp::::res://Assets/Jogos/Jogo 1/Audio/J.wav<>uid://c00gs2b32fj8i::::res://Assets/Jogos/Jogo 1/Audio/CH.wav<>uid://b51mbd8vltuxw::::res://Assets/Jogos/Jogo 1/Audio/CHUVA.wav<>uid://7ogjfruhqglw::::res://Assets/Jogos/Jogo 1/Imagens/chuva copy.svg<>res://Scripts/Recursos/perguntas.gd
+::res://Perguntas/Jogo 1/::1715046740
+chuva.tres::Resource/GameQuestion::6549902020592221279::1715046740::0::1::::<><>::uid://cgw0cke45yvkp::::res://Assets/Jogos/Jogo 1/Audio/J.wav<>uid://c00gs2b32fj8i::::res://Assets/Jogos/Jogo 1/Audio/CH.wav<>uid://b51mbd8vltuxw::::res://Assets/Jogos/Jogo 1/Audio/CHUVA.wav<>uid://7ogjfruhqglw::::res://Assets/Jogos/Jogo 1/Imagens/chuva copy.svg<>res://Scripts/Recursos/perguntas.gd
 gato.tres::Resource/Resource::3316616440931263266::1714665291::0::1::::<><>::uid://b3syr5itsik02
 tulipa.tres::Resource/Resource::9080825972773918546::1714665291::0::1::::<><>::uid://souvyluibis7
 ::res://Perguntas/Jogo 2/::1714664934
@@ -103,8 +108,8 @@ prima.tres::Resource/Resource::2125054245532983382::1714152658::0::1::::<><>::re
 problema.tres::Resource/Resource::6691237490876432677::1714664615::0::1::::<><>::res://Scripts/Recursos/perguntas.gd
 ::res://Scenes/::1714682119
 selecionar_jogo.tscn::PackedScene::1832842105212652695::1714682119::0::1::::<><>::res://Scripts/Scenes/selecionar_jogo.gd<>uid://duvtrlavd8o2i::::res://Assets/Common/UI/seta icon.svg<>uid://cothvl5gfbaww::::res://Themes/Botões/tema.tres<>uid://577qufh1kjfj::::res://Themes/Botões/botao 1.tres<>uid://csw2vk16owcqm::::res://Themes/Botões/botao1.tres<>uid://btt3ar1fy5l1l::::res://Assets/Common/UI/botoes menu/jogo 1.svg<>uid://bwhvltpy2k7xi::::res://Assets/Common/UI/botoes menu/jogo 2.svg<>uid://bbsrdsjryc1x1::::res://Themes/Botões/botao 2.tres<>uid://bj5hltlyr75w2::::res://Assets/Common/UI/botoes menu/jogo 3.svg<>uid://xj2wbgvnmp5::::res://Assets/Common/UI/botoes menu/jogo 4.svg<>uid://ch8y3ua5uhsld::::res://Themes/Botões/botao 3.tres<>uid://dofxdd5jm1gkh::::res://Assets/Common/UI/botoes menu/jogo 5.svg<>uid://c1hobi24qg4xs::::res://Assets/Common/UI/botoes menu/jogo 6.svg<>uid://2pvuyxcfdq12::::res://Themes/Botões/botao 4.tres<>uid://doomp44nwaule::::res://Themes/Botões/botao 5.tres<>uid://muaxwejjhl0j::::res://Themes/Botões/botao 6.tres
-::res://Scenes/Jogos/::1714682517
-jogo1.tscn::PackedScene::9210529253115872909::1714680532::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo1_controller.gd<>uid://ds07i6e4vvqgs
+::res://Scenes/Jogos/::1715046741
+jogo1.tscn::PackedScene::9210529253115872909::1715046741::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo1_controller.gd<>uid://ds07i6e4vvqgs::::res://Perguntas/Categorias/jogo1.tres<>uid://bc240rb7sblyi::::res://Assets/Instruções/Jogo 1.wav<>uid://cothvl5gfbaww::::res://Themes/Botões/tema.tres<>uid://dduwhxbgsqkts::::res://Themes/Botões/botaoaudiopequeno.tres<>uid://dchv76lm0kqtf::::res://Assets/Common/UI/audio icon2.svg<>uid://duvtrlavd8o2i::::res://Assets/Common/UI/seta icon.svg<>uid://yog4a8cikohl::::res://Assets/Common/Audio/Parabens.wav<>uid://f6o8n0xf263n::::res://Assets/Common/Audio/audio win.wav<>uid://lgns6wsensd7::::res://Assets/Common/Audio/audio wrong.wav<>uid://bbsrdsjryc1x1::::res://Themes/Botões/botao 2.tres<>uid://divqfx1mbhnj3::::res://Themes/Botões/tema jogo 1.tres<>uid://3chfguel1fv8::::res://Themes/Botões/botao azul menu parabens.tres<>uid://n8jsuk1mc25l::::res://Themes/Botões/botao 2 menu parabens.tres
 jogo2.tscn::PackedScene::8093723404885532943::1714680532::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo2_controller.gd<>uid://cha60psmp1qud
 jogo3.tscn::PackedScene::8736881735335365839::1714680532::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo3_controller.gd<>uid://wgmm7b74c05a
 jogo4.tscn::PackedScene::7945171553299241982::1714682119::0::1::::<><>::res://Scripts/Scenes/Jogos/jogo4_controller.gd<>uid://ds6jiwabyrkfk::::res://Perguntas/Categorias/jogo4.tres<>uid://cothvl5gfbaww::::res://Themes/Botões/tema.tres<>uid://dduwhxbgsqkts::::res://Themes/Botões/botaoaudiopequeno.tres<>uid://dchv76lm0kqtf::::res://Assets/Common/UI/audio icon2.svg<>uid://duvtrlavd8o2i::::res://Assets/Common/UI/seta icon.svg<>uid://dhotaox0htu1l::::res://Assets/Instruções/Jogo 4.wav<>uid://bbsrdsjryc1x1::::res://Themes/Botões/botao 2.tres<>uid://f6o8n0xf263n::::res://Assets/Common/Audio/audio win.wav<>uid://lgns6wsensd7::::res://Assets/Common/Audio/audio wrong.wav<>uid://yog4a8cikohl::::res://Assets/Common/Audio/Parabens.wav
@@ -117,15 +122,15 @@ perguntas.gd::GDScript::-1::1714682581::0::1::::GameQuestion<>Resource<>::
 ::res://Scripts/Scenes/::1714666255
 menu.gd::GDScript::-1::1714665291::0::1::::<>Control<>::
 selecionar_jogo.gd::GDScript::-1::1714666255::0::1::::<>Control<>::
-::res://Scripts/Scenes/Jogos/::1715012254
-jogo1_controller.gd::GDScript::-1::1715012254::0::1::::<>Node<>::
+::res://Scripts/Scenes/Jogos/::1715046740
+jogo1_controller.gd::GDScript::-1::1715046740::0::1::::<>Node<>::
 jogo2_controller.gd::GDScript::-1::1714680235::0::1::::<>Node<>::
 jogo3_controller.gd::GDScript::-1::1714680218::0::1::::<>Node<>::
 jogo4_controller.gd::GDScript::-1::1714681519::0::1::::<>Node<>::
 jogo5_controller.gd::GDScript::-1::1714681509::0::1::::<>Node<>::
 jogo6_controller.gd::GDScript::-1::1714682466::0::1::::<>Node<>::
 ::res://Themes/::1714665197
-::res://Themes/Botões/::1715012254
+::res://Themes/Botões/::1715046740
 botao1.tres::StyleBoxFlat::6083334290763288100::1714662800::0::1::::<><>::
 botao 1.tres::Theme::2173697972286110823::1714679927::0::1::::<><>::uid://dyoxr568nj7rb
 botao 2 menu parabens.tres::StyleBoxFlat::981159097516094851::1714662710::0::1::::<><>::
@@ -138,9 +143,9 @@ botao 6.tres::StyleBoxFlat::883595914111552111::1714662800::0::1::::<><>::
 botao azul menu parabens.tres::StyleBoxFlat::1969850671525575039::1714662710::0::1::::<><>::
 botao sobre.tres::StyleBoxFlat::3029618123866420674::1714402264::0::1::::<><>::
 botaoaudio.tres::Theme::9043813924234300573::1714680197::0::1::::<><>::
-botaoaudiopequeno.tres::Theme::7412465621351957728::1714681509::0::1::::<><>::
-tema jogo 1.tres::Theme::7765106382621425482::1714682517::0::1::::<><>::
-tema.tres::Theme::5795171500647477658::1715012254::0::1::::<><>::
+botaoaudiopequeno.tres::Theme::7412465621351957728::1715046740::0::1::::<><>::
+tema jogo 1.tres::Theme::7765106382621425482::1715046740::0::1::::<><>::
+tema.tres::Theme::5795171500647477658::1715046740::0::1::::<><>::
 ::res://Themes/Fontes/::1714665210
 FONTE.tres::Theme::3695727049381731704::1714665206::0::1::::<><>::uid://dyoxr568nj7rb
 OpenSans-Bold.ttf::FontFile::5087946632583971715::1713231279::1714665204::1::::<><>::

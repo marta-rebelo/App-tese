@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-config/name="Protótipo 2024 (vertical)"
+config/name="Dislexa"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
@@ -21,6 +21,7 @@ window/size/viewport_width=480
 window/size/viewport_height=800
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
+window/stretch/scale_mode="integer"
 window/handheld/orientation=1
 window/vram_compression/import_etc2_astc=false
 
@@ -32,7 +33,9 @@ import/fbx/enabled.android=true
 [rendering]
 
 textures/vram_compression/import_etc2_astc=true
+textures/lossless_compression/force_png=true
 anti_aliasing/screen_space_roughness_limiter/enabled=false
 anti_aliasing/screen_space_roughness_limiter/amount=4.0
 anti_aliasing/screen_space_roughness_limiter/limit=1.0
 environment/defaults/default_clear_color=Color(0.968627, 0.905882, 0.815686, 1)
+anti_aliasing/quality/msaa_2d=1
