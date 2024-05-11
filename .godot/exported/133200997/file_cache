@@ -3,7 +3,7 @@ res://Scenes/Jogos/jogo2.tscn::109b339c3f972359ca32c7eae27c15e5::1715287196::res
 res://Scenes/Jogos/jogo3.tscn::cd21be7e0e2643bfae992e1b3268b077::1715287196::res://.godot/exported/133200997/export-df7593fcfd583b1da33482f3ccc1c7e2-jogo3.scn
 res://Scenes/Jogos/jogo4.tscn::527e0a66dfbded62f54f01f13979544f::1715287196::res://.godot/exported/133200997/export-b2db2c7a2112021bd31eddaced508204-jogo4.scn
 res://Scenes/Jogos/jogo5.tscn::cc6846c2ba766ced421fc929ca1df293::1715287196::res://.godot/exported/133200997/export-9aced11f5673b5599d9f7762c0c771c3-jogo5.scn
-res://Scenes/Jogos/jogo6.tscn::60dd5dc25c7d0ffdfeee417d58dd4cc8::1715287196::res://.godot/exported/133200997/export-be213b35b16eeb4bf6449c70ffb51e44-jogo6.scn
+res://Scenes/Jogos/jogo6.tscn::60dd5dc25c7d0ffdfeee417d58dd4cc8::1715292123::res://.godot/exported/133200997/export-be213b35b16eeb4bf6449c70ffb51e44-jogo6.scn
 res://Scenes/selecionar_jogo.tscn::c85755cb9e3bc4f23617711b13045cfe::1715281659::res://.godot/exported/133200997/export-671355c2fd5919190be6727f30dc1bfd-selecionar_jogo.scn
 res://Perguntas/Categorias/jogo1.tres::f7717bbe1f62074ef10baa487d893573::1715279511::res://.godot/exported/133200997/export-fbce93d78fca8b93a22699b2a6386544-jogo1.res
 res://Perguntas/Categorias/jogo2.tres::63c9710f61b5565831c696d8152f39e2::1714682359::res://.godot/exported/133200997/export-033c4c3f8806cbab46a315709a296868-jogo2.res
@@ -33,7 +33,7 @@ res://Perguntas/Jogo 6/porta.tres::8281ee8fb37afb5b7b16c2f22c759723::1714664615:
 res://Perguntas/Jogo 6/prima.tres::6a70596c16a5598da6003e03897f99ec::1714152658::res://.godot/exported/133200997/export-d39410c1c349161b7550e11bf0e9e39d-prima.res
 res://Perguntas/Jogo 6/problema.tres::f0c26454d47ecdd90cb926b3ca5c6338::1715275180::res://.godot/exported/133200997/export-ca4bbaf49453bc22e9c54d5209be1bd1-problema.res
 res://Themes/Botões/botao1.tres::35bcabf932b7976cf1bf9647fce1f5be::1715275180::res://.godot/exported/133200997/export-fa1b7ae365a83dac470de76573e2f594-botao1.res
-res://Themes/Botões/botao 1.tres::0102cbbaf58ddf50c2803c151c1bd8d7::1715280479::res://.godot/exported/133200997/export-c8003c0eca86c6ec522447c194fa0877-botao 1.res
+res://Themes/Botões/botao 1.tres::0102cbbaf58ddf50c2803c151c1bd8d7::1715287953::res://.godot/exported/133200997/export-c8003c0eca86c6ec522447c194fa0877-botao 1.res
 res://Themes/Botões/botao 2 menu parabens.tres::c459620d290a5f0d0fd273a61ca1ff43::1714662710::res://.godot/exported/133200997/export-564b286e7dc36a7a8da6218fe1b71fcd-botao 2 menu parabens.res
 res://Themes/Botões/botao 2 pressed.tres::43fd1b6d57cce1bf4cf9b3feeea603f0::1714662711::res://.godot/exported/133200997/export-9f4d4e934a0c6b449a0b2a7fc615b51f-botao 2 pressed.res
 res://Themes/Botões/botao 2.tres::a7b8f25dcac51f39dd92f920e9b8013a::1715275179::res://.godot/exported/133200997/export-f541ec1175bec1b3d5c91694e2758601-botao 2.res
