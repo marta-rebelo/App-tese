@@ -9,10 +9,10 @@
 [resource]
 script = ExtResource("5_2dkk5")
 question_info = ""
-options = Array[String](["j", "ch"])
+options = Array[String](["ch", "j"])
 correct = "ch"
 question_image = ExtResource("4_3fhnb")
 options_image = Array[Texture2D]([])
 question_audio = ExtResource("3_rtb8j")
-options_audio1 = ExtResource("1_oxy6i")
-options_audio2 = ExtResource("2_1qwvb")
+options_audio1 = ExtResource("2_1qwvb")
+options_audio2 = ExtResource("1_oxy6i")

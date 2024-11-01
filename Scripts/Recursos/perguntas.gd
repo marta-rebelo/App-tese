@@ -8,7 +8,7 @@ class_name GameQuestion
 @export var correct: String
 
 
-@export_category("Imagens")
+@export_category("Imagem")
 @export var question_image: Texture2D
 @export var options_image: Array[Texture2D]
 
@@ -19,7 +19,8 @@ class_name GameQuestion
 @export_group("Botões de áudio")
 @export var options_audio1: AudioStream
 @export var options_audio2: AudioStream
-@export var options_audio3: AudioStream
-@export var options_audio4: AudioStream
+
+#@export var options_audio3: AudioStream
+#@export var options_audio4: AudioStream
 
 

@@ -18,25 +18,30 @@ func _ready() -> void:
 	randomize()
 	game.type.shuffle()	
 	load_game()
+	get_tree().set_quit_on_go_back(false)
 
 func load_game() -> void:
 	if index == 0:	
 		$Instrucoes.play()
 		$Timer.start()
-		
-	texto_das_perguntas.text = current_game.question_info
+		$"Control/perguntas/texto das perguntas".hide()
+
 	question_audio.stream = current_game.question_audio
 	if index >= 1:
 		question_audio.play()
+		texto_das_perguntas.text = current_game.question_info
 	
 	var options = current_game.options
 	options.shuffle()
 	
 	for i in buttons.size():
-		buttons[i].text = options[i]
+		
 		buttons [i].pressed.connect(_buttons_answer.bind(buttons[i]))
 		if index == 0:	
 			buttons[i].disabled = true
+		if index >= 1:
+			buttons[i].text = options[i]
+
 	
 
 func _buttons_answer(button) -> void:
@@ -80,12 +85,23 @@ func _on_voltar_pressed():
 
 func _on_timer_timeout():
 	$ColorRect2.hide()
+	await get_tree().create_timer(0.5).timeout
+	$"Control/perguntas/texto das perguntas".show()
+	var options = current_game.options
 	for i in buttons.size():
+		buttons[i].text = options[i]
 		buttons[i].disabled = false
 	question_audio.play()
+	texto_das_perguntas.text = current_game.question_info
 
 func _on_skip_pressed():
 	$Instrucoes.stop()
 	$Timer.stop()
 	_on_timer_timeout()
 
+
+
+
+func _notification(what):
+	if what == NOTIFICATION_WM_GO_BACK_REQUEST:
+		_on_voltar_pressed()

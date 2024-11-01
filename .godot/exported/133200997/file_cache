@@ -1,17 +1,17 @@
-res://Scenes/Jogos/jogo1.tscn::51e36344842dcb0d6e5d5dafa548b493::1715287196::res://.godot/exported/133200997/export-1cc1d18255cd7ee8360a8cfe7cbc88f0-jogo1.scn
-res://Scenes/Jogos/jogo2.tscn::109b339c3f972359ca32c7eae27c15e5::1715287196::res://.godot/exported/133200997/export-50f4bcedc1b5b67d36d8d327788c7c66-jogo2.scn
-res://Scenes/Jogos/jogo3.tscn::cd21be7e0e2643bfae992e1b3268b077::1715287196::res://.godot/exported/133200997/export-df7593fcfd583b1da33482f3ccc1c7e2-jogo3.scn
-res://Scenes/Jogos/jogo4.tscn::527e0a66dfbded62f54f01f13979544f::1715287196::res://.godot/exported/133200997/export-b2db2c7a2112021bd31eddaced508204-jogo4.scn
-res://Scenes/Jogos/jogo5.tscn::cc6846c2ba766ced421fc929ca1df293::1715287196::res://.godot/exported/133200997/export-9aced11f5673b5599d9f7762c0c771c3-jogo5.scn
-res://Scenes/Jogos/jogo6.tscn::60dd5dc25c7d0ffdfeee417d58dd4cc8::1715292123::res://.godot/exported/133200997/export-be213b35b16eeb4bf6449c70ffb51e44-jogo6.scn
-res://Scenes/selecionar_jogo.tscn::c85755cb9e3bc4f23617711b13045cfe::1715281659::res://.godot/exported/133200997/export-671355c2fd5919190be6727f30dc1bfd-selecionar_jogo.scn
-res://Perguntas/Categorias/jogo1.tres::f7717bbe1f62074ef10baa487d893573::1715279511::res://.godot/exported/133200997/export-fbce93d78fca8b93a22699b2a6386544-jogo1.res
+res://Scenes/Jogos/jogo1.tscn::9b47cc49af6102b429aa5156ef78e8b1::1716395107::res://.godot/exported/133200997/export-1cc1d18255cd7ee8360a8cfe7cbc88f0-jogo1.scn
+res://Scenes/Jogos/jogo2.tscn::b8aaf242dea3fbe91565834cea83a2b4::1716395106::res://.godot/exported/133200997/export-50f4bcedc1b5b67d36d8d327788c7c66-jogo2.scn
+res://Scenes/Jogos/jogo3.tscn::0ceb66848b3133e01c989a11079746db::1716395106::res://.godot/exported/133200997/export-df7593fcfd583b1da33482f3ccc1c7e2-jogo3.scn
+res://Scenes/Jogos/jogo4.tscn::f2ba829f37b277e281b3ea22f519d611::1716395107::res://.godot/exported/133200997/export-b2db2c7a2112021bd31eddaced508204-jogo4.scn
+res://Scenes/Jogos/jogo5.tscn::0a63ae1e880d69f33b3f83c3f4af1b18::1715547197::res://.godot/exported/133200997/export-9aced11f5673b5599d9f7762c0c771c3-jogo5.scn
+res://Scenes/Jogos/jogo6.tscn::a2a7bc02624445ae7b3eeda16e0ec47c::1716395106::res://.godot/exported/133200997/export-be213b35b16eeb4bf6449c70ffb51e44-jogo6.scn
+res://Scenes/selecionar_jogo.tscn::c85755cb9e3bc4f23617711b13045cfe::1716395106::res://.godot/exported/133200997/export-671355c2fd5919190be6727f30dc1bfd-selecionar_jogo.scn
+res://Perguntas/Categorias/jogo1.tres::f7717bbe1f62074ef10baa487d893573::1716393930::res://.godot/exported/133200997/export-fbce93d78fca8b93a22699b2a6386544-jogo1.res
 res://Perguntas/Categorias/jogo2.tres::63c9710f61b5565831c696d8152f39e2::1714682359::res://.godot/exported/133200997/export-033c4c3f8806cbab46a315709a296868-jogo2.res
 res://Perguntas/Categorias/jogo3.tres::95a551a11a6bacb6450e64b09e1085ef::1714682359::res://.godot/exported/133200997/export-bd596bd5b3f6f3dc750dccc2e932f956-jogo3.res
-res://Perguntas/Categorias/jogo4.tres::f6d631f9279b9333dfe6e048c6268606::1715287054::res://.godot/exported/133200997/export-0fa5ffe797a7463495cac978b5b35f54-jogo4.res
-res://Perguntas/Categorias/jogo5.tres::d53e1a4fc40ef526ba4892500ed5b56b::1715284315::res://.godot/exported/133200997/export-e0f3879f6c7cba33e494c59d24382fb3-jogo5.res
+res://Perguntas/Categorias/jogo4.tres::f6d631f9279b9333dfe6e048c6268606::1716393930::res://.godot/exported/133200997/export-0fa5ffe797a7463495cac978b5b35f54-jogo4.res
+res://Perguntas/Categorias/jogo5.tres::d53e1a4fc40ef526ba4892500ed5b56b::1715796933::res://.godot/exported/133200997/export-e0f3879f6c7cba33e494c59d24382fb3-jogo5.res
 res://Perguntas/Categorias/jogo6.tres::7c0342efb4a0942d75c88e8ea41e494b::1715275180::res://.godot/exported/133200997/export-d9186870b1caec9b478e9d30f620ac9a-jogo6.res
-res://Perguntas/Jogo 1/chuva.tres::0ac5f0f1e46b00f109965305693b0020::1715279511::res://.godot/exported/133200997/export-36c3ed74ec2f85e1cd423546fc7c25d6-chuva.res
+res://Perguntas/Jogo 1/chuva.tres::0ac5f0f1e46b00f109965305693b0020::1716393930::res://.godot/exported/133200997/export-36c3ed74ec2f85e1cd423546fc7c25d6-chuva.res
 res://Perguntas/Jogo 1/gato.tres::47d2f65b732e066066f10d9247a69f4d::1715196181::res://.godot/exported/133200997/export-fcb76b156790b84f2a7dd198271e9b7b-gato.res
 res://Perguntas/Jogo 1/tulipa.tres::4c1c7ed3626ff46d4e49bf1c81041791::1714665291::res://.godot/exported/133200997/export-413fa441c37fc3bf36b176bc04682f8f-tulipa.res
 res://Perguntas/Jogo 2/escola.tres::ea8ccb69959ba86ecf6061a9a04fce64::1714664778::res://.godot/exported/133200997/export-b4c06314d5b4312e0c7df237b3727c89-escola.res
@@ -21,11 +21,11 @@ res://Perguntas/Jogo 3/cha.tres::f3b36b8104e2e0fbf7412abfeed26208::1714664776::r
 res://Perguntas/Jogo 3/do.tres::7b779e585f3189964cc77dde10961886::1714664776::res://.godot/exported/133200997/export-f6a9fe7a1d3de4f69308b7679a9d1baa-do.res
 res://Perguntas/Jogo 3/mao.tres::55deea3f8ca11dd46c65be541453c6d4::1714664776::res://.godot/exported/133200997/export-bbcf72bcb373a65cd9a7d76a744c1185-mao.res
 res://Perguntas/Jogo 4/gola cola.tres::5e45dffdd255497f7820afe063620862::1715275180::res://.godot/exported/133200997/export-3e8406a3d4dfa03f536af2043886fdba-gola cola.res
-res://Perguntas/Jogo 4/mota nota.tres::6d1a051a45038c7a2534a98c689bb8dc::1715287054::res://.godot/exported/133200997/export-fa067df3554d4cf85809b4e98a99e1db-mota nota.res
-res://Perguntas/Jogo 4/vaca faca.tres::1749d55f58d484f8af0aa58e8d25ec5b::1715287054::res://.godot/exported/133200997/export-cdf30e3402b886740619115127972875-vaca faca.res
-res://Perguntas/Jogo 5/cama cadeira gaveta caneta.tres::ae31cf5127163e1dc23aa7c10fdc8208::1715284315::res://.godot/exported/133200997/export-96b050e17bfb92cc3646d7f9807a7e72-cama cadeira gaveta caneta.res
-res://Perguntas/Jogo 5/fato familia fada borracha.tres::1673bbe2583b424211ad724aa0cdf055::1715284315::res://.godot/exported/133200997/export-fc0cb2c24d1121a465ae3a9dc94e2f50-fato familia fada borracha.res
-res://Perguntas/Jogo 5/livro limao lilas lapis.tres::1c8ff832b9bd4f3c2001cba887aad32a::1715281159::res://.godot/exported/133200997/export-36dc2f949656db5c691507dbde0827b3-livro limao lilas lapis.res
+res://Perguntas/Jogo 4/mota nota.tres::6d1a051a45038c7a2534a98c689bb8dc::1716393930::res://.godot/exported/133200997/export-fa067df3554d4cf85809b4e98a99e1db-mota nota.res
+res://Perguntas/Jogo 4/vaca faca.tres::1749d55f58d484f8af0aa58e8d25ec5b::1716393930::res://.godot/exported/133200997/export-cdf30e3402b886740619115127972875-vaca faca.res
+res://Perguntas/Jogo 5/cama cadeira gaveta caneta.tres::ae31cf5127163e1dc23aa7c10fdc8208::1715796933::res://.godot/exported/133200997/export-96b050e17bfb92cc3646d7f9807a7e72-cama cadeira gaveta caneta.res
+res://Perguntas/Jogo 5/fato familia fada borracha.tres::1673bbe2583b424211ad724aa0cdf055::1715796933::res://.godot/exported/133200997/export-fc0cb2c24d1121a465ae3a9dc94e2f50-fato familia fada borracha.res
+res://Perguntas/Jogo 5/livro limao lilas lapis.tres::1c8ff832b9bd4f3c2001cba887aad32a::1715796933::res://.godot/exported/133200997/export-36dc2f949656db5c691507dbde0827b3-livro limao lilas lapis.res
 res://Perguntas/Jogo 6/broca.tres::cd6a42a159747a39e86e436a155e065b::1715180506::res://.godot/exported/133200997/export-bfc5f757151f526d13ff5f86a533f263-broca.res
 res://Perguntas/Jogo 6/carta.tres::a08e1ac35e3e2a17092ed16021efe839::1715275180::res://.godot/exported/133200997/export-3658caf8223ee42051fb96923b6b0366-carta.res
 res://Perguntas/Jogo 6/Pedro.tres::ff3fdf2c88ba200b2a2a916a5cd07f63::1715275180::res://.godot/exported/133200997/export-18927f1d1fb2856bd1332022c89cd27f-Pedro.res
@@ -33,7 +33,7 @@ res://Perguntas/Jogo 6/porta.tres::8281ee8fb37afb5b7b16c2f22c759723::1714664615:
 res://Perguntas/Jogo 6/prima.tres::6a70596c16a5598da6003e03897f99ec::1714152658::res://.godot/exported/133200997/export-d39410c1c349161b7550e11bf0e9e39d-prima.res
 res://Perguntas/Jogo 6/problema.tres::f0c26454d47ecdd90cb926b3ca5c6338::1715275180::res://.godot/exported/133200997/export-ca4bbaf49453bc22e9c54d5209be1bd1-problema.res
 res://Themes/Botões/botao1.tres::35bcabf932b7976cf1bf9647fce1f5be::1715275180::res://.godot/exported/133200997/export-fa1b7ae365a83dac470de76573e2f594-botao1.res
-res://Themes/Botões/botao 1.tres::0102cbbaf58ddf50c2803c151c1bd8d7::1715287953::res://.godot/exported/133200997/export-c8003c0eca86c6ec522447c194fa0877-botao 1.res
+res://Themes/Botões/botao 1.tres::0102cbbaf58ddf50c2803c151c1bd8d7::1716393929::res://.godot/exported/133200997/export-c8003c0eca86c6ec522447c194fa0877-botao 1.res
 res://Themes/Botões/botao 2 menu parabens.tres::c459620d290a5f0d0fd273a61ca1ff43::1714662710::res://.godot/exported/133200997/export-564b286e7dc36a7a8da6218fe1b71fcd-botao 2 menu parabens.res
 res://Themes/Botões/botao 2 pressed.tres::43fd1b6d57cce1bf4cf9b3feeea603f0::1714662711::res://.godot/exported/133200997/export-9f4d4e934a0c6b449a0b2a7fc615b51f-botao 2 pressed.res
 res://Themes/Botões/botao 2.tres::a7b8f25dcac51f39dd92f920e9b8013a::1715275179::res://.godot/exported/133200997/export-f541ec1175bec1b3d5c91694e2758601-botao 2.res
@@ -43,10 +43,13 @@ res://Themes/Botões/botao 5.tres::45f83fd782f3311277ac22cccc472218::1715275180:
 res://Themes/Botões/botao 6.tres::cf61502f89a3195546ba977d33bd3b5d::1715275180::res://.godot/exported/133200997/export-1c03a940ced27e972a36f6f4c473e970-botao 6.res
 res://Themes/Botões/botao azul menu parabens.tres::10de07f396abc8c64da9b32524048c27::1715282125::res://.godot/exported/133200997/export-48ffc18487c07fa89d87e5084b13a504-botao azul menu parabens.res
 res://Themes/Botões/botao sobre.tres::2d5a099115689770f15c78cd8c738587::1714402264::res://.godot/exported/133200997/export-168a14dd11189fe58a5592c084289b49-botao sobre.res
-res://Themes/Botões/botaoaudio.tres::3fac87e3b6430808a5cfeddbf58795b4::1715286501::res://.godot/exported/133200997/export-984a6cd6118b51f37a69e1a0c265a5a5-botaoaudio.res
-res://Themes/Botões/botaoaudiopequeno.tres::fed021ce1c02b11f51bf9361b558a67c::1715287172::res://.godot/exported/133200997/export-0844940d08e61185070d891f2a119076-botaoaudiopequeno.res
-res://Themes/Botões/tema jogo 1.tres::17647771ab0aa98285bc5744aa79a792::1715282605::res://.godot/exported/133200997/export-3b2b27b36ea5c08571c9c819763d8a68-tema jogo 1.res
-res://Themes/Botões/tema.tres::ececfa0b41143ba673c5b76dc2197067::1715282124::res://.godot/exported/133200997/export-01bef64f11ba224c41e71c703ba29fff-tema.res
+res://Themes/Botões/botaoaudio.tres::3fac87e3b6430808a5cfeddbf58795b4::1716393929::res://.godot/exported/133200997/export-984a6cd6118b51f37a69e1a0c265a5a5-botaoaudio.res
+res://Themes/Botões/botaoaudiopequeno.tres::fed021ce1c02b11f51bf9361b558a67c::1716393930::res://.godot/exported/133200997/export-0844940d08e61185070d891f2a119076-botaoaudiopequeno.res
+res://Themes/Botões/tema jogo 1.tres::17647771ab0aa98285bc5744aa79a792::1716393929::res://.godot/exported/133200997/export-3b2b27b36ea5c08571c9c819763d8a68-tema jogo 1.res
+res://Themes/Botões/tema.tres::ececfa0b41143ba673c5b76dc2197067::1716393929::res://.godot/exported/133200997/export-01bef64f11ba224c41e71c703ba29fff-tema.res
 res://Themes/Fontes/FONTE.tres::add71bd7835ab1ca25fe4aeb3918d6ff::1714665206::res://.godot/exported/133200997/export-2c9c863557d26f830a55b277be0da9d7-FONTE.res
-res://main.tscn::9f0e931e2d1f5f7f41924cfb906389f7::1715287196::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
+res://main.tscn::9f0e931e2d1f5f7f41924cfb906389f7::1716395107::res://.godot/exported/133200997/export-3070c538c03ee49b7677ff960a3f5195-main.scn
 res://Themes/Botões/botao tutorial.tres::b01b8fd33d8626716ee58ab36bd7de04::1715203919::res://.godot/exported/133200997/export-7208ae25f69826a64d1c9573db210059-botao tutorial.res
+res://Perguntas/Jogo 6/bolacha.tres::25200876f8fa00860e17709437fa85d5::1716329894::res://.godot/exported/133200997/export-d1a1429bffb84534c063ecbfa67f2ad5-bolacha.res
+res://Perguntas/Jogo 6/vinte.tres::32efadc8cf34b2ef31fb401a332268e0::1716329894::res://.godot/exported/133200997/export-2fc0f3dacad1bb7bfe0adee7b9243e25-vinte.res
+res://Themes/inst_shader.tres::6262d8c34ca614e2b19b0b871c6bb1c6::1716393930::res://.godot/exported/133200997/export-68322e207560e216d7400563e1d7e8c2-inst_shader.res

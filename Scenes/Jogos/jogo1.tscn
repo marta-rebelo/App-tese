@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://d4hwcohpdl44x"]
+[gd_scene load_steps=19 format=3 uid="uid://d4hwcohpdl44x"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo1_controller.gd" id="1_sjwyw"]
 [ext_resource type="Resource" uid="uid://ds07i6e4vvqgs" path="res://Perguntas/Categorias/jogo1.tres" id="2_3lcda"]
@@ -9,6 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://duvtrlavd8o2i" path="res://Assets/Common/UI/seta icon.svg" id="6_xfctd"]
 [ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Assets/Common/Audio/Parabens.wav" id="7_4qoid"]
 [ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Assets/Common/Audio/audio win.wav" id="7_xhlxp"]
+[ext_resource type="Material" uid="uid://o3k3faaoyw8h" path="res://Themes/inst_shader.tres" id="9_8pyix"]
 [ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Assets/Common/Audio/audio wrong.wav" id="9_70e3n"]
 [ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://Themes/Botões/botao 2.tres" id="11_14aju"]
 [ext_resource type="Theme" uid="uid://divqfx1mbhnj3" path="res://Themes/Botões/tema jogo 1.tres" id="11_qmpis"]
@@ -87,7 +88,7 @@ anchor_top = 0.211
 anchor_right = 0.494
 anchor_bottom = 0.211
 offset_left = -208.626
-offset_top = -54.589
+offset_top = -12.589
 offset_right = 207.374
 offset_bottom = 261.411
 grow_horizontal = 2
@@ -144,6 +145,7 @@ expand_icon = true
 stream = ExtResource("3_cc05o")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
+material = ExtResource("9_8pyix")
 anchors_preset = -1
 anchor_right = 1.008
 anchor_bottom = 1.001
@@ -151,17 +153,26 @@ offset_right = 0.23999
 offset_bottom = -1.28003
 color = Color(0.231373, 0.231373, 0.231373, 0.639216)
 
+[node name="ColorRect" type="ColorRect" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.219608, 0.207843, 0.184314, 0.690196)
+
 [node name="Skip" type="Button" parent="ColorRect2"]
-modulate = Color(0, 0, 0, 0.831373)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -33.0
-offset_top = -157.0
-offset_right = 33.0
+offset_left = -35.04
+offset_top = -156.52
+offset_right = 30.96
+offset_bottom = 0.47998
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_font_sizes/font_size = 35

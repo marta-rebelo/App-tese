@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dnkwpa6hlcktb"]
+[gd_scene load_steps=19 format=3 uid="uid://dnkwpa6hlcktb"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo2_controller.gd" id="1_acap8"]
 [ext_resource type="Resource" uid="uid://cha60psmp1qud" path="res://Perguntas/Categorias/jogo2.tres" id="2_wvkfa"]
@@ -11,6 +11,7 @@
 [ext_resource type="StyleBox" uid="uid://bbsrdsjryc1x1" path="res://Themes/Botões/botao 2.tres" id="7_j5k53"]
 [ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Assets/Common/Audio/audio wrong.wav" id="8_5cp41"]
 [ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Assets/Common/Audio/audio win.wav" id="9_6030w"]
+[ext_resource type="Material" uid="uid://o3k3faaoyw8h" path="res://Themes/inst_shader.tres" id="10_blhki"]
 [ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Assets/Common/Audio/Parabens.wav" id="11_ub3ue"]
 [ext_resource type="StyleBox" uid="uid://3chfguel1fv8" path="res://Themes/Botões/botao azul menu parabens.tres" id="12_h4sv8"]
 [ext_resource type="StyleBox" uid="uid://n8jsuk1mc25l" path="res://Themes/Botões/botao 2 menu parabens.tres" id="14_44d0x"]
@@ -119,6 +120,7 @@ stream = ExtResource("9_6030w")
 stream = ExtResource("11_ub3ue")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
+material = ExtResource("10_blhki")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -126,8 +128,16 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.231373, 0.231373, 0.231373, 0.639216)
 
+[node name="ColorRect" type="ColorRect" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.219608, 0.207843, 0.184314, 0.690196)
+
 [node name="Skip" type="Button" parent="ColorRect2"]
-modulate = Color(0, 0, 0, 0.831373)
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5

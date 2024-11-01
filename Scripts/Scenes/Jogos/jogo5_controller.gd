@@ -22,6 +22,7 @@ func _ready() -> void:
 	randomize()
 	game.type.shuffle()	
 	load_game()
+	get_tree().set_quit_on_go_back(false)
 
 func load_game() -> void:
 	if index == 0:	

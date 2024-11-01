@@ -159,7 +159,7 @@ expand_icon = true
 stream = ExtResource("7_tgvki")
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 13.0
+wait_time = 2.0
 one_shot = true
 
 [node name="certo" type="AudioStreamPlayer" parent="."]
@@ -172,6 +172,7 @@ stream = ExtResource("9_46pe2")
 stream = ExtResource("11_gxfqa")
 
 [node name="ColorRect" type="ColorRect" parent="."]
+visible = false
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0

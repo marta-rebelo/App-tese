@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://dwqhfvs6wtxtv"]
+[gd_scene load_steps=19 format=3 uid="uid://dwqhfvs6wtxtv"]
 
 [ext_resource type="Script" path="res://Scripts/Scenes/Jogos/jogo3_controller.gd" id="1_klwsd"]
 [ext_resource type="Resource" uid="uid://wgmm7b74c05a" path="res://Perguntas/Categorias/jogo3.tres" id="2_dh73e"]
@@ -11,6 +11,7 @@
 [ext_resource type="AudioStream" uid="uid://bst5xyknpwpkq" path="res://Assets/Instruções/Jogo 3.wav" id="7_u4b6s"]
 [ext_resource type="AudioStream" uid="uid://lgns6wsensd7" path="res://Assets/Common/Audio/audio wrong.wav" id="8_lhovl"]
 [ext_resource type="AudioStream" uid="uid://f6o8n0xf263n" path="res://Assets/Common/Audio/audio win.wav" id="9_81lci"]
+[ext_resource type="Material" uid="uid://o3k3faaoyw8h" path="res://Themes/inst_shader.tres" id="10_nyg2k"]
 [ext_resource type="AudioStream" uid="uid://yog4a8cikohl" path="res://Assets/Common/Audio/Parabens.wav" id="11_8wvoc"]
 [ext_resource type="StyleBox" uid="uid://3chfguel1fv8" path="res://Themes/Botões/botao azul menu parabens.tres" id="12_8f5ye"]
 [ext_resource type="Texture2D" uid="uid://bx1fj26befch1" path="res://Assets/Common/UI/3249401.png" id="14_eixpe"]
@@ -117,15 +118,23 @@ one_shot = true
 stream = ExtResource("11_8wvoc")
 
 [node name="ColorRect2" type="ColorRect" parent="."]
+material = ExtResource("10_nyg2k")
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.231373, 0.231373, 0.231373, 0.639216)
 
-[node name="Skip" type="Button" parent="ColorRect2"]
-modulate = Color(0, 0, 0, 0.831373)
+[node name="ColorRect" type="ColorRect" parent="ColorRect2"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.219608, 0.207843, 0.184314, 0.690196)
+
+[node name="Skip" type="Button" parent="ColorRect2/ColorRect"]
 layout_mode = 1
 anchors_preset = 7
 anchor_left = 0.5
@@ -220,7 +229,7 @@ vertical_alignment = 1
 
 [connection signal="pressed" from="Jogo 1/VBoxContainer/ImageHolder/Audio" to="." method="_on_audio_pressed"]
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
-[connection signal="pressed" from="ColorRect2/Skip" to="." method="_on_skip_pressed"]
+[connection signal="pressed" from="ColorRect2/ColorRect/Skip" to="." method="_on_skip_pressed"]
 [connection signal="pressed" from="voltar" to="." method="_on_voltar_pressed"]
 [connection signal="pressed" from="ColorRect/VBoxContainer/jogar" to="." method="_on_jogar_pressed"]
 [connection signal="pressed" from="ColorRect/VBoxContainer/menu" to="." method="_on_menu_pressed"]

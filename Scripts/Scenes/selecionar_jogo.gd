@@ -2,6 +2,8 @@ extends Control
 
 @export var mainGameScene : PackedScene
 
+func _ready() -> void:
+	get_tree().set_quit_on_go_back(false)
 
 
 func _on_button_pressed():
@@ -31,3 +33,7 @@ func _on_jogo_6_pressed():
 
 func _on_voltar_pressed():
 	get_tree().change_scene_to_file("res://main.tscn")
+
+func _notification(what):
+	if what == NOTIFICATION_WM_GO_BACK_REQUEST:
+		_on_voltar_pressed()

@@ -1,14 +1,14 @@
+res://Scenes/Jogos/jogo6.tscn
 res://Scripts/Scenes/Jogos/jogo1_controller.gd
-res://Perguntas/Jogo 5/cama cadeira gaveta caneta.tres
-res://Perguntas/Jogo 5/fato familia fada borracha.tres
-res://Perguntas/Jogo 5/livro limao lilas lapis.tres
-res://Perguntas/Categorias/jogo5.tres
-res://Themes/Botões/botaoaudiopequeno.tres
+res://Perguntas/Jogo 6/carta.tres
+res://Perguntas/Categorias/jogo6.tres
 res://Themes/Botões/tema.tres
 res://Themes/Botões/tema jogo 1.tres
+res://Themes/blur.gdshader
 res://Perguntas/Jogo 1/chuva.tres
+res://Perguntas/Jogo 1/tulipa.tres
+res://Perguntas/Jogo 1/gato.tres
 res://Perguntas/Categorias/jogo1.tres
-res://Themes/Botões/botaoaudio.tres
-res://Perguntas/Jogo 4/vaca faca.tres
-res://Perguntas/Jogo 4/mota nota.tres
-res://Perguntas/Categorias/jogo4.tres
+res://Themes/Botões/botaoaudiopequeno.tres
+res://Themes/inst_shader.tres
+res://Scenes/Jogos/jogo1.tscn

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="GameQuestion" load_steps=2 format=3 uid="uid://be7mai8k65bkx"]
+
+[ext_resource type="Script" path="res://Scripts/Recursos/perguntas.gd" id="1_fepru"]
+
+[resource]
+script = ExtResource("1_fepru")
+question_info = "bola__a"
+options = Array[String](["j", "ch"])
+correct = "ch"
+options_image = Array[Texture2D]([])

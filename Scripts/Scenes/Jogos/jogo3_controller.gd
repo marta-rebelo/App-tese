@@ -17,6 +17,7 @@ func _ready() -> void:
 	randomize()
 	game.type.shuffle()
 	load_game()
+	get_tree().set_quit_on_go_back(false)
 	
 func load_game() -> void:
 	if index == 0:	
@@ -93,3 +94,6 @@ func _on_skip_pressed():
 	$Timer.stop()
 	_on_timer_timeout()
 
+func _notification(what):
+	if what == NOTIFICATION_WM_GO_BACK_REQUEST:
+		_on_voltar_pressed()
